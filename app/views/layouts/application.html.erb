@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instapx
+    </title>
+    <%= favicon_link_tag asset_path('instagram.png'), :rel => 'icon', :type => 'image/png' %>
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <% if current_user%>
+    <script>
+      window.currentUser = {
+        'id': <%= current_user.id %>, 
+        'username': <%= current_user.username %>
+      }
+    </script>
+    <% end %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
