@@ -9,13 +9,11 @@ import NavBarContainer from './nav_bar/nav_bar_container';
 
 const App = () => (
     <div className='big-div'>
-                <NavBarContainer/>
+            <ProtectedRoute path='/user' component={NavBarContainer}/>
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
-                <div className='main-nav'>
                 <ProtectedRoute exact path="/user" component={UserIndexContainer}/>
-                </div>
             </Switch>
     </div>
 );

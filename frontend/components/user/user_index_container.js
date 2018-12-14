@@ -9,7 +9,6 @@ const mstp = (state, ownProps) => {
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        action : () => dispatch(logout())
     });
 };
 
