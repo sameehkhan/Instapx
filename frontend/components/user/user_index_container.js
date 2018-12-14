@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { logout } from '../../actions/session_actions';
 import UserIndex from './user_index';
 
 const mstp = (state, ownProps) => {
