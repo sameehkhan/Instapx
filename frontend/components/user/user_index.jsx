@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-class PostIndex extends React.Component {
+class UserIndex extends React.Component {
     constructor(props){
         super(props)
         
@@ -25,4 +25,4 @@ class PostIndex extends React.Component {
     }
 };
 
-export default PostIndex;
+export default UserIndex;
