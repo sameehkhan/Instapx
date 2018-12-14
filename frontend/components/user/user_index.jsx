@@ -17,7 +17,7 @@ class UserIndex extends React.Component {
     render() {
         return (
             <div>
-                <div className='nav-bar'></div>
+                <div></div>
                 <div className='form-box'>
                     <button onClick={this.handleLogout}>Log Out</button>
                 </div>
