@@ -15,10 +15,8 @@ class NavBar extends React.Component {
     render() {
         return( 
             <div className="main-nav">
-                <div className='form-box'>
                     <button onClick={this.handleLogout}>Log Out</button>
-                    {/* <div className="logo"><img src='/assets/ig-logo.png'/></div> */}
-                </div>
+                    <span><img className="ig-logo" src='/assets/ig-logo.png'/></span>
             </div>
         );
     }

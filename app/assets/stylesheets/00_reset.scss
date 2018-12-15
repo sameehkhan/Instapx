@@ -19,12 +19,26 @@ html, body, {
 // }
 
 .main-nav{
-    border: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
     background-color: white;
-    height: 77px; 
+    height: 25px; 
     width: 100%;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    display: flex; 
+
 }
 
+// .main-nav img{
+//   width: 50px;
+//   height: 50px; 
+// }
+
 .ig-logo{
-  width: 5px
+  width: 45px;
+  height: 45px; 
+  
 }
