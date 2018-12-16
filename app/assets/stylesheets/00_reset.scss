@@ -28,7 +28,7 @@ html, body, {
     padding-bottom: 25px;
     padding-left: 20px;
     display: flex; 
-    
+
 }
 
 .main-nav input{
@@ -45,6 +45,11 @@ html, body, {
 .ig-logo{
   height: 24px; 
   width: 24px; 
-  background-position: -163px -84px
-  
+  background-position: -163px -84px 
+}
+
+.nav-logo{
+  font-family: 'Grand Hotel', cursive;
+  height: 29px;
+  width: 103px;
 }
