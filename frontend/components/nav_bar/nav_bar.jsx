@@ -17,7 +17,7 @@ class NavBar extends React.Component {
             <div className="main-nav">
                     <button onClick={this.handleLogout}>Log Out</button>
                     <img className="ig-logo" src='/assets/ig-logo.png'/>
-                    <div className='nav-logo'>Instapx</div>
+                    <div className='nav-logo'><h2 id='logo-words'>Instapx</h2></div>
                     <div className='search-bar'><input type="text" placeholder="Search.."/></div>
             </div>
         );
