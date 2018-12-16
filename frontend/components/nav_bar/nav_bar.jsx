@@ -19,7 +19,7 @@ class NavBar extends React.Component {
                     <img className="ig-logo" src='/assets/ig-logo.png'/>
                     <div className='nav-logo'><h2 id='logo-words'>Instapx</h2></div>
                     <div className='search-bar'><input className='search-input'type="text" placeholder="Search"/></div>
-                    <Link to="/dashboard"> <button type="button">Profile</button></Link>
+                    <Link to="/user"> <button type="button">Profile</button></Link>
             </div>
         );
     }
