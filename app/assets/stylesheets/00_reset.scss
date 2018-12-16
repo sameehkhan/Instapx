@@ -60,8 +60,11 @@ html, body, {
 }
 
 .search-input{
-  width: 177px;
-  height: 20px;
+  // width: 177px;
+  // height: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
   padding: 3px 10px 3px 26px;
   border: solid 1px #dbdbdb;
   border-radius: 3px;
