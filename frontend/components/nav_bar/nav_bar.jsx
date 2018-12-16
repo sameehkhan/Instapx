@@ -19,7 +19,7 @@ class NavBar extends React.Component {
                     <div className=''>
                     <span><img className="ig-logo" src='/assets/ig-logo.png'/></span>
                     <div><h2 id='logo'>Instapx</h2></div>
-                    <div></div>
+                    <div> <input type="text" placeholder="Search.."/> </div>
                     </div>
                     <span></span>
             </div>
