@@ -62,4 +62,12 @@ html, body, {
 .search-input{
   width: 177px;
   height: 20px;
+  padding: 3px 10px 3px 26px;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  color: #262626;
+  outline: 0;
+  z-index: 2;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
 }
