@@ -11,11 +11,11 @@ import FeedContainer from './feed/feed_container';
 const App = () => (
     <div className='big-div'>
             <ProtectedRoute path='/' component={NavBarContainer}/>
-            <ProtectedRoute path='/feed' component={FeedContainer}/>
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
                 <ProtectedRoute exact path="/user" component={UserIndexContainer}/>
+                <ProtectedRoute path='/feed' component={FeedContainer} />
             </Switch>
     </div>
 );
