@@ -5,6 +5,11 @@ class Feed extends React.Component {
         super(props)
 
     }
+    render(){
+        return(
+            
+        )
+    }
 }
 
 export default Feed; 
