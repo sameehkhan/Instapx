@@ -75,5 +75,9 @@ body, button, input, textarea{
   outline: 0;
   z-index: 2;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.search-input:placeholder-shown {
+    font-size: 16px;
 }
