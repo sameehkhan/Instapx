@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2018_12_18_000543) do
 
   create_table "posts", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.string "image_url", null: false
     t.integer "post_author_username"
     t.text "caption"
     t.datetime "created_at", null: false
