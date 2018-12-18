@@ -14,8 +14,6 @@ export const receivePosts = ({ posts, users }) => {
     };
 };
 
-
-
 export const receivePost = (post) => {
     return {
         type: RECEIVE_POST,
