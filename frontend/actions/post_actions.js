@@ -1,78 +1,40 @@
-import * as PostAPIUtil from '../util/post_api_util';
+import * as APIUtil from '../util/photos_api_util';
 
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const RECEIVE_POST = 'RECEIVE_POST';
 export const REMOVE_POST = 'REMOVE_POST';
-export const RECEIVE_POST_ERRORS = 'RECEIVE_POST_ERRORS';
 
+const receivePosts = (posts) => ({
+    type: RECEIVE_POSTS,
+    posts
+});
 
-export const receivePosts = ({ posts, users }) => {
-    return {
-        type: RECEIVE_POSTS,
-        posts: posts,
-        users: users
-    };
-};
+const receivePost = ({ post }) => ({
+    type: RECEIVE_POST,
+    post
+});
 
-export const receivePost = (post) => {
-    return {
-        type: RECEIVE_POST,
-        post: post
-    };
-};
+const removePost = (postId) => ({
+    type: REMOVE_POST,
+    postId
+});
 
-export const removePost = (post) => {
-    return {
-        type: REMOVE_POST,
-        post: post
-    };
-};
+export const fetchPhotos = (userId) => dispatch => (
+    APIUtil.fetchPhotos(userId).then(photos =>
+        dispatch(receivePost(photos)))
+);
 
-export const fetchPosts = () => {
-    return (dispatch) => {
-        return PostAPIUtil.fetchPosts().then(posts => {
-            return dispatch(receivePosts(posts));
-        },
-            errors => {
-                return dispatch({ type: RECEIVE_POST_ERRORS, errors: errors.responseJSON });
-            }
-        );
-    };
-};
+export const fetchPhoto = id => dispatch => (
+    APIUtil.fetchPhoto(id).then(post =>
+        dispatch(receivePost(post)))
+);
 
-export const fetchPost = (id) => {
-    return (dispatch) => {
-        return PostAPIUtil.fetchPost(id).then(post => {
-            return dispatch(receivePost(post));
-        },
-            errors => {
-                return dispatch({ type: RECEIVE_POST_ERRORS, errors: errors.responseJSON });
-            }
-        );
-    };
-};
+export const createPhoto = post => dispatch => (
+    APIUtil.createPhoto(post).then(post =>
+        dispatch(receivePost(post)))
+);
 
-export const createPost = (post) => {
-    return (dispatch) => {
-        return PostAPIUtil.createPost(post).then(post => {
-            return dispatch(receivePost(post));
-        },
-            errors => {
-                return dispatch({ type: RECEIVE_POST_ERRORS, errors: errors.responseJSON });
-            }
-        );
-    };
-};
-
-
-export const deletePost = (id) => {
-    return (dispatch) => {
-        return PostAPIUtil.deletePost(id).then((post) => {
-            return dispatch(removePost(post));
-        },
-            errors => {
-                return dispatch({ type: RECEIVE_POST_ERRORS, errors: errors.responseJSON });
-            }
-        );
-    };
-};
+export const deletePhoto = photoId => dispatch => (
+    APIUtil.deletePhoto(photoId).then(post =>
+        dispatch(removePost(photoId)))
+);

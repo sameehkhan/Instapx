@@ -1,31 +1,29 @@
-export const fetchPosts = () => {
-    return $.ajax({
-        method: 'GET',
-        url: '/api/posts'
-    });
-};
+export const fetchPost = () => (
+    $.ajax({
+        url: `api/posts`,
+        method: 'GET'
+    })
+);
+export const fetchPost = (id) => (
+    $.ajax({
+        url: `api/posts/${id}`,
+        method: 'GET'
+    })
+);
 
-
-export const fetchPost = (id) => {
-    return $.ajax({
-        method: 'GET',
-        url: `/api/posts/${id}`
-    });
-};
-
-
-export const createPost = (post) => {
-    return $.ajax({
+export const createPost = (post) => (
+    $.ajax({
+        url: `api/posts`,
         method: 'POST',
-        url: `/api/posts`,
-        data: {post}
-    });
-};
+        processData: false,
+        contentType: false,
+        data: post,
+    })
+);
 
-
-export const deletePost = (id) => {
-    return $.ajax({
-        method: 'DELETE',
-        url: `/api/posts/${id}`
-    });
-};
+export const deletePost = (id) => (
+    $.ajax({
+        url: `api/posts/${id}`,
+        method: 'DELETE'
+    })
+);
