@@ -69,7 +69,8 @@ body, button, input, textarea{
   height: 100%;
   width: 100%;
   padding: 3px 10px 3px 26px;
-  border: solid 1px #dbdbdb;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
   border-radius: 3px;
   color: #262626;
   outline: 0;
@@ -80,4 +81,19 @@ body, button, input, textarea{
 
 .search-input:placeholder-shown {
     font-size: 16px;
+}
+
+.nav-bar-logo{
+  width: 115px;
+  height: 30px;
+}
+
+.nav-bar-word{
+  width: 115px;
+  height: 30px;
+}
+
+.nav-bar-line{
+  width: 5px;
+  height: 30px;
 }
