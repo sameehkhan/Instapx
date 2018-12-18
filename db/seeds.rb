@@ -3,5 +3,9 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+    demo = User.create({ username: 'demo', full_name: 'Demo', password: 'password'})
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# file = File.open('app/assets/images/instagram.png')
+# post.photo.attach(io: file, filename: 'instagram.png')
