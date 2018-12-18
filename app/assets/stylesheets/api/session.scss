@@ -1,3 +1,4 @@
+
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -14,13 +15,43 @@
     background-color: #fafafa;
 }
  
-.outer-div img{
+// .outer-div img{
+//     margin-left: -125px;
+//     margin-right: -94px;
+// }
+
+#iphone #paris #temp{
     margin-left: -125px;
     margin-right: -94px;
 }
 
+.form-header {
+    margin-bottom: 18px;
+    margin-top: 0px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #999;
+}
+
+::placeholder { 
+  color: #999;
+  opacity: 1; 
+}
+
+.instapx-logo {
+    width: 125px;
+    height: 56px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    margin-left: 2px;
+}
+
 .session-form, .parent-image{
     margin-top: 70px;
+    margin-left: -120px;
 }
 .session-form{
     display: flex;
@@ -34,7 +65,7 @@
     border-radius: 1px;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     text-align: center;
-    // margin-left: -40px;
+    margin-left: -48px;
 }
 
 .errors{
@@ -115,7 +146,7 @@
     border-left-color: rgb(213, 209, 201);
     height: 37px;
     width: 250px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
     border-radius: 2px;
@@ -137,6 +168,7 @@
   position: relative;
   top: 0;
   left: 0;
+  margin-right: -48px;
 }
 
 #paris{
