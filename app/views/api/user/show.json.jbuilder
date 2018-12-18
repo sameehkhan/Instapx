@@ -6,8 +6,8 @@ end
 json.posts do
   @user.posts.each do |post|
     json.set! post.id do
-      json.extract! post, :id, :caption, :image_url
-      json.image_url asset_path(item.image_url)
+      json.extract! post, :id, :caption
+      json.photo url_for(post.photo)
     end
   end
 end
