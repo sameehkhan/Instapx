@@ -5,6 +5,7 @@ import SignUpFormContainer from './session/signup_form_container';
 import UserIndexContainer from './user/user_index_container';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import FeedContainer from './feed/feed_container';
+import UserShowContainer from './user/user_show_container';
  import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 
