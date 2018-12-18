@@ -3,7 +3,7 @@
 #
 # Examples:
 #
-#     demo = User.create({ username: 'demo', full_name: 'Demo', password: 'password'})
+    demo = User.create({ username: 'demo', full_name: 'Demo', password: 'password'})
 # #   Character.create(name: 'Luke', movie: movies.first)
 
 
