@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# file = File.open('app/assets/images/instagram.png')
+file = File.open('app/assets/images/instagram.png')
 # post.photo.attach(io: file, filename: 'instagram.png')
