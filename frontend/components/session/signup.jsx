@@ -49,8 +49,8 @@ class SignupForm extends React.Component {
                 </div>
                 <div className="session-form">
                 <form>
-                    <h2 id='logo'>Instapx</h2>
-                    {/* <h2 className='greeting'>Sign up to see posts from your friends.</h2> */}
+                        <img className="instapx-logo" src='/assets/instapx.png' />
+                        <h2 className="form-header">Log in to see photos and videos from your friends.</h2>
                     <input
                             type="text"
                             value={this.state.username}
