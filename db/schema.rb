@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 2018_12_18_000543) do
 
   create_table "posts", force: :cascade do |t|
     t.integer "user_id", null: false
+    t.string "image_url", null: false
+    t.integer "post_author_username"
     t.text "caption"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -49,6 +51,7 @@ ActiveRecord::Schema.define(version: 2018_12_18_000543) do
     t.string "full_name", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
+    t.string "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
