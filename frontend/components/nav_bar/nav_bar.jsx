@@ -15,15 +15,19 @@ class NavBar extends React.Component {
 
     render() {
         return( 
+        <div className="big-nav">
             <div className="main-nav">
-                    <button onClick={this.handleLogout}>Log Out</button>
+                    {/* <button onClick={this.handleLogout}>Log Out</button> */}
                     {/* <img className="ig-logo" src='/assets/ig-logo.png'/> */}
-                    <img className="nav-bar-word" src='/assets/instapxlogo.png' />
+                    <div className='all-nav-logos'>
+                    <img className="nav-bar-logo" src='/assets/instapxlogo.png' />
                     <img className="nav-bar-line" src='/assets/logo-line.png' />
-                    <img className="nav-bar-logo" src='/assets/instapx.png'/>
+                    <img className="nav-bar-word" src='/assets/instapx.png'/>
+                    </div>
                     <div className='search-bar'><input className='search-input'type="text" placeholder="Search"/></div>
-                    <Link to={`/user`} id='login-button'>Sign up</Link>
+                    <div className='user-icon'><Link to={`/user`}><img className="prof-icon" src='/assets/profile-icon.png' /></Link></div>
             </div>
+        </div>
         );
     }
 

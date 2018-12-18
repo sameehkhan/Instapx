@@ -22,16 +22,27 @@ body, button, input, textarea{
 // }
 
 .main-nav{
-    border-bottom: 1px solid #e6e6e6;
     background-color: white;
-    height: 25px; 
-    width: 100%;
-    padding-top: 26px;
-    padding-right: 20px;
-    padding-bottom: 25px;
-    padding-left: 20px;
+    width: 970px;
+    // padding-top: 26px;
+    // padding-right: 20px;
+    // padding-bottom: 25px;
+    // padding-left: 20px;
     display: flex; 
+    justify-content: space-between
+}
 
+.big-nav{
+  background-color: white;
+  height: 25px; 
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-nav input{
@@ -83,17 +94,35 @@ body, button, input, textarea{
     font-size: 16px;
 }
 
-.nav-bar-logo{
-  width: 115px;
-  height: 30px;
+.nav-bar-word{
+  width: 86px;
+  height: 33px;
+  position: relative;
+  top: -2px;
 }
 
-.nav-bar-word{
-  width: 115px;
-  height: 30px;
+.nav-bar-logo{
+  width: 27px;
+  height: 27px;
+  position: relative;
 }
 
 .nav-bar-line{
   width: 5px;
-  height: 30px;
+  height: 33px;
+  position: relative;
+  top: -4px;
+}
+
+.prof-icon{
+  width: 24px;
+  height: 26px;
+  position: relative;
+  top: -1px;
+}
+
+.all-nav-logos {
+  width: 145px;
+  display: flex;
+  justify-content: space-between;
 }
