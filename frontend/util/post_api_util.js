@@ -1,4 +1,4 @@
-export const fetchPost = () => (
+export const fetchPosts = () => (
     $.ajax({
         url: `api/posts`,
         method: 'GET'

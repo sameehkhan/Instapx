@@ -1,25 +1,24 @@
 import { RECEIVE_POSTS, RECEIVE_POST, REMOVE_POST } from '../actions/post_actions';
-import { RECEIVE_USER } from '../actions/user_actions';
+import { RECEIVE_CURRENT_USER } from '../actions/user_actions';
 
 import merge from 'lodash/merge';
 
-const photosReducer = (state = {}, action) => {
+const postsReducer = (state = {}, action) => {
     Object.freeze(state);
     let newState = merge({}, state);
-
     switch (action.type) {
         case RECEIVE_POSTS:
             return merge({}, action.posts);
         case RECEIVE_POST:
-            return merge({}, state, { [action.photo.id]: action.photo });
+            return merge({}, state, { [action.post.id]: action.post });
         case REMOVE_POST:
-            delete newState[action.photoId];
+            delete newState[action.postId];
             return newState;
-        case RECEIVE_USER:
-            return merge({}, state, action.payload.photos);
+        case RECEIVE_CURRENT_USER:
+            return merge({}, state, action.posts);
         default:
             return state;
     }
 };
 
-export default sessionReducer;
+export default postsReducer;

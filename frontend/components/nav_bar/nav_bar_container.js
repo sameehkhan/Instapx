@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
     return ({
+        currentUserId: state.session.id
     });
 };
 

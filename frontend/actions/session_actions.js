@@ -11,9 +11,10 @@ export const login = user => dispatch => {
     (error) => dispatch(receiveErrors(error.responseJSON)));
 };
 
-export const receiveCurrentUser = user => ({
+export const receiveCurrentUser = ({user, posts}) => ({
   type: RECEIVE_CURRENT_USER,
-  user
+  user,
+  posts
 });
 
 export const logoutCurrentUser = () => ({

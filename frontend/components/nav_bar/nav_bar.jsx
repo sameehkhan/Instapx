@@ -31,7 +31,7 @@ class NavBar extends React.Component {
                     </Link>
                     </div>
                     <div className='search-bar'><input className='search-input'type="text" placeholder="Search"/></div>
-                    <div className='user-icon'><Link to={`/user`}><img className="prof-icon" src='/assets/profile-icon.png' /></Link></div>
+                    <div className='user-icon'><Link to={`/users/${this.props.currentUserId}`}><img className="prof-icon" src='/assets/profile-icon.png' /></Link></div>
             </div>
         </div>
         );

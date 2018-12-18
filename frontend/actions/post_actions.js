@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/photos_api_util';
+import * as APIUtil from '../util/post_api_util';
 
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 export const RECEIVE_POST = 'RECEIVE_POST';
@@ -19,22 +19,22 @@ const removePost = (postId) => ({
     postId
 });
 
-export const fetchPhotos = (userId) => dispatch => (
-    APIUtil.fetchPhotos(userId).then(photos =>
-        dispatch(receivePost(photos)))
+export const fetchPosts = (userId) => dispatch => (
+    APIUtil.fetchPosts(userId).then(posts =>
+        dispatch(receivePosts(posts)))
 );
 
-export const fetchPhoto = id => dispatch => (
-    APIUtil.fetchPhoto(id).then(post =>
+export const fetchPost = id => dispatch => (
+    APIUtil.fetchPost(id).then(post =>
         dispatch(receivePost(post)))
 );
 
-export const createPhoto = post => dispatch => (
-    APIUtil.createPhoto(post).then(post =>
+export const createPost = post => dispatch => (
+    APIUtil.createPost(post).then(post =>
         dispatch(receivePost(post)))
 );
 
-export const deletePhoto = photoId => dispatch => (
-    APIUtil.deletePhoto(photoId).then(post =>
-        dispatch(removePost(photoId)))
+export const deletePost = postId => dispatch => (
+    APIUtil.deletePost(postId).then(postId =>
+        dispatch(removePost(postId)))
 );
