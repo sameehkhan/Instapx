@@ -26,9 +26,12 @@ componentDidMount() {
             <div className='profile-div'>
 
             <div className='info-container'>
-                    <div className='div-1'> <h1>{this.props.user.username}</h1></div>
-                    <div className='div-2'> {this.props.user.username}</div>
-                    <div className='div-3'> {this.props.user.full_name}</div>
+                    <div className='info-section'>
+                        <div className='div-1'> <h1>{this.props.user.username}</h1></div>
+                        <div className='div-2'> {this.props.user.username}</div>
+                        <div className='div-3'> {this.props.user.full_name}</div>
+                    </div>
+                    <div className='image-section'></div>
             </div>
 
                 <div className='posts-container'>
