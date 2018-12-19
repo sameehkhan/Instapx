@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class UserShow extends React.Component {
     constructor(props) {
         super(props)
-        
+
         this.handleLogout = this.handleLogout.bind(this);
 
     }
@@ -36,9 +36,10 @@ handleLogout(e) {
                 <div className='info-container'>
                     <div className='image-section'><img className='prof-pic' src={this.props.user.photo} /></div>
                     <div className='info-section'>
-                            <div className='div-1'> <h1>{this.props.user.username}</h1>
-                                <button className='user-button'>Edit Profile</button>
-                                <button className='user-button' onClick={this.handleLogout}>Log Out</button>
+                            <div className='div-1'> 
+                                <h1>{this.props.user.username}</h1>
+                                <div><button className='user-button'>Edit Profile</button></div>
+                                <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
                             </div>
 
                             <ul className='stats-list'> 

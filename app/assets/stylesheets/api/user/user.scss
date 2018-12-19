@@ -121,6 +121,8 @@
 }
 
 .div-1{
+    // display: inline;
+    display: flex; 
 
     h1{
         font-weight: 300;
@@ -184,4 +186,25 @@
     // width: 100%;
     // height: 100%;
     left: 0;
+}
+
+.user-button{
+    // height: 18px;
+    // width: 75.422px;
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    outline: 0!important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: inherit;
+    text-overflow: ellipsis;
 }
