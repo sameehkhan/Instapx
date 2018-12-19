@@ -34,7 +34,10 @@ componentDidMount() {
                                 <li className='stat-li'>followers</li>
                                 <li className='stat-li'>following</li>
                             </ul>
-                        <div className='div-3'> <h1 className='full-name'>{this.props.user.full_name}</h1></div>
+                        <div className='div-3'> 
+                        <h1 className='full-name'>{this.props.user.full_name}</h1>
+                        <span>{this.props.user.bio}</span>
+                        </div>
                         </div>
                         <div className='image-section'></div>
                 </div>
