@@ -16,7 +16,7 @@ const mstp = (state, ownProps) => {
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        logout: () => dispatch(logout()),
+        action: () => dispatch(logout()),
         fetchUser: (id) =>dispatch(fetchUser(id))
     });
 };

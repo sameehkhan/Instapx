@@ -17,7 +17,7 @@ class NavBar extends React.Component {
         return( 
         <div className="big-nav">
             <div className="main-nav">
-                    <button onClick={this.handleLogout}>Log Out</button>
+                    {/* <button onClick={this.handleLogout}>Log Out</button> */}
                     {/* <img className="ig-logo" src='/assets/ig-logo.png'/> */}
                     <div className='all-nav-logos'>
                     <Link to={`/feed`}>
