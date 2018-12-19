@@ -40,11 +40,11 @@
     padding-bottom: 3rem;
 }
 
-// .all-posts{
-//     display: grid;
-//     grid-template - columns: repeat(auto - fit, minmax(22rem, 1fr));
-//     grid-gap: 2rem;
-// }
+.all-posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+}
 
 
 .post {
@@ -60,4 +60,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.post,
+.all-posts {
+    width: auto;
+    margin: 0;
 }
