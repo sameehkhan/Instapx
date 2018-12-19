@@ -29,7 +29,7 @@ componentDidMount() {
                     <div className='info-section'>
                         <div className='div-1'> <h1>{this.props.user.username}</h1></div>
 
-                        <ul className='div-2'> 
+                        <ul className='stats-list'> 
                             
                         </ul>
                         <div className='div-3'> {this.props.user.full_name}</div>
