@@ -31,7 +31,9 @@ componentDidMount() {
 
                 {this.props.posts.reverse().map( post => {
                     return (
-                        <img className='user-post' src={post.photo} />
+                        <div className='post'>
+                        <img className='user-image' src={post.photo} />
+                        </div>
                     )
                 })}
                 </div>
