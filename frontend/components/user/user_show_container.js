@@ -7,9 +7,10 @@ import { withRouter } from 'react-router-dom';
 
 
 const mstp = (state, ownProps) => {
+    const posts = Object.values(state.entities.posts).filter(post => post.user_id === parseInt(ownProps.match.params.id))
     return ({
         user: state.entities.users[ownProps.match.params.id],
-        currentUserId: state.session.currentUser
+        posts
     });
 };
 

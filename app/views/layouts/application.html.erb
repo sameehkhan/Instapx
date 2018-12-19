@@ -15,7 +15,9 @@
     <script>
       window.currentUser = {
         'id': <%= current_user.id %>, 
-        'username': "<%=current_user.username%>"
+        'username': "<%=current_user.username%>",
+        'full_name': "<%=current_user.full_name%>",
+        'bio': "<%=current_user.bio%>"
       }
     </script>
     <% end %>
