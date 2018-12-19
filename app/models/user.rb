@@ -16,7 +16,7 @@ class User < ApplicationRecord
   validates :username, :session_token, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true}
 
-  # has_one_attached :prof_pic
+  has_one_attached :prof_pic
 
   has_many :posts
 

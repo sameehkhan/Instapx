@@ -4,6 +4,11 @@
 
 json.set! :user do 
    json.extract! user, :id, :username, :full_name, :bio
+   if user.prof_pic.nil? 
+      json.prof_pic url_for(user.prof_pic)
+   else 
+      json.prof_pic url_for('https://s3-us-west-1.amazonaws.com/instapx-dev/1bbAzYAX4P3YR3n57iqKE6P1')
+   end 
 end 
 
 
