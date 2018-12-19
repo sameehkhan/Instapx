@@ -27,15 +27,17 @@ componentDidMount() {
                 <div> {this.props.user.username}</div>
                 <div> {this.props.user.full_name}</div>
 
-                <div className='all-posts'>
-
-                {this.props.posts.reverse().map( post => {
-                    return (
-                        <div className='post'>
-                        <img className='user-image' src={post.photo} />
-                        </div>
-                    )
-                })}
+                <div className='posts-container'>
+                    <div className='all-posts'>
+                    {this.props.posts.reverse().map( post => {
+                        return (
+                            <div className='post' tabIndex="0">
+                            <img className='post-image' src={post.photo} />
+                            <div className='post-info'></div>
+                            </div>
+                        )
+                    })}
+                    </div>
                 </div>
                 {/* <UserPostsIndexContainer userId={userProf.id} /> */}
             </div>
