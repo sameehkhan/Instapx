@@ -27,11 +27,11 @@ componentDidMount() {
                 <div> {this.props.user.username}</div>
                 <div> {this.props.user.full_name}</div>
 
-                <div>{this.props.posts.map( post => {
+                <div className='all-posts'>
+
+                {this.props.posts.reverse().map( post => {
                     return (
-                        <div>
-                        <img src={post.photo}/>
-                        </div>
+                        <img className='user-post' src={post.photo} />
                     )
                 })}
                 </div>
