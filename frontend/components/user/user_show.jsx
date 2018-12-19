@@ -7,12 +7,22 @@ class UserShow extends React.Component {
 
     }
 
-
+componentDidMount() {
+    this.props.fetchUser(this.props.match.params.id);
+}
 
     render() {
+        if(this.props.user === undefined){
+            return (
+                <div></div>
+            )
+        }
+         
         return (
             <div>
-                <div></div>
+                <div>Hello {this.props.user.username}</div>
+
+                {/* <UserPostsIndexContainer userId={userProf.id} /> */}
             </div>
         );
     }

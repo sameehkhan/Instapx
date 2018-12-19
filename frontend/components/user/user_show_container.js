@@ -1,21 +1,26 @@
 import { connect } from 'react-redux';
 import UserShow from './user_show';
-import { receiveCurrentUser } from '../../actions/session_actions';
+import { logout } from '../../actions/session_actions';
+import { fetchUser } from '../../actions/user_actions';
+import { withRouter } from 'react-router-dom';
+
 
 
 const mstp = (state, ownProps) => {
     return ({
-        user: state.entities.users[ownProps.match.params.id]
+        user: state.entities.users[ownProps.match.params.id],
+        currentUserId: state.session.currentUser
     });
 };
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        logout: () => dispatch(logout())
+        logout: () => dispatch(logout()),
+        fetchUser: (id) =>dispatch(fetchUser(id))
     });
 };
 
-export default connect(
+export default withRouter(connect(
     mstp,
     mdtp
-)(UserShow);
+)(UserShow));
