@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
 import UserShow from './user_show';
-import { login, clearErrors } from '../../actions/session_actions';
-import { selectAllErrors } from '../../reducers/selectors';
+import { receiveCurrentUser } from '../../actions/session_actions';
 
 
 const mstp = (state, ownProps) => {
     return ({
+        user: state.entities.users[ownProps.match.params.id]
     });
 };
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        
+        logout: () => dispatch(logout())
     });
 };
 

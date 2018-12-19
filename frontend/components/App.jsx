@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/signup_form_container';
-import UserIndexContainer from './user/user_index_container';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import FeedContainer from './feed/feed_container';
 import UserShowContainer from './user/user_show_container';
@@ -16,9 +15,8 @@ const App = () => (
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
-                <ProtectedRoute exact path="/user" component={UserIndexContainer}/>
                 <ProtectedRoute path='/feed' component={FeedContainer} />
-                {/* <Route path='/users/:id' component={UserShowContainer}/> */}
+                <ProtectedRoute path='/users/:id' component={UserShowContainer}/>
             </Switch>
             
     </div>
