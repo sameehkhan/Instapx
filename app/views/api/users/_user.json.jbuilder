@@ -4,11 +4,11 @@
 
 json.set! :user do 
    json.extract! user, :id, :username, :full_name, :bio
-   if user.photo.nil? 
-      json.photo url_for(user.photo)
-   else 
-      json.photo url_for(user.photo)
-   end 
+   #if user.photo.nil? 
+      json.photo url_for('/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--436bceed2cf735309de1252b9391752878e9f3a1/profile.png')
+   #else 
+      #json.photo url_for(user.photo)
+   #end 
 end 
 
 
