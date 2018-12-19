@@ -7,7 +7,7 @@ json.set! :user do
    if user.photo.nil? 
       json.photo url_for(user.photo)
    else 
-      json.photo url_for('https://s3-us-west-1.amazonaws.com/instapx-dev/1bbAzYAX4P3YR3n57iqKE6P1')
+      json.photo url_for(user.photo)
    end 
 end 
 
