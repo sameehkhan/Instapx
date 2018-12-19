@@ -26,7 +26,8 @@ componentDidMount() {
             <div className='profile-div'>
 
                 <div className='info-container'>
-                        <div className='info-section'>
+                    <div className='image-section'></div>
+                    <div className='info-section'>
                             <div className='div-1'> <h1>{this.props.user.username}</h1></div>
 
                             <ul className='stats-list'> 
@@ -39,7 +40,6 @@ componentDidMount() {
                         <span>{this.props.user.bio}</span>
                         </div>
                         </div>
-                        <div className='image-section'></div>
                 </div>
 
                 <div className='posts-block'></div>
