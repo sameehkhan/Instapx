@@ -26,7 +26,7 @@ componentDidMount() {
             <div className='profile-div'>
 
                 <div className='info-container'>
-                    <div className='image-section'></div>
+                    <div className='image-section'><img className='prof-pic' src={this.props.user.prof_pic} /></div>
                     <div className='info-section'>
                             <div className='div-1'> <h1>{this.props.user.username}</h1></div>
 
