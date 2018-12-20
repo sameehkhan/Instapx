@@ -20,7 +20,8 @@
     min-height: 614px;
     object-fit: cover;
     display: block;
-    padding-left: 1px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
 }
 
 .feed-post {
@@ -32,12 +33,13 @@
 
 .post-bar{
     background: white;
-    height: 61px;
+    height: 59px;
     width: 614px;
     padding-left: 0px;
-    border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
+    // border-top: 1px solid #e6e6e6;
+    // border-left: 1px solid #e6e6e6;
+    // border-right: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
 }
 
 .comment-bar{
