@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const bar = document.getElementsByClassName("big-nav");
 
         if(word.length > 0 && line.length > 0){
-            if(window.scrollY > 300){
+            if(window.scrollY > 200){
                 line[0].classList.add('visible');
                 word[0].classList.add('visible');
                 bar[0].classList.add('height');
