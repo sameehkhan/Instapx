@@ -8,6 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
     let preloadedState = {} 
     
+
+    window.addEventListener("scroll", (e) =>{
+        const word = document.getElementsByClassName("nav-bar-word")
+        const line = document.getElementsByClassName("nav-bar-line")
+        if(word.length > 0 && line.length > 0){
+            if(window.scrollY !== 0){
+                
+            }
+        }
+    })
+
+
     if (window.currentUser) {
         preloadedState = {
             entities: {
