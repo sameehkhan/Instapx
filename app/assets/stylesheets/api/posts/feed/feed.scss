@@ -20,7 +20,7 @@
     min-height: 614px;
     object-fit: cover;
     display: block;
-    padding-left: 0px;
+    padding-left: 1px;
 }
 
 .feed-post {
@@ -45,6 +45,9 @@
     height: 100px;
     width: 614px;
     padding-left: 0px;
+    border-bottom: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
 }
 
 
