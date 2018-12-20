@@ -1,9 +1,13 @@
 .feed-index{
+    display: flex;
+    flex-direction: column;
     width: 614px !important;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-gap: 28px;
+    // display: grid;
+    // grid-template-columns: repeat(1, 100%);
+    // grid-gap: 28px;
     margin-top: 136px;
+    padding-left: 0px;
+    justify-content: center;
 }
 
 .feed-container{
@@ -16,12 +20,11 @@
     min-height: 614px;
     object-fit: cover;
     display: block;
+    padding-left: 0px;
 }
 
 .feed-post {
     position: relative;
-    flex: 10 0 22px;
-    margin: 10px;
     color: #fff;
     cursor: pointer;
 }
@@ -30,6 +33,7 @@
     background: white;
     height: 61px;
     width: 614px;
+    padding-left: 0px;
 }
 
 
