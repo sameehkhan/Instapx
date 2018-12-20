@@ -20,6 +20,7 @@ class Feed extends React.Component {
                         <div className='feed-post' tabIndex="0">
                             <div className='post-bar'></div>
                             <img className='post-index-img' src={post.photo} />
+                            <div className='comment-bar'></div>
                             {/* // <div className='post-info'></div> */}
                         </div>
                     )
