@@ -17,7 +17,6 @@ class Feed extends React.Component {
                 <div></div>
             )
         }
-        debugger
         return (
             <div>
                 <div className='feed-container'>
@@ -26,7 +25,7 @@ class Feed extends React.Component {
                     return (
                         <div className='feed-post' tabIndex="0">
                             <div className='post-bar'>
-                                <div id='hey' className={this.props.users}>BIG BOY</div>
+                                <div className='post-username'>{this.props.users[post.user_id].username}</div>
                             </div>
                             <img className='post-index-img' src={post.photo} />
                             <div className='comment-bar'></div>
