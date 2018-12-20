@@ -26,6 +26,7 @@ class Feed extends React.Component {
                         <div className='feed-post' tabIndex="0">
                             <div className='post-bar'>
                                 <div className='post-username'>{this.props.users[post.user_id].username}</div>
+                                <div className='canvas'> <img src={this.props.users[post.user_id].photo}/> </div>
                             </div>
                             <img className='post-index-img' src={post.photo} />
                             <div className='comment-bar'></div>
