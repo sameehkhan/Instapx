@@ -2,18 +2,22 @@ import { connect } from 'react-redux';
 import Feed from './feed';
 import { withRouter } from 'react-router-dom';
 import { fetchPosts } from '../../actions/post_actions';
+import { fetchUsers } from '../../actions/user_actions';
 
 
 const mstp = (state, ownProps) => {
-    const posts = Object.values(state.entities.posts)
+    const posts = Object.values(state.entities.posts);
+    const users = Object.values(state.entities.users)
     return ({
-        posts
+        posts, 
+        users 
     });
 };
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        fetchPosts: () => dispatch(fetchPosts())
+        fetchPosts: () => dispatch(fetchPosts()),
+        fetchUsers: ()  => dispatch(fetchUsers())
     });
 };
 

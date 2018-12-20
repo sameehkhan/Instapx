@@ -9,8 +9,14 @@ class Feed extends React.Component {
 
     componentDidMount(){
         this.props.fetchPosts();
+        this.props.fetchUsers();
     }
     render() {
+        if (this.props.posts === undefined || this.props.users === undefined){
+            return(
+                <div></div>
+            )
+        }
         return (
             <div>
                 <div className='feed-container'>
@@ -18,7 +24,9 @@ class Feed extends React.Component {
                 {this.props.posts.reverse().map(post => {
                     return (
                         <div className='feed-post' tabIndex="0">
-                            <div className='post-bar'></div>
+                            <div className='post-bar'>
+
+                            </div>
                             <img className='post-index-img' src={post.photo} />
                             <div className='comment-bar'></div>
                             {/* // <div className='post-info'></div> */}
