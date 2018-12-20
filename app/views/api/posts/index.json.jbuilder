@@ -1,3 +1,11 @@
+json.array! @posts do |post|
+  json.extract! post, :id, :caption
+  json.photo url_for(post.photo)
+end 
+
+
+
+
 #json.posts do
   #@posts.each do |post|
     #json.set! post.id do
