@@ -10,11 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     window.addEventListener("scroll", (e) =>{
-        const word = document.getElementsByClassName("nav-bar-word")
-        const line = document.getElementsByClassName("nav-bar-line")
+        const word = document.getElementsByClassName("nav-bar-word");
+        const line = document.getElementsByClassName("nav-bar-line");
+        const bar = document.getElementsByClassName("big-nav");
+
         if(word.length > 0 && line.length > 0){
-            if(window.scrollY !== 0){
-                
+            if(window.scrollY > 300){
+                line[0].classList.add('visible');
+                word[0].classList.add('visible');
+                bar[0].classList.add('height');
+            }else{
+                line[0].classList.remove('visible');
+                word[0].classList.remove('visible');
+                bar[0].classList.remove('height');
             }
         }
     })

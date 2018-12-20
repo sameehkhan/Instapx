@@ -13,14 +13,18 @@ class Feed extends React.Component {
     render() {
         return (
             <div>
+                <div className='feed-container'>
+                <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
                     return (
-                        <div className='post-index' tabIndex="0">
+                        <div className='feed-post' tabIndex="0">
                             <img className='post-index-img' src={post.photo} />
                             {/* // <div className='post-info'></div> */}
                         </div>
                     )
                 })}
+                </div>
+                </div>
             </div>
         );
     }
