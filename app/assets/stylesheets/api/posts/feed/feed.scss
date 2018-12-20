@@ -13,6 +13,7 @@
 .feed-container{
     display: flex;
     justify-content: center;
+    color: #262626;
 }
 
 .post-index-img{
@@ -55,7 +56,13 @@
 
 .post-username{
     // height: 100px;
-    color: black;
+    // color: black;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin-left: -5px;
 }
 
 .canvas{
