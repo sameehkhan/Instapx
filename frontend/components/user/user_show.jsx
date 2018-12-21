@@ -51,7 +51,7 @@ handleLogout(e) {
                             </ul>
                         <div className='div-3'> 
                         <h1 className='full-name'>{this.props.user.full_name}</h1>
-                            <div><div>{this.props.user.bio}</div></div>
+                            {/* <div><div>{this.props.user.bio}</div></div> */}
                         </div>
                         </div>
                 </div>

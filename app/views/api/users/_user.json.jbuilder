@@ -3,7 +3,7 @@
 #end 
 
 json.set! :user do 
-   json.extract! user, :id, :username, :full_name, :bio
+   json.extract! user, :id, :username, :full_name
    json.photo url_for(user.photo)
 end 
 
