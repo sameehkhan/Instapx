@@ -38,6 +38,11 @@
     width: 582px;
     padding-left: 0px;
     border: 1px solid #e6e6e6;
+    // border-radius: 3px;
+    // border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
     display: flex;
     align-items: center;
     padding: 16px 21px 16px 11px;
@@ -51,6 +56,8 @@
     border-bottom: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 
