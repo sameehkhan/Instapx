@@ -7,8 +7,7 @@ const mstp = (state, ownProps) => {
     let currentUserId = state.session.id;
     let post = {
         caption: "",
-        user_id: currentUserId,
-        photoFile: null
+        user_id: currentUserId
     };
     return ({
         post
@@ -17,7 +16,7 @@ const mstp = (state, ownProps) => {
 
 const mdtp = (dispatch) => {
     return ({
-        createPost: (post) => dispatch(createPost(post))
+        action: (post) => dispatch(createPost(post))
     });
 };
 

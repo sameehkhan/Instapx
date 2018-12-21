@@ -1,4 +1,4 @@
-  @posts.each do |post|
+@posts.each do |post|
   json.set! post.id do 
     json.extract! post, :id, :user_id, :caption
     json.photo url_for(post.photo)

@@ -3,55 +3,39 @@ import React from 'react';
 class PostForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.post;
-        
-        this.handleInput = this.handleInput.bind(this);
+        this.state = Object.assign({}, this.props.post, { photoFile: null })
+
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleFile = this.handleFile.bind(this);
     }
 
-    handleInput(field) {
+    update(field) {
         return e => this.setState({
-            [field]: e.currentTarget.value
-        });
+            [field]: e.target.value
+        })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("post[caption]", this.state.caption)
+        formData.append("post[photo]", this.state.photoFile)
+        this.props.action(formData)
     }
 
     handleFile(e) {
         this.setState({ photoFile: e.currentTarget.files[0] });
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        let formData = new FormData();
-        formData.append("post[title]", this.state.title);
-        formData.append("post[user_id]", this.state.user_id);
-        formData.append("post[attached_photo]", this.state.photoFile);
-        this.props.createPost(formData);
-    }
-
     render() {
-
-        console.log(this.state);
         return (
-            <div className='post_form'>
-
-            <form onSubmit={this.handleSubmit}>
-                <label htmlFor="post-caption"> Caption </label>
-                <input type="text"
-                    id="post-caption"
-
-                    onChange={this.handleInput("caption")} />
-                {/* onChange={this.handleInput.bind(this)}/> */}
-
-                
-                {/* value={this.state.photographerId}
-                onChange={this.handleInput("photographerId")}/> */}
-
-                <input type="file"
-                    onChange={this.handleFile} />
-                <button> Upload a new Photo!</button>
-            </form>
-        </div>
+            <div className='post-form'>
+                <h2 className="post-index-upload-title">Upload Your Own Photo</h2>
+                <form className="post-form" onSubmit={this.handleSubmit}>
+                    <input className="post-caption" type="text" value={this.state.title} onChange={this.update("caption")} />
+                    <input className="post-file" type="file" onChange={this.handleFile.bind(this)} />
+                    <input className="post-submit-button" type="submit" value="Submit" />
+                </form>
+            </div>
         );
     }
 }

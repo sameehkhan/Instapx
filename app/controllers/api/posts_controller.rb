@@ -1,8 +1,10 @@
 class Api::PostsController < ApplicationController
 
 def index
-    @users = User.all
     @posts = Post.all    
+    # debugger
+    # @users = User.all
+    
     render :index
 end
 
@@ -28,6 +30,6 @@ def destroy
 end
 
 def post_params
-    params.require(:post).permit(:caption)
+    params.require(:post).permit(:caption, :photo)
 end
 end
