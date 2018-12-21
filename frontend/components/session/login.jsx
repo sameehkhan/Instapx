@@ -46,13 +46,13 @@ class LoginForm extends React.Component {
         return (
             <div className="outer-div">
                 <div className="parent-image">
-                    <img id="iphone" src="/assets/login-phone.png" />
-                    <img id="paris" src="/assets/paris.gif" />
-                    <img id="temp" src="/assets/iphonetemp.png" />
+                    <img id="iphone" src={window.iphone} />
+                    <img id="paris" src={window.paris} />
+                    <img id="temp" src={window.temp} />
                 </div>
             <div className="session-form">
                 <form>
-                        <img className="instapx-logo" src='/assets/instapx.png' />
+                        <img className="instapx-logo" src={window.instapx} />
                         <h2 className="form-header">Log in to see photos and videos from your friends.</h2>
                     <input
                             type="text"

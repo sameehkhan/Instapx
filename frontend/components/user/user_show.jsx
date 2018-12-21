@@ -19,6 +19,7 @@ handleLogout(e) {
     this.props.action().then(() => this.props.history.push('/login'));
 }
 
+
 // componentDidUpdate() {  for different user show pages
 //     this.props.fetchUser(this.props.match.params.id);
 // }
@@ -40,6 +41,7 @@ handleLogout(e) {
                                 <h1>{this.props.user.username}</h1>
                                 <div><button className='user-button'>Edit Profile</button></div>
                                 <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
+                                <div><button className='user-button' onClick={this.handleUpload}>Log Out</button></div>
                             </div>
 
                             <ul className='stats-list'> 

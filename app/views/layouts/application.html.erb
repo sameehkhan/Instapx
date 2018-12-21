@@ -11,10 +11,23 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <script>
+      window.instapx = "<%= image_url('instapx.png') %>"
+      window.paris = "<%= image_url('paris.gif') %>"
+      window.temp = "<%= image_url('iphonetemp.png') %>"
+      window.iphone = "<%= image_url('login-phone.png') %>"
+
+      window.instapxlogo = "<%= image_url('instapxlogo.png') %>"
+      window.logoline = "<%= image_url('logo-line.png') %>"
+      window.logoline = "<%= image_url('logo-line.png') %>"
+      window.icon = "<%= image_url('profile-icon.png') %>"
+  
+
+    </script>
     <% if current_user%>
     <script>
       window.currentUser = {
-        'id': <%= current_user.id %>, 
+        'id': "<%= current_user.id %>", 
         'username': "<%=current_user.username%>",
         'full_name': "<%=current_user.full_name%>",
         'bio': "<%=current_user.bio%>"

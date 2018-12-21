@@ -28,6 +28,6 @@ def destroy
 end
 
 def post_params
-    params.require(:post).permit(:caption, :photo, :image_url)
+    params.require(:post).permit(:caption, :photo)
 end
 end

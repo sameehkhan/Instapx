@@ -21,17 +21,17 @@ class NavBar extends React.Component {
                     {/* <img className="ig-logo" src='/assets/ig-logo.png'/> */}
                     <div className='all-nav-logos'>
                     <Link to={`/feed`}>
-                            <img className="nav-bar-logo" src='/assets/instapxlogo.png' />
+                        <img className="nav-bar-logo" src={window.instapxlogo} />
                     </Link>
 
-                    <img className="nav-bar-line" src='/assets/logo-line.png' />
+                    <img className="nav-bar-line" src={window.logoline} />
                     
                     <Link to={`/feed`}>
-                        <img className="nav-bar-word" src='/assets/instapx.png'/>
+                        <img className="nav-bar-word" src={window.instapx}/>
                     </Link>
                     </div>
                     <div className='search-bar'><input className='search-input'type="text" placeholder="Search"/></div>
-                    <div className='user-icon'><Link to={`/users/${this.props.currentUserId}`}><img className="prof-icon" src='/assets/profile-icon.png' /></Link></div>
+                    <div className='user-icon'><Link to={`/users/${this.props.currentUserId}`}><img className="prof-icon" src={window.icon} /></Link></div>
             </div>
         </div>
         );

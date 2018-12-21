@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+require 'open-uri'
 
 ruby '2.5.1'
 
@@ -30,10 +31,12 @@ gem "aws-sdk-s3"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduces boot times through caching; required in config/boot.rb
+# Reduces boot times through caching; regemd in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do

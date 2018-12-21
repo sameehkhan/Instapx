@@ -5,7 +5,9 @@ import SignUpFormContainer from './session/signup_form_container';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import FeedContainer from './feed/feed_container';
 import UserShowContainer from './user/user_show_container';
- import { AuthRoute, ProtectedRoute } from '../util/route_utils';
+// import PhotoForm from './user/photo_form';
+import { AuthRoute, ProtectedRoute } from '../util/route_utils';
+
 
 
 const App = () => (
@@ -17,6 +19,7 @@ const App = () => (
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
                 <ProtectedRoute path='/feed' component={FeedContainer} />
                 <ProtectedRoute path='/users/:id' component={UserShowContainer}/>
+                {/* <Route path='/upload' component={PhotoForm}/> */}
             </Switch>
             
     </div>
