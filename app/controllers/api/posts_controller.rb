@@ -2,7 +2,6 @@ class Api::PostsController < ApplicationController
 
 def index
     @posts = Post.all    
-    # debugger
     # @users = User.all
     
     render :index
