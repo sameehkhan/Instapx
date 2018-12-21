@@ -8,7 +8,7 @@ end
 
 def create
     @post = Post.new(post_params)
-    @post = current_user.id
+    @post.user_id = current_user.id
     if @post.save 
         render :show 
     else 
@@ -28,6 +28,6 @@ def destroy
 end
 
 def post_params
-    params.require(:post).permit(:caption, :photo)
+    params.require(:post).permit(:caption)
 end
 end

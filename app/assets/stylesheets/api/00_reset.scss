@@ -29,7 +29,8 @@ body, button, input, textarea{
     // padding-bottom: 25px;
     // padding-left: 20px;
     display: flex; 
-    justify-content: space-between
+    justify-content: space-between;
+    position: fixed;
 }
 
 .big-nav{

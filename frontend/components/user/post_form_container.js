@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import PostForm from './post_form';
 import { createPost } from '../../actions/post_actions';
 
-const mSTP = (state, ownProps) => {
+const mstp = (state, ownProps) => {
     let currentUserId = state.session.id;
     let post = {
         caption: "",
@@ -15,10 +15,10 @@ const mSTP = (state, ownProps) => {
      });
 };
 
-const mDTP = (dispatch) => {
+const mdtp = (dispatch) => {
     return ({
         createPost: (post) => dispatch(createPost(post))
     });
 };
 
-export default withRouter(connect(mSTP, mDTP)(PostForm));
+export default withRouter(connect(mstp, mdtp)(PostForm));

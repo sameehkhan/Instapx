@@ -4,6 +4,7 @@ class PostForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = this.props.post;
+        
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
@@ -38,15 +39,12 @@ class PostForm extends React.Component {
                 <label htmlFor="post-caption"> Caption </label>
                 <input type="text"
                     id="post-caption"
-                    // value={this.state.title}
 
                     onChange={this.handleInput("caption")} />
                 {/* onChange={this.handleInput.bind(this)}/> */}
 
-                {/* <label htmlFor="photographer-id"> Photographer Id</label>
-                <input type="text"
-                id="photographer-id"
-                value={this.state.photographerId}
+                
+                {/* value={this.state.photographerId}
                 onChange={this.handleInput("photographerId")}/> */}
 
                 <input type="file"

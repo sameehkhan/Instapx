@@ -23,7 +23,7 @@ class Feed extends React.Component {
                 <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
                     return (
-                        <div className='feed-post' tabIndex="0">
+                        <div key={post.id} className='feed-post' tabIndex="0">
                             <div className='post-bar'>
                                 <div className='canvas'><img className='post-prof-pic' src={this.props.users[post.user_id].photo} /> </div>
                                 <div><h2 className='post-username'>{this.props.users[post.user_id].username}</h2></div> 
