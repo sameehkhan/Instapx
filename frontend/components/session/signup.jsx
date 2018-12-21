@@ -43,7 +43,7 @@ class SignupForm extends React.Component {
         return (
             <div className="outer-div">
                 <div className="parent-image">
-                <img id="temp" src={window.iphone} />
+                <img id="iphone" src={window.iphone} />
                 <img id="paris" src={window.paris} />
                 <img id="temp" src={window.temp} />
                 </div>
