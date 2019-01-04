@@ -14,7 +14,7 @@ def create
         render :show  
     else 
         render json: @post.errors.full_messages, status: 422
-    end 
+    end  
 end  
 
 def show 
