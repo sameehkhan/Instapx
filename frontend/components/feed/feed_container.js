@@ -11,7 +11,7 @@ const mstp = (state, ownProps) => {
     return ({
         posts, 
         users 
-    });
+    }); 
 };
 
 const mdtp = (dispatch, ownProps) => {
