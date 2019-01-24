@@ -16,8 +16,7 @@ const mstp = (state, ownProps) => {
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        fetchPosts: () => dispatch(fetchPosts()),
-        fetchUsers: ()  => dispatch(fetchUsers())
+        fetchPosts: () => dispatch(fetchPosts())
     });
 };
 

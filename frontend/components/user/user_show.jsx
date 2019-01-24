@@ -62,7 +62,7 @@ handleLogout(e) {
                     <div className='all-posts'>
                     {this.props.posts.reverse().map( post => {
                         return (
-                            <div className='post' tabIndex="0">
+                            <div key={post.id} className='post' tabIndex="0">
                             <img className='post-image' src={post.photo} />
                             <div className='post-info'></div>
                             </div>
