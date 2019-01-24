@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import PostFormContainer from './post_form_container';
 
 class UserShow extends React.Component {
     constructor(props) {
@@ -19,6 +19,11 @@ handleLogout(e) {
     this.props.action().then(() => this.props.history.push('/login'));
 }
 
+upload(e) {
+    e.preventDefault();
+
+    document.getElementById('user-modal').style.display = 'block';
+}
 
 // componentDidUpdate() {  for different user show pages
 //     this.props.fetchUser(this.props.match.params.id);
@@ -41,7 +46,7 @@ handleLogout(e) {
                                 <h1>{this.props.user.username}</h1>
                                 <div><button className='user-button'>Edit Profile</button></div>
                                 <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
-                                <div><button className='user-button' onClick={this.handleUpload}>Log Out</button></div>
+                                <div><button className='user-button' onClick={this.upload}>Upload</button></div>
                             </div>
 
                             <ul className='stats-list'> 
@@ -71,8 +76,10 @@ handleLogout(e) {
                     </div>
                 </div>
                 {/* <UserPostsIndexContainer userId={userProf.id} /> */}
-                <div className="upload-modal">
-
+                <div id='user-modal'className="upload-modal">
+                    <div className=''>
+                    <PostFormContainer/>
+                    </div>
                 </div>
             </div>
         );

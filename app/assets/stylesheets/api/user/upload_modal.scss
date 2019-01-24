@@ -1,10 +1,20 @@
 .upload-modal{
     position: absolute;
     // height: 100%;
-    // width: 100%;
+    width: 100vw;
     top:0;
-    right: 0;
-    left:0;
+    // right: 0;
+    // left: -1;
     bottom: 0;
     background: rgba($color: #000000, $alpha: 0.8);
+    z-index: 1000;
+    display: none;
+}
+
+.post-form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    background: #fafafa;
 }
