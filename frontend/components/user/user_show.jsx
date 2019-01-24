@@ -33,7 +33,7 @@ handleLogout(e) {
          
         return (
             <div className='profile-div'>
-            
+                
                 <div className='info-container'>
                     <div className='image-section'><img className='prof-pic' src={this.props.user.photo} /></div>
                     <div className='info-section'>
@@ -71,6 +71,9 @@ handleLogout(e) {
                     </div>
                 </div>
                 {/* <UserPostsIndexContainer userId={userProf.id} /> */}
+                <div className="upload-modal">
+
+                </div>
             </div>
         );
     }
