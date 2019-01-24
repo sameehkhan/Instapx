@@ -43,14 +43,14 @@ class PostForm extends React.Component {
         
         return (
             <div className='post-form'>
-                <div><button onClick={this.closeModal}>X</button></div>
+                <div className='close-button'onClick={this.closeModal}>X</div>
                 <div className='upload-form'>
-                <h2 className="post-index-upload-title">Upload Your Own Photo</h2>
-                <form className="post-form" onSubmit={this.handleSubmit}>
-                    <textarea className="post-caption" placeholder="Caption" value={this.state.title} onChange={this.update("caption")} />
-                    <input className="post-file" type="file" onChange={this.handleFile.bind(this)} />
-                    <input className="post-submit-button" type="submit" value="Submit" />
-                </form>
+                    <h2 className="post-index-upload-title">Upload Your Own Photo</h2>
+                    <form onSubmit={this.handleSubmit}>
+                        <textarea className="post-caption" placeholder="Caption" value={this.state.title} onChange={this.update("caption")} />
+                        <input className="post-file-button" type="file" onChange={this.handleFile.bind(this)} />
+                        <input className="post-submit-button" type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         );

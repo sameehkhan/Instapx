@@ -77,8 +77,8 @@ upload(e) {
                 </div>
                 {/* <UserPostsIndexContainer userId={userProf.id} /> */}
                 <div id='user-modal'className="upload-modal">
-                    <div className=''>
-                    <PostFormContainer/>
+                    <div className='form-container'>
+                        <PostFormContainer/>
                     </div>
                 </div>
             </div>
