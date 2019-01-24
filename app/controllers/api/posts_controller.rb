@@ -4,7 +4,7 @@ def index
     @posts = Post.all    
     # @users = User.all
     
-    render :index
+    # render :index
 end
 
 def create
