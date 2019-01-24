@@ -1,2 +1,2 @@
-json.extract! @post, :id, :caption, :photo
+json.extract! @post, :id, :caption
 json.photo url_for(@post.photo)

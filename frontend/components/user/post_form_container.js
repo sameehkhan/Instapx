@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import PostForm from './post_form';
 import { createPost } from '../../actions/post_actions';
 
@@ -20,4 +19,4 @@ const mdtp = (dispatch) => {
     });
 };
 
-export default withRouter(connect(mstp, mdtp)(PostForm));
+export default connect(mstp, mdtp)(PostForm);

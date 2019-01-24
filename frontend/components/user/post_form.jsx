@@ -24,7 +24,8 @@ class PostForm extends React.Component {
         formData.append("post[caption]", this.state.caption)
         formData.append("post[photo]", this.state.photoFile)
         this.props.action(formData)
-            .then(() => this.props.history.push("/feed"))
+            .then(() => {
+                this.props.history.push("/feed")});
     }
 
     handleFile(e) {
@@ -32,6 +33,7 @@ class PostForm extends React.Component {
     }
 
     render() {
+        
         return (
             <div className='post-form'>
                 <h2 className="post-index-upload-title">Upload Your Own Photo</h2>

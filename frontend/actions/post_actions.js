@@ -9,7 +9,7 @@ const receivePosts = (posts) => ({
     posts
 });
 
-const receivePost = ({ post }) => ({
+const receivePost = ( post ) => ({
     type: RECEIVE_POST,
     post
 });
@@ -30,8 +30,11 @@ export const fetchPost = id => dispatch => (
 );
 
 export const createPost = post => dispatch => (
-    APIUtil.createPost(post).then(post =>
-        dispatch(receivePost(post)))
+    APIUtil.createPost(post)
+    .then(post => {
+        dispatch(receivePost(post))
+    })
+        
 );
 
 export const deletePost = postId => dispatch => (
