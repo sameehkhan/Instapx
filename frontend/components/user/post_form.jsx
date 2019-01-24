@@ -20,6 +20,8 @@ class PostForm extends React.Component {
         formData.append("post[caption]", this.state.caption)
         formData.append("post[photo]", this.state.photoFile)
         this.props.action(formData)
+        // this.props.action(this.state).then(() => this.props.history.push('/feed'));
+
     }
 
     handleFile(e) {

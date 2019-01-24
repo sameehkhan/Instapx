@@ -8,7 +8,10 @@ User.destroy_all
 Post.destroy_all
 
 demo = User.new({ username: 'demo', full_name: 'Demo', password: 'password'})
+demo.photo.attach(io: File.open("#{Rails.root}/app/assets/images/default_user.png"), filename: 'default_user.png')
 demo.save
+
+# demo.save!
 # image = open('https://s3-us-west-1.amazonaws.com/instapx-dev/4kiR8PbDgAibaVcrthWdAJr1')
 # demo.photo = image 
 # demo.save
