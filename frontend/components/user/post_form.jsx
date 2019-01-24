@@ -6,6 +6,10 @@ class PostForm extends React.Component {
         this.state = Object.assign({}, this.props.post, { photoFile: null })
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleFile = this.handleFile.bind(this);
+        this.update = this.update.bind(this);
+
+
     }
 
     update(field) {
@@ -20,8 +24,7 @@ class PostForm extends React.Component {
         formData.append("post[caption]", this.state.caption)
         formData.append("post[photo]", this.state.photoFile)
         this.props.action(formData)
-        // this.props.action(this.state).then(() => this.props.history.push('/feed'));
-
+            .then(() => this.props.history.push("/feed"))
     }
 
     handleFile(e) {
@@ -33,7 +36,7 @@ class PostForm extends React.Component {
             <div className='post-form'>
                 <h2 className="post-index-upload-title">Upload Your Own Photo</h2>
                 <form className="post-form" onSubmit={this.handleSubmit}>
-                    <input className="post-caption" type="text" value={this.state.title} onChange={this.update("caption")} />
+                    <textarea className="post-caption" placeholder="Caption" value={this.state.title} onChange={this.update("caption")} />
                     <input className="post-file" type="file" onChange={this.handleFile.bind(this)} />
                     <input className="post-submit-button" type="submit" value="Submit" />
                 </form>
