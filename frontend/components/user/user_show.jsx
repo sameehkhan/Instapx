@@ -70,7 +70,7 @@ upload(e) {
                             <div key={post.id} className='post' tabIndex="0">
                             <img className='post-image' src={post.photo} />
                             <div className='post-info'></div>
-                            <Link to={`/users/posts/${post.id}`}>The</Link>
+                            <Link to={`/posts/${post.id}`}>The</Link>
 
                             </div>
                         )

@@ -1,18 +1,20 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import PostShow from './post_show';
-import { fetchPost } from '../../actions/post_actions';
+import { fetchPost, fetchPosts } from '../../actions/post_actions';
 
 const mstp = (state, ownProps) => {
-    debugger
+    // debugger
     let postId = ownProps.match.params.id;
     return ({
+        postId: postId,
         post: state.entities.posts[postId]
     });
 };
 
 const mdtp = (dispatch) => {
     return ({
+        // fetchPosts: () => dispatch(fetchPosts())
         fetchPost: (id) => dispatch(fetchPost(id))
     });
 };

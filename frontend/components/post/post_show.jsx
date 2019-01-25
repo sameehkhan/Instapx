@@ -9,13 +9,19 @@ class PostShow extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchPost(this.props.match.params.id);
+        // this.props.fetchPosts();
+        this.props.fetchPost(this.props.postId);
     }
 
     render() {
+        if (this.props.post === undefined) {
+            return (
+                <div></div>
+            )
+        }
         return (
             <div>
-                {this.props.post.photo}
+                <img className='post-show-image' src={this.props.post.photo} />
             </div>
         );
     }
