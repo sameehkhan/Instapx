@@ -5,7 +5,7 @@ import { fetchPost, fetchPosts } from '../../actions/post_actions';
 
 const mstp = (state, ownProps) => {
     // debugger
-    let postId = ownProps.match.params.id;
+    let postId = ownProps.postId;
     return ({
         postId: postId,
         post: state.entities.posts[postId]

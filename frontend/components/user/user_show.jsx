@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PostFormContainer from './post_form_container';
+import PostShowContainer from '../post/post_show_container';
 
 class UserShow extends React.Component {
     constructor(props) {
@@ -25,9 +26,13 @@ upload(e) {
     document.getElementById('user-modal').style.display = 'block';
 }
 
-// componentDidUpdate() {  for different user show pages
-//     this.props.fetchUser(this.props.match.params.id);
-// }
+showPost(e) {
+    debugger
+    e.preventDefault();
+    
+
+    document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
+}
 
     render() {
         if(this.props.user === undefined){
@@ -67,27 +72,29 @@ upload(e) {
                     <div className='all-posts'>
                     {this.props.posts.reverse().map( post => {
                         return (
-                            <div key={post.id} className='post' tabIndex="0">
+                            <div id={post.id} key={post.id} className='post' tabIndex="0" onClick={this.showPost}>
                             <img className='post-image' src={post.photo} />
                             <div className='post-info'></div>
-                            <Link to={`/posts/${post.id}`}>The</Link>
+                            {/* <Link to={`/posts/${post.id}`}>The</Link> */}
+
+                                <div id={`modal-` + post.id} className="post-modal">
+                                    <div className='post-show-container'>
+                                        <PostShowContainer postId={post.id} />
+                                    </div>
+                                </div>
 
                             </div>
                         )
                     })}
                     </div>
                 </div>
-                {/* <UserPostsIndexContainer userId={userProf.id} /> */}
+
                 <div id='user-modal'className="upload-modal">
                     <div className='form-container'>
                         <PostFormContainer/>
                     </div>
                 </div>
-                <div id='post-modal'className="post-modal">
-                    <div className='post-show-container'>
-                        {/* <PostFormContainer/> */}
-                    </div>
-                </div>
+            
             </div>
         );
     }
