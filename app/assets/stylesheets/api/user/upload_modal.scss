@@ -11,7 +11,7 @@
     display: none;
 }
 
-.post-form{
+.post-form-container{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -32,20 +32,46 @@
     cursor: pointer;
 }
 
-.post-file-button, .post-submit-button{
-     font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: rgb(28, 137, 238);
+.post-submit-button, .file-upload-button{
+    font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    outline: 0 !important;
     border-radius: 4px;
-    color: rgb(234, 231, 225);
-    border: none;
-    padding: 3px;
-    width: 200px;
-    height: 30px;
-    padding-top: 5px;
-    padding-left: 9px;
-    font-weight: bold;
+    box-sizing: border-box;
+    font-weight: 600;
     font-size: 14px;
-    height: 30px;
-    width: 250px;
+    line-height: 18px;
     cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+// .file-upload-button {
+//   border: 2px solid gray;
+//   color: gray;
+//   background-color: white;
+//   padding: 8px 20px;
+//   border-radius: 8px;
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }
