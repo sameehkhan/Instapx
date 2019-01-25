@@ -5,7 +5,6 @@ import SignUpFormContainer from './session/signup_form_container';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import FeedContainer from './feed/feed_container';
 import UserShowContainer from './user/user_show_container';
-import PostFormContainer from './user/post_form_container';
 import PostShowContainer from './post/post_show_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
@@ -20,8 +19,8 @@ const App = () => (
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
                 <ProtectedRoute path='/feed' component={FeedContainer} />
                 <ProtectedRoute path='/users/:id' component={UserShowContainer}/>
-                <ProtectedRoute path='/posts/:id' component={PostShowContainer}/>
-                <ProtectedRoute path='/upload' component={PostFormContainer}/>
+                <ProtectedRoute path='/users/posts/:id' component={PostShowContainer}/>
+                {/* <ProtectedRoute path='/upload' component={PostFormContainer}/> */}
             </Switch>
             
     </div>

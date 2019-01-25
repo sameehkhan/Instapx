@@ -70,6 +70,8 @@ upload(e) {
                             <div key={post.id} className='post' tabIndex="0">
                             <img className='post-image' src={post.photo} />
                             <div className='post-info'></div>
+                            <Link to={`/users/posts/${post.id}`}>The</Link>
+
                             </div>
                         )
                     })}
@@ -79,6 +81,11 @@ upload(e) {
                 <div id='user-modal'className="upload-modal">
                     <div className='form-container'>
                         <PostFormContainer/>
+                    </div>
+                </div>
+                <div id='post-modal'className="post-modal">
+                    <div className='post-show-container'>
+                        {/* <PostFormContainer/> */}
                     </div>
                 </div>
             </div>

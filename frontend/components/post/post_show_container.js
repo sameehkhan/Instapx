@@ -4,6 +4,7 @@ import PostShow from './post_show';
 import { fetchPost } from '../../actions/post_actions';
 
 const mstp = (state, ownProps) => {
+    debugger
     let postId = ownProps.match.params.id;
     return ({
         post: state.entities.posts[postId]
@@ -16,4 +17,4 @@ const mdtp = (dispatch) => {
     });
 };
 
-export default withRouter(connect(mstp, mdtp)(PostShow));
+export default connect(mstp, mdtp)(PostShow);
