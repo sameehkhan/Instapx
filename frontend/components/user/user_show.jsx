@@ -27,11 +27,18 @@ upload(e) {
 }
 
 showPost(e) {
-    debugger
+    // debugger
     e.preventDefault();
     
 
-    document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
+    // document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
+
+    let mod = (<div id={`post-modal`} className="post-modal">
+        <div className='post-show-container'>
+            <PostShowContainer postId={e.currentTarget.id} />
+        </div>
+    </div>)
+    document.getElementById('prof-modal').append(mod)
 }
 
     render() {
@@ -42,7 +49,7 @@ showPost(e) {
         }
          
         return (
-            <div className='profile-div'>
+            <div id='prof-modal'className='profile-div'>
                 
                 <div className='info-container'>
                     <div className='image-section'><img className='prof-pic' src={this.props.user.photo} /></div>
@@ -73,17 +80,12 @@ showPost(e) {
                     {this.props.posts.reverse().map( post => {
                         return (
                             <div id={post.id} key={post.id} className='post' tabIndex="0" onClick={this.showPost}>
-                            <img className='post-image' src={post.photo} />
-                            <div className='post-info'></div>
-                            {/* <Link to={`/posts/${post.id}`}>The</Link> */}
-
-                                <div id={`modal-` + post.id} className="post-modal">
-                                    <div className='post-show-container'>
-                                        <PostShowContainer postId={post.id} />
-                                    </div>
-                                </div>
+                                <img className='post-image' src={post.photo} />
+                                <div className='post-info'></div>
 
                             </div>
+                            
+                            
                         )
                     })}
                     </div>

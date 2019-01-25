@@ -1,12 +1,44 @@
 .post-modal{
-    position: absolute;
+    position: relative;
     // height: 100%;
     width: 100vw;
+    height: 100vh;
     top:0;
     // right: 0;
-    // left: -1;
+    left: -1;
     bottom: 0;
-    background: rgba($color: #000000, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.7);
     z-index: 1000;
-    display: none;
+    // display: none;
+}
+
+.post-show-container{
+    // width: 100vw;
+    // height: 100vh;
+    // top:0;
+    // // right: 0;
+    // // left: -1;
+    // bottom: 0;
+    // background: rgba($color: #000000, $alpha: 0.8);
+    // z-index: 1000;
+    // display: none;
+}
+
+// .post-modal-container{
+//     width: 100vw;
+//     height: 100vh;
+//     top:0;
+//     // right: 0;
+//     // left: -1;
+//     bottom: 0;
+//     background: rgba($color: #000000, $alpha: 0.8);
+//     z-index: 1000;
+//     display: none;
+// }
+
+.post-show-image{
+    max-height: 602px;
+    width: auto;
+    // z-index: 1000;
+
 }
