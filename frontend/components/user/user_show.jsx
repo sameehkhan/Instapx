@@ -26,20 +26,14 @@ upload(e) {
     document.getElementById('user-modal').style.display = 'block';
 }
 
-showPost(e) {
-    // debugger
-    e.preventDefault();
+// showPost(e) {
+//     // debugger
+//     e.preventDefault();
     
-
-    // document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
-
-    let mod = (<div id={`post-modal`} className="post-modal">
-        <div className='post-show-container'>
-            <PostShowContainer postId={e.currentTarget.id} />
-        </div>
-    </div>)
-    document.getElementById('prof-modal').append(mod)
-}
+//     // this.props.action().then(() => this.props.history.push(`/users/${}`));
+//     <Link to={}></Link>
+//     // document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
+// }
 
     render() {
         if(this.props.user === undefined){
@@ -49,7 +43,7 @@ showPost(e) {
         }
          
         return (
-            <div id='prof-modal'className='profile-div'>
+            <div className='profile-div'>
                 
                 <div className='info-container'>
                     <div className='image-section'><img className='prof-pic' src={this.props.user.photo} /></div>
@@ -79,11 +73,18 @@ showPost(e) {
                     <div className='all-posts'>
                     {this.props.posts.reverse().map( post => {
                         return (
-                            <div id={post.id} key={post.id} className='post' tabIndex="0" onClick={this.showPost}>
+                            <Link key={post.id} to={`/${post.id}`}>
+                            <div key={post.id} className='post' tabIndex="0">
                                 <img className='post-image' src={post.photo} />
                                 <div className='post-info'></div>
 
+                            {/* <div id={`modal-` + post.id} className="post-modal">
+                                <div className='post-show-container'>
+                                  <PostShowContainer postId={post.id} />
+                                </div>
+                            </div> */}
                             </div>
+                            </Link>
                             
                             
                         )
