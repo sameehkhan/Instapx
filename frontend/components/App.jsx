@@ -14,14 +14,16 @@ const App = () => (
     <div className='big-div'>
 
             <ProtectedRoute path='/' component={NavBarContainer}/>
+            <ProtectedRoute exact path='/users/:id/:post_id' component={PostShowContainer} />
+
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer}/>
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
                 <ProtectedRoute exact path='/feed' component={FeedContainer} />
                 <ProtectedRoute path='/users/:id' component={UserShowContainer}/>
-                <ProtectedRoute exact path='/users/:id/:post_id' component={PostShowContainer}/>
                 {/* <ProtectedRoute path='/upload' component={PostFormContainer}/> */}
             </Switch>
+
             
     </div>
 );

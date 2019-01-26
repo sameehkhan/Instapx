@@ -73,7 +73,7 @@ upload(e) {
                     <div className='all-posts'>
                     {this.props.posts.reverse().map( post => {
                         return (
-                            <Link key={post.id} to={`/${post.id}`}>
+                            <Link key={post.id} to={`/users/${this.props.user.id}/${post.id}`}>
                             <div key={post.id} className='post' tabIndex="0">
                                 <img className='post-image' src={post.photo} />
                                 <div className='post-info'></div>
