@@ -1,14 +1,18 @@
 .upload-modal{
-    position: absolute;
+    position: fixed;
     // height: 100%;
     width: 100vw;
     top:0;
     // right: 0;
     // left: -1;
     bottom: 0;
-    background: rgba($color: #000000, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.6);
     z-index: 1000;
     display: none;
+}
+
+body.upload-modal{
+    overflow: hidden;
 }
 
 .upload-form{
@@ -34,7 +38,7 @@
 
 
 .post-form-container{
-    margin-top: 210px;
+    margin-top: 340px;
     display: flex;
     flex-direction: column;
     height: 222px;
