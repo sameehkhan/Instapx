@@ -21,7 +21,9 @@ class PostShow extends React.Component {
         }
         return (
             <div className='post-modal-container'>
+                <div className='image-comments'>
                 <img className='post-show-image' src={this.props.post.photo} />
+                </div>
             </div>
         );
     }
