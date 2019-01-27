@@ -78,11 +78,6 @@ upload(e) {
                                 <img className='post-image' src={post.photo} />
                                 <div className='post-info'></div>
 
-                            {/* <div id={`modal-` + post.id} className="post-modal">
-                                <div className='post-show-container'>
-                                  <PostShowContainer postId={post.id} />
-                                </div>
-                            </div> */}
                             </div>
                             </Link>
                             
