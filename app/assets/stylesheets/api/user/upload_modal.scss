@@ -58,19 +58,23 @@ body.upload-modal{
 .close-button{
     cursor: pointer;
     color: #fff;
+    background: transparent;
     content: '\00D7';
     display: block;
     font-size: 36px;
+    // width: 36px;
     font-weight: 600;
-    line-height: 20px;
-    padding: 6px 10px;
+
+    // height: 36px;
+    // padding: 6px 10px;
     margin: 0;
+    border: none;
 }
 
 .close-button-wrp{
     display: flex;
     justify-content: flex-end;
-    margin: 1px 7px 2px 7px;
+    margin: 0px 9px 2px 7px;
 
 }
 
