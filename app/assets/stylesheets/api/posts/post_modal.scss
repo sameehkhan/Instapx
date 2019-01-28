@@ -51,7 +51,16 @@
 
 }
 
-.image-comments{
+.post-show-image-container{
     display: flex;
     align-items: center;
+}
+
+.post-show-comments{
+    width: 335px;
+}
+
+.post-show-image-wrap{
+    display: flex; 
+    justify-content: center;
 }
