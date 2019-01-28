@@ -29,7 +29,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
-
+    align-items: center;
     width: 100%;
     height: 100%;
     // height: 100vh;
@@ -43,21 +43,29 @@
 }
 
 .post-show-image{
+    display: table-cell;
     max-height: 580px;
     width: auto;
     // height: auto;
-    width: 540px;
+    // width: 540px;
     // z-index: 1000;
 
 }
 
 .post-show-image-container{
-    display: flex;
-    align-items: center;
+    display: table;
+    // max-height: 580px;
+    // align-items: center;
+    // justify-content: center;
+    // display: table-row;
 }
 
 .post-show-comments{
     width: 335px;
+    // min-height: 100px;
+    display: table-cell;
+    // height: 100%;
+    background: #fafafa;
 }
 
 .post-show-image-wrap{
