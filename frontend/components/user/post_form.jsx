@@ -43,7 +43,7 @@ class PostForm extends React.Component {
         
         return (
             <div className='post-form-container'>
-                <div className='close-button'onClick={this.closeModal}>X</div>
+                {/* <div className='close-button'onClick={this.closeModal}>X</div> */}
                 <h2 className="post-index-upload-title">Upload Your Own Photo</h2>
 
                 <div className='upload-form'>

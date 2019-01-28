@@ -26,14 +26,12 @@ upload(e) {
     document.getElementById('user-modal').style.display = 'block';
 }
 
-// showPost(e) {
-//     // debugger
-//     e.preventDefault();
-    
-//     // this.props.action().then(() => this.props.history.push(`/users/${}`));
-//     <Link to={}></Link>
-//     // document.getElementById(`modal-`+ e.currentTarget.id).style.display = 'block';
-// }
+closeModal(e) {
+    e.preventDefault();
+
+    document.getElementById('user-modal').style.display = 'none';
+
+}
 
     render() {
         if(this.props.user === undefined){
@@ -88,6 +86,8 @@ upload(e) {
                 </div>
 
                 <div id='user-modal'className="upload-modal">
+                    <div className='close-button' onClick={this.closeModal}>X</div>
+
                     <div className='form-container'>
                         <PostFormContainer/>
                     </div>
