@@ -86,8 +86,9 @@ closeModal(e) {
                 </div>
 
                 <div id='user-modal'className="upload-modal">
-                    <div className='close-button' onClick={this.closeModal}>X</div>
-
+                    <div className='close-button-wrp'>
+                    <div className='close-button' onClick={this.closeModal}>x</div>
+                    </div>
                     <div className='form-container'>
                         <PostFormContainer/>
                     </div>
