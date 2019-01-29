@@ -32,6 +32,7 @@ class Feed extends React.Component {
                                 <div><h2 className='post-username'><Link to={`/users/${post.user_id}`}>{post.username}</Link></h2></div> 
                                 
                             </div>
+                            
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
                                 
