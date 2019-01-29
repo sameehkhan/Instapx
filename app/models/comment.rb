@@ -14,12 +14,12 @@ class Comment < ApplicationRecord
   belongs_to :post,
     primary_key: :id,
     foreign_key: :post_id,
-    class_name: Post
+    class_name: 'Post'
 
   belongs_to :user,
     primary_key: :id,
     foreign_key: :user_id,
-    class_name: User
+    class_name: 'User'
 
   has_one :receiver,
     through: :post,
