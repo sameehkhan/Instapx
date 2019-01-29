@@ -23,6 +23,7 @@ class Feed extends React.Component {
                 <div className='feed-container'>
                 <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
+                    // debugger
                     return (
                         <div key={post.id} className='feed-post' tabIndex="0">
                             <div className='post-bar'>
@@ -31,8 +32,17 @@ class Feed extends React.Component {
                             </div>
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
-                                < CommentContainer postId={post.id} />
-                                {/* COMMENT */}
+                                
+
+                                {post.comments.reverse().map(comment => {
+                                    // debugger
+                                    return (
+                                        <div key={comment.id}>
+                                            {comment.body}
+                                        </div>
+                                    )
+                                })}
+
                             </div>
                             {/* // <div className='post-info'></div> */}
                         </div>

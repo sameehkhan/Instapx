@@ -4,8 +4,8 @@ import React from 'react';
 import Comment from './comment';
 
 const mapStateToProps = (state, ownProps) => {
-    debugger
-    let comments = [];
+    // debugger
+    const comments = Object.values(state.entities.comments);
 
     return ({
         postId: ownProps.postId,
@@ -19,7 +19,7 @@ const mapDispatchToProps = dispatch => {
     return ({
         createComment: comment => dispatch(createComment(comment)),
         deleteComment: commentId => dispatch(deleteComment(commentId)),
-        fetchComments: postId => dispatch(fetchComments(postId))
+        fetchComments: () => dispatch(fetchComments())
     });
 };
 

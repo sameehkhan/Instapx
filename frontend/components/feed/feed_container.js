@@ -6,11 +6,14 @@ import { fetchUsers } from '../../actions/user_actions';
 
 
 const mstp = (state, ownProps) => {
+    // debugger
     const posts = Object.values(state.entities.posts);
+    // debugger
     const users = state.entities.users;
     return ({
         posts, 
-        users 
+        users,
+        // comments
     }); 
 };
 

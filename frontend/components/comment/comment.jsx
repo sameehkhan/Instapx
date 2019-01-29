@@ -8,8 +8,7 @@ class Comment extends React.Component {
     }
 
     componentDidMount() {
-        // this.props.fetchPosts();
-        this.props.fetchComments(this.props.postId);
+        this.props.fetchComments();
     }
 
     render() {

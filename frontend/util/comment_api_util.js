@@ -6,13 +6,20 @@ export const createComment = comment => (
     })
 );
 
-export const fetchComments = postId => (
+export const fetchComments = () => (
     $.ajax({
-        method: 'GET',
-        url: 'api/comments',
-        data: { postId }
+        url: `api/comments`,
+        method: 'GET'
     })
 );
+
+// export const fetchComments = postId => (
+//     $.ajax({
+//         method: 'GET',
+//         url: 'api/comments',
+//         data: { postId }
+//     })
+// );
 
 export const deleteComment = commentId => (
     $.ajax({
