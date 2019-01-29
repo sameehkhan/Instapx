@@ -21,9 +21,9 @@ class Comment < ApplicationRecord
     foreign_key: :user_id,
     class_name: User
 
-#   has_one :receiver,
-#     through: :post,
-#     source: :user
+  has_one :receiver,
+    through: :post,
+    source: :user
 
 
 end
