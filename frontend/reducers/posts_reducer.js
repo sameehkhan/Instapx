@@ -2,7 +2,7 @@ import { RECEIVE_POSTS, RECEIVE_POST, REMOVE_POST } from '../actions/post_action
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 import { RECEIVE_USER } from '../actions/user_actions';
 
-import { RECEIVE_COMMENT, REMOVE_COMMENT} from '../actions/comment_actions';
+import { RECEIVE_COMMENT, REMOVE_COMMENT, RECEIVE_COMMENTS} from '../actions/comment_actions';
 
 
 
@@ -22,6 +22,8 @@ const postsReducer = (state = {}, action) => {
         case RECEIVE_CURRENT_USER:
         case RECEIVE_USER:
             return merge({}, state, action.posts);
+        case RECEIVE_COMMENTS:
+            return merge({}, action.comments);
         case RECEIVE_COMMENT:
             if (newState[action.comment.postId].comments) {
                 newState[action.comment.postId].comments[action.comment.id] = action.comment;
