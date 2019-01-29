@@ -1,6 +1,7 @@
 class Api::CommentsController < ApplicationController
   def index
-    @comments = Image.where(post_id: params[:id])
+    # @comments = Post.where(post_id: params[:id])
+    @comments = Comment.all
   end
 
   def create

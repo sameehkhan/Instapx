@@ -4,7 +4,7 @@ import React from 'react';
 import Comment from './comment';
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
+    debugger
     let comments = [];
 
     return ({
