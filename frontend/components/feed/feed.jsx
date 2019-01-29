@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentContainer from '../comment/comment_container';
 
 class Feed extends React.Component {
     constructor(props) {
@@ -30,6 +31,7 @@ class Feed extends React.Component {
                             </div>
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'></div>
+                            <CommentContainer postId={post.id}/>
                             {/* // <div className='post-info'></div> */}
                         </div>
                     )

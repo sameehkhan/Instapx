@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PostFormContainer from './post_form_container';
-import PostShowContainer from '../post/post_show_container';
+// import PostShowContainer from '../post/post_show_container';
 
 class UserShow extends React.Component {
     constructor(props) {

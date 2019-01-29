@@ -9,21 +9,18 @@ class Comment extends React.Component {
 
     componentDidMount() {
         // this.props.fetchPosts();
-        this.props.fetchPost(this.props.postId);
+        this.props.fetchComments(this.props.postId);
     }
 
     render() {
-        if (this.props.post === undefined) {
+        if (this.props.comments === []) {
             return (
                 <div></div>
             )
         }
         return (
-            <div className='post-modal-container'>
-                <div className='post-show-image-container'>
-                    <div><img className='post-show-image' src={this.props.post.photo} /></div>
-                    <div className='post-show-comments'></div>
-                </div>
+            <div>
+                
             </div>
         );
     }
