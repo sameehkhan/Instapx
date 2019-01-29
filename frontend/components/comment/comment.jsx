@@ -28,7 +28,7 @@ class Comment extends React.Component {
                     )
                 })} */}
 
-                {/* COMMENT */}
+                COMMENT
             </div>
         );
     }

@@ -32,6 +32,7 @@ class Feed extends React.Component {
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
                                 < CommentContainer postId={post.id} />
+                                {/* COMMENT */}
                             </div>
                             {/* // <div className='post-info'></div> */}
                         </div>
