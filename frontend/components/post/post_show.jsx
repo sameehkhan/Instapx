@@ -14,12 +14,6 @@ class PostShow extends React.Component {
     }
 
 
-    closeModal(e) {
-        e.preventDefault();
-
-        document.getElementById('user-modal').style.display = 'none';
-
-    }
 
     render() {
         if (this.props.post === undefined) {
