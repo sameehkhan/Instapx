@@ -4,7 +4,7 @@ import PostShow from './post_show';
 import { fetchPost, fetchPosts } from '../../actions/post_actions';
 
 const mstp = (state, ownProps) => {
-    debugger
+    // debugger
     let postId = ownProps.match.params.post_id;
     let userId = ownProps.match.params.id
     return ({

@@ -13,6 +13,30 @@ class Feed extends React.Component {
         this.props.fetchPosts();
         // this.props.fetchUsers();
     }
+
+    postComments(post){
+        // debugger
+        if(post.comments.length > 0){
+            return (
+                post.comments.reverse().map(comment => {
+                    // debugger
+
+                    return (
+                        <div key={comment.id}>
+                            {comment.body}
+                        </div>
+                    )
+                
+                })
+            )
+        }else{
+            return (
+                <div></div>
+            )
+        }
+    }
+
+    
     render() {
         if (this.props.posts === undefined){
             return(
@@ -32,20 +56,10 @@ class Feed extends React.Component {
                                 <div><h2 className='post-username'><Link to={`/users/${post.user_id}`}>{post.username}</Link></h2></div> 
                                 
                             </div>
-                            
+
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
-                                
-
-                                {post.comments.reverse().map(comment => {
-                                    // debugger
-                                    return (
-                                        <div key={comment.id}>
-                                            {comment.body}
-                                        </div>
-                                    )
-                                })}
-
+                                {this.postComments(post)}
                             </div>
                             {/* // <div className='post-info'></div> */}
                         </div>

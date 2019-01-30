@@ -24,7 +24,7 @@ class PostShow extends React.Component {
         return (
             <div className='big-wrapper'>
                 <div className='close-button-wrp'>
-                    <button className='close-button'><Link to={`/users/15`}>×</Link></button>
+                    <button className='close-button'><Link to={`/users/${this.props.userId}`}>×</Link></button>
                    
                 </div>
                 <div>
