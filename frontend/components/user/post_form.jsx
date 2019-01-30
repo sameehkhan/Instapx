@@ -21,8 +21,8 @@ class PostForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const formData = new FormData();
-        formData.append("post[caption]", this.state.caption)
-        formData.append("post[photo]", this.state.photoFile)
+        formData.append("post[caption]", this.state.caption);
+        formData.append("post[photo]", this.state.photoFile);
         this.props.action(formData)
             .then(() => {
                 this.props.history.push("/feed")});
@@ -48,7 +48,7 @@ class PostForm extends React.Component {
 
                 <div className='upload-form'>
                     <form onSubmit={this.handleSubmit}>
-                        <div><textarea className="post-caption" placeholder="Caption" value={this.state.title} onChange={this.update("caption")} /></div>
+                        <div><textarea className="post-caption" placeholder="Caption" onChange={this.update("caption")} /></div>
                         <div className='upload-btn-wrapper'>
                             <button className="file-upload-button">Upload a file</button>
                             <input type="file" onChange={this.handleFile.bind(this)} />
