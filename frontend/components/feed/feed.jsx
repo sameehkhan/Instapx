@@ -60,7 +60,12 @@ class Feed extends React.Component {
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
                                 <div className='post-like-container'></div>
-                                <div className='post-caption-container'><div>{post.username}</div>{post.caption}</div>
+                                
+                                <div className='post-caption-container'>
+                                    <h2 className='post-username'>{post.username} </h2>
+                                    <span className='post-caption'>{post.caption}</span>
+                                </div>
+
                                 <div className='post-comments-container'>{this.postComments(post)}</div>
 
                             </div>
