@@ -20,12 +20,20 @@ class PostShow extends React.Component {
             )
         }
         return (
-            <div className='post-modal-container'>
-                <div className='post-show-image-container'>
-                    <div><img className='post-show-image' src={this.props.post.photo} /></div>
-                    <div className='post-show-comments'></div>
+            <div className='big-wrapper'>
+                <div className='close-button-wrp'>
+                    <button className='close-button' onClick={this.closeModal}>×</button>
+                </div>
+                <div>
+                    <div className='post-modal-container'>                    
+                        <div className='post-show-image-container'>
+                            <div><img className='post-show-image' src={this.props.post.photo} /></div>
+                            <div className='post-show-comments'></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         );
     }
 };
