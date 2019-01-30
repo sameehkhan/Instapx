@@ -26,7 +26,8 @@ const App = () => (
                 {/* <ProtectedRoute path='/upload' component={PostFormContainer}/> */}
             </Switch>
 
-            
+            {/* <ProtectedRoute path='/' component={copyrightContainer} /> */}
+
     </div>
 );
 
