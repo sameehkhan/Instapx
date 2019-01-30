@@ -4,20 +4,21 @@ import React from 'react';
 import Comment from './comment';
 
 const mapStateToProps = (state, ownProps) => {
-    // debugger
-    // const comments = Object.values(state.entities.comments);
-
+    let currentUserId = state.session.id;
+    let postId = ownProps.postId;
+    let comment = {
+        body: "",
+        user_id: currentUserId,
+        post_id: postId
+    };
     return ({
-        postId: ownProps.postId,
-        currentUserId: state.session.id,
-        currentUser: state.entities.users[state.session.id],
-        comments: comments
-    })
+        comment
+    });
 };
 
 const mapDispatchToProps = dispatch => {
     return ({
-        createComment: comment => dispatch(createComment(comment)),
+        createComment: comment => dispatch(createComment(comment))
         // deleteComment: commentId => dispatch(deleteComment(commentId)),
         // fetchComments: () => dispatch(fetchComments())
     });

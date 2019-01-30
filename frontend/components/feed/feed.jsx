@@ -73,7 +73,7 @@ class Feed extends React.Component {
 
                                 <div className='post-comments-container'>
                                     {this.postComments(post)}
-                                    <CommentContainer postId={post.id}/>
+                                    {/* <CommentContainer postId={post.id}/> */}
                                 </div>
 
                             </div>
