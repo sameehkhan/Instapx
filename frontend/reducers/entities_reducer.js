@@ -6,6 +6,7 @@ import commentsReducer from './comments_reducer';
 const entitiesReducer = combineReducers ({
   users: usersReducer,
   posts: postsReducer,
+  comments: commentsReducer
 });
 
 export default entitiesReducer;

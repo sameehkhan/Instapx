@@ -1,12 +1,15 @@
-export const createComment = comment => (
+export const createComment = comment => {
+    // debugger
+    return (
     $.ajax({
         method: 'POST',
         url: 'api/comments',
-        processData: false,
-        contentType: false,
-        data: comment
+        // processData: false,
+        // contentType: false,
+        data: {comment}
     })
-);
+    );
+};
 
 export const fetchComments = () => (
     $.ajax({

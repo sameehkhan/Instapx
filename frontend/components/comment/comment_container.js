@@ -1,9 +1,11 @@
 import { createComment, deleteComment, fetchComments } from '../../actions/comment_actions';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import React from 'react';
 import Comment from './comment';
 
 const mapStateToProps = (state, ownProps) => {
+    // debugger
     let currentUserId = state.session.id;
     let postId = ownProps.postId;
     let comment = {
@@ -11,6 +13,7 @@ const mapStateToProps = (state, ownProps) => {
         user_id: currentUserId,
         post_id: postId
     };
+    
     return ({
         comment
     });
@@ -24,4 +27,4 @@ const mapDispatchToProps = dispatch => {
     });
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Comment);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Comment));

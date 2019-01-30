@@ -2,7 +2,7 @@ import { RECEIVE_POSTS, RECEIVE_POST, REMOVE_POST } from '../actions/post_action
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 import { RECEIVE_USER } from '../actions/user_actions';
 
-import { RECEIVE_COMMENT, REMOVE_COMMENT, RECEIVE_COMMENTS} from '../actions/comment_actions';
+import { RECEIVE_COMMENT, REMOVE_COMMENT, RECEIVE_COMMENTS } from '../actions/comment_actions';
 
 
 
@@ -19,6 +19,10 @@ const postsReducer = (state = {}, action) => {
         case REMOVE_POST:
             delete newState[action.postId];
             return newState;
+        case RECEIVE_COMMENT:
+            const newPost = merge({}, state[action.comment.post_id])
+            newPost.comments.unshift(action.comment);
+            return merge({}, state, { [action.comment.post_id]: newPost });
         case RECEIVE_CURRENT_USER:
         case RECEIVE_USER:
             return merge({}, state, action.posts);

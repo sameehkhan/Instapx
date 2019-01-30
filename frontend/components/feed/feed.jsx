@@ -11,14 +11,13 @@ class Feed extends React.Component {
 
     componentDidMount(){
         this.props.fetchPosts();
-        // this.props.fetchUsers();
     }
 
     postComments(post){
         // debugger
         if(post.comments){
             return (
-                post.comments.reverse().map(comment => {
+                post.comments.reverse().reverse().map(comment => {
                     // debugger
 
                     return (
@@ -75,6 +74,7 @@ class Feed extends React.Component {
                                     {this.postComments(post)}
                                     <CommentContainer postId={post.id}/>
                                 </div>
+                                <div></div>
 
                             </div>
                             {/* // <div className='post-info'></div> */}
