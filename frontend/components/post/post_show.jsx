@@ -13,6 +13,14 @@ class PostShow extends React.Component {
         this.props.fetchPost(this.props.postId);
     }
 
+
+    closeModal(e) {
+        e.preventDefault();
+
+        document.getElementById('user-modal').style.display = 'none';
+
+    }
+
     render() {
         if (this.props.post === undefined) {
             return (
@@ -22,7 +30,8 @@ class PostShow extends React.Component {
         return (
             <div className='big-wrapper'>
                 <div className='close-button-wrp'>
-                    <button className='close-button' onClick={this.closeModal}>×</button>
+                    <button className='close-button'><Link to={`/users/15`}>×</Link></button>
+                   
                 </div>
                 <div>
                     <div className='post-modal-container'>                    
