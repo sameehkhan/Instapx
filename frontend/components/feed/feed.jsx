@@ -22,8 +22,12 @@ class Feed extends React.Component {
                     // debugger
 
                     return (
-                        <div key={comment.id}>
-                            {comment.body}
+                        <div className='feed-comment-list'>
+                            <ul key={comment.id}>
+                                <li key={comment.id}>
+                                    <span>{comment.username}</span> {comment.body}
+                                </li>
+                            </ul>
                         </div>
                     )
                 
@@ -66,7 +70,9 @@ class Feed extends React.Component {
                                     <span className='post-caption-feed'>{post.caption}</span>
                                 </div>
 
-                                <div className='post-comments-container'>{this.postComments(post)}</div>
+                                <div className='post-comments-container'>
+                                    {this.postComments(post)}
+                                </div>
 
                             </div>
                             {/* // <div className='post-info'></div> */}
