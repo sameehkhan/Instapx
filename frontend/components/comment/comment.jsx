@@ -34,7 +34,7 @@ class Comment extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <textarea className="post-caption" placeholder="Add a comment..." value={this.state.body} onChange={this.update("body")} />
+                        <textarea className="post-feed-all-comments" placeholder="Add a comment..." value={this.state.body} onChange={this.update("body")} />
                     </div>
                     
                     <div>

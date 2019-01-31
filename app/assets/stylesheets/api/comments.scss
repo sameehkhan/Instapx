@@ -1,3 +1,17 @@
-// Place all the styles related to the Api::Comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-feed-all-comments{
+    background-color: rgb(230, 227, 220);
+    border-top-color: rgb(213, 209, 201);
+    border-right-color: rgb(213, 209, 201);
+    border-bottom-color: rgb(213, 209, 201);
+    border-left-color: rgb(213, 209, 201);
+    height: 42px;
+    width: 320px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding-left: 9px;
+    box-sizing: border-box;
+    font-size: 13px;
+    resize: none;
+}
