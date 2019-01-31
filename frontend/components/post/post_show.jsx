@@ -33,8 +33,17 @@ class PostShow extends React.Component {
                             <div><img className='post-show-image' src={this.props.post.photo} /></div>
                             <div className='post-show-comments-container'>
                                 <div className='post-show-comments-wrp'>
-                                    <div className='post-show-header'>Hello</div>
+
+                                    <div className='post-show-header'>
+                                        <div>
+                                            <img className='post-show-prof' src={this.props.post.user_photo} />
+                                        </div>
+                                        <div>
+                                            {this.props.post.username}
+                                        </div>
+                                    </div>
                                     <div className='post-show-comments'>Whats up</div>
+
                                 </div>
                             </div>
                         </div>
