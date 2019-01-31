@@ -7,6 +7,7 @@ import FeedContainer from './feed/feed_container';
 import UserShowContainer from './user/user_show_container';
 import PostFormContainer from './user/post_form_container';
 import PostShowContainer from './post/post_show_container';
+import ScrollToTop from './user/scroll_top';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 
@@ -15,6 +16,7 @@ const App = () => (
     <div className='big-div'>
 
             <ProtectedRoute path='/' component={NavBarContainer}/>
+            <Route path='/' component={ScrollToTop}/>
             <ProtectedRoute exact path='/users/:id/:post_id' component={PostShowContainer} />
 
             <Switch>
