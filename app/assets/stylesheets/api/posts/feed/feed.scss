@@ -33,6 +33,15 @@
     
 }
 
+.feed-post:hover, .feed-post:focus{
+    outline: 0;
+}
+
+.feed-post:active {
+    outline: none;
+    border: none;
+}
+
 .feed-post a{
     text-decoration: none;
     color: #262626;
@@ -51,7 +60,6 @@
     // border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 16px 21px 16px 11px;
