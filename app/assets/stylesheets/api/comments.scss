@@ -1,17 +1,22 @@
 .post-feed-all-comments{
-    background-color: rgb(230, 227, 220);
-    border-top-color: rgb(213, 209, 201);
-    border-right-color: rgb(213, 209, 201);
-    border-bottom-color: rgb(213, 209, 201);
-    border-left-color: rgb(213, 209, 201);
+    border: none;
     height: 42px;
     width: 320px;
     margin-bottom: 8px;
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb;
+    // background-color: #fafafa;
+    // border: 1px solid #dbdbdb;
     border-radius: 4px;
     padding-left: 9px;
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 14px;
     resize: none;
+}
+
+.post-feed-all-comments:hover, .post-feed-all-comments:focus{
+    outline: 0;
+}
+
+.post-feed-all-comments:active {
+    outline: none;
+    border: none;
 }
