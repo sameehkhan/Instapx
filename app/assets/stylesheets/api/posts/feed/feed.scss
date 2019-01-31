@@ -124,6 +124,12 @@
     padding-bottom: 6px;
 }
 
+.post-comments-list{
+    // display: inline-block;
+    max-height: 90px;
+    overflow: scroll;
+}
+
 .feed-comment-list ul{
     list-style-type: none;
     padding: 5px 0px 0px 0px;
