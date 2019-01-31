@@ -40,11 +40,16 @@
     width: 335px;
     max-height: 580px;
     background: #fafafa;
+    padding: 0px 24px 0px 24px;
+    box-sizing: border-box;
 }
 
 .post-show-comments-wrp{
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
+
+    // padding: 0px 24px 0px 24px;
 }
 
 .post-show-image-wrap{

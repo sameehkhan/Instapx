@@ -21,4 +21,4 @@ const mdtp = (dispatch) => {
     });
 };
 
-export default connect(mstp, mdtp)(PostShow);
+export default withRouter(connect(mstp, mdtp)(PostShow));

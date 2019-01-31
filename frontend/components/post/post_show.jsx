@@ -24,7 +24,7 @@ class PostShow extends React.Component {
         return (
             <div className='big-wrapper'>
                 <div className='close-button-wrp'>
-                    <button className='close-button'><Link to={`/users/${this.props.userId}`}>×</Link></button>
+                    <button onClick={this.props.history.goBack} className='close-button'>×</button>
                    
                 </div>
                 <div>
@@ -33,8 +33,8 @@ class PostShow extends React.Component {
                             <div><img className='post-show-image' src={this.props.post.photo} /></div>
                             <div className='post-show-comments-container'>
                                 <div className='post-show-comments-wrp'>
-                                    {/* <div className='post-show-header'>Hello</div>
-                                    <div className='post-show-comments'>Whats up</div> */}
+                                    <div className='post-show-header'>Hello</div>
+                                    <div className='post-show-comments'>Whats up</div>
                                 </div>
                             </div>
                         </div>

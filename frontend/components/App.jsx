@@ -16,7 +16,8 @@ const App = () => (
     <div className='big-div'>
 
             <ProtectedRoute path='/' component={NavBarContainer}/>
-            <Route path='/' component={ScrollToTop}/>
+            {/* <ProtectedRoute path='/' component={ScrollToTop} /> */}
+
             <ProtectedRoute exact path='/users/:id/:post_id' component={PostShowContainer} />
 
             <Switch>
@@ -24,6 +25,7 @@ const App = () => (
                 <AuthRoute exact path="/" component={SignUpFormContainer}/>
                 <ProtectedRoute exact path='/feed' component={FeedContainer} />
                 <ProtectedRoute path='/users/:id' component={UserShowContainer}/>
+
                 {/* <ProtectedRoute path='/users/:id/:post_id' component={PostShowContainer}/> */}
                 {/* <ProtectedRoute path='/upload' component={PostFormContainer}/> */}
             </Switch>

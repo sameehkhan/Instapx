@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { matchPath } from 'react-router';
 import PostFormContainer from './post_form_container';
 // import PostShowContainer from '../post/post_show_container';
+import { LastLocationProvider } from 'react-router-last-location';
+
 
 class UserShow extends React.Component {
     constructor(props) {
@@ -11,27 +14,59 @@ class UserShow extends React.Component {
 
     }
 
-componentDidMount() {
-    this.props.fetchUser(this.props.match.params.id);
-}
+    // getInitialState() {
+    //     return { prevPath: '' };
+    //     debugger
+    // }
 
-handleLogout(e) {
-    e.preventDefault();
-    this.props.action().then(() => this.props.history.push('/login'));
-}
+    componentDidMount() {
+        this.props.fetchUser(this.props.match.params.id);
+        
+    }
 
-upload(e) {
-    e.preventDefault();
+// componentDidUpdate(prevProps) {
+//     debugger
+//     if (prevProps.location.pathname === '/feed') {
+//         window.scrollTo(0, 0);
+//     }
+// }
 
-    document.getElementById('user-modal').style.display = 'block';
-}
+    // componentWillReceiveProps(nextProps) {
+        // debugger
 
-closeModal(e) {
-    e.preventDefault();
+        // if (nextProps.location !== this.props.location) {
+        //     this.setState({ prevPath: this.props.location })
+        // }
+    // }
 
-    document.getElementById('user-modal').style.display = 'none';
+    // logger({ lastLocation }) {
+    //     return (
+    //     <div>
+    //         <h2>Logger!</h2>
+    //         <pre>
+    //             {JSON.stringify(lastLocation)}
+    //         </pre>
+    //     </div>
+    //     )
+    // };
 
-}
+    handleLogout(e) {
+        e.preventDefault();
+        this.props.action().then(() => this.props.history.push('/login'));
+    }
+
+    upload(e) {
+        e.preventDefault();
+
+        document.getElementById('user-modal').style.display = 'block';
+    }
+
+    closeModal(e) {
+        e.preventDefault();
+
+        document.getElementById('user-modal').style.display = 'none';
+
+    }
 
     render() {
         if(this.props.user === undefined){
