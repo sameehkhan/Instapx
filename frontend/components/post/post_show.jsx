@@ -74,7 +74,7 @@ class PostShow extends React.Component {
                                         <div className='feed-comment-list'>
                                             <ul key={this.props.post.id}>
                                                 <li key={this.props.post.id}>
-                                                    <Link to={`/users/${this.props.post.id}`}><span className='post-username2'>{this.props.post.username} </span></Link>
+                                                    <Link to={`/users/${this.props.post.user_id}`}><span className='post-username2'>{this.props.post.username} </span></Link>
                                                     <span className='post-caption-feed'>{this.props.post.caption}</span>
                                                 </li>
                                             </ul>
