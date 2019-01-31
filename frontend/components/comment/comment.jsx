@@ -31,16 +31,13 @@ class Comment extends React.Component {
     render() {
         // debugger
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <textarea className="post-feed-all-comments" placeholder="Add a comment..." value={this.state.body} onChange={this.update("body")} />
-                    </div>
-                    
-                    <div>
-                        <input className="post-submit-button" type="submit" value="Submit" />
-                    </div>
-                </form>
+            <div className='comment-creator-container'>
+                <div className='create-comment-wrapper'>
+                    <form onSubmit={this.handleSubmit}>
+                        <textarea className="create-post-comment" placeholder="Add a comment..." value={this.state.body} onChange={this.update("body")} />
+                        <input className='hidden-submit' type="submit" value="Submit"/>
+                    </form>
+                </div>
             </div>
         );
     }
