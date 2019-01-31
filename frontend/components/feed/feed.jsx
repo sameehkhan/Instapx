@@ -17,7 +17,7 @@ class Feed extends React.Component {
         // debugger
         if(post.comments){
             return (
-                post.comments.reverse().reverse().map(comment => {
+                post.comments.map(comment => {
                     // debugger
 
                     return (

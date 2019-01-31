@@ -21,13 +21,11 @@ class Comment extends React.Component {
         // debugger
 
         e.preventDefault();
-        // const formData = new FormData();
-        // formData.append("comment[body]", this.state.body)
-        // debugger
-        this.props.action(this.state)
-            .then(() => {
-                this.props.history.push("/feed")
-            });
+        console.log(this.state)
+        this.props.action(this.state).then( ()=> this.setState({body: ''}));
+            // .then(() => {
+            //     this.props.history.push("/feed")
+            // });
     }
 
     render() {
@@ -36,7 +34,7 @@ class Comment extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <textarea className="post-caption" placeholder="Add a comment..." onChange={this.update("body")} />
+                        <textarea className="post-caption" placeholder="Add a comment..." value={this.state.body} onChange={this.update("body")} />
                     </div>
                     
                     <div>
