@@ -52,6 +52,10 @@
     // padding: 0px 24px 0px 24px;
 }
 
+.post-show-comments{
+    padding: 12px 0px 12px 0px;
+}
+
 .post-show-image-wrap{
     display: flex; 
     justify-content: center;
@@ -66,12 +70,33 @@
 .post-username-show{
     display: flex;
     align-items: center;
-    padding: 10px 0px 10px 0px;
+    padding-left: 10px;
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+    // padding: 5px 0px 5px 0px;
+}
+
+.post-username-show2{
+   
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.post-show-caption{
+    font-size: 14px;
+}
+
+.post-caption-container2{
+    display: flex;
+    padding: 5px 2px 6px 0px;
 }
 
 .post-show-prof{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    padding: 10px;
+    // padding: 5px;
 }

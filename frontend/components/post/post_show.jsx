@@ -42,7 +42,12 @@ class PostShow extends React.Component {
                                             <div>{this.props.post.username}</div>
                                         </div>
                                     </div>
-                                    <div className='post-show-comments'>Whats up</div>
+                                    <div className='post-show-comments'>
+                                        <div className='post-caption-container2'>
+                                            <div className='post-username-show2'>{this.props.post.username}</div>
+                                            <div className='post-show-caption'>{this.props.post.caption}</div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
