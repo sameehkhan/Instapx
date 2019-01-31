@@ -59,7 +59,8 @@ closeModal(e) {
                                 <li className='stat-li'>following</li>
                             </ul>
                         <div className='div-3'> 
-                        <h1 className='full-name'>{this.props.user.full_name}</h1>
+                            <div><h1 className='full-name'>{this.props.user.full_name}</h1></div>
+                            <span className='user-bio'>{this.props.user.bio}</span>
                             {/* <div><div>{this.props.user.bio}</div></div> */}
                         </div>
                         </div>

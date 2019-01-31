@@ -46,6 +46,16 @@ body.upload-modal{
     background: #fafafa;
     position: absolute;
     border-radius: 10px;
+    text-align: center;
+}
+
+.post-form-container h2{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.post-form-container textarea{
+    font-size: 14px;
 }
 
 .form-container{
@@ -94,10 +104,11 @@ body.upload-modal{
     font-weight: 600;
     padding: 5px 9px;
     text-align: center;
+    // cursor: pointer;
     // margin-left: 15px;
 }
 
-.file-upload-button:hover, .post-submit-button:hover{
+.post-submit-button:hover{
     background: rgb(28, 137, 238);
     color: #fafafa
 }
@@ -124,13 +135,14 @@ body.upload-modal{
     border-right-color: rgb(213, 209, 201);
     border-bottom-color: rgb(213, 209, 201);
     border-left-color: rgb(213, 209, 201);
-    height: 37px;
-    width: 250px;
+    height: 42px;
+    width: 320px;
     margin-bottom: 8px;
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
-    border-radius: 2px;
+    border-radius: 4px;
     padding-left: 9px;
     box-sizing: border-box;
     font-size: 13px;
+    resize: none;
 }

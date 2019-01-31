@@ -55,7 +55,10 @@
 
 
 .post-show-comments{
+    position: relative;
     width: 335px;
+    left: -2px;
+    // margin-left: -2
     // min-height: 100px;
     display: table-cell;
     // height: 100%;
