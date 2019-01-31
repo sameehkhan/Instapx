@@ -70,10 +70,16 @@ class PostShow extends React.Component {
                                         </div>
                                     </div>
                                     <div className='post-show-comments'>
-                                        <div className='post-caption-container2'>
-                                            <div className='post-username-show2'>{this.props.post.username}</div>
-                                            <div className='post-show-caption'>{this.props.post.caption}</div>
+                                       
+                                        <div className='feed-comment-list'>
+                                            <ul key={this.props.post.id}>
+                                                <li key={this.props.post.id}>
+                                                    <Link to={`/users/${this.props.post.id}`}><span className='post-username2'>{this.props.post.username} </span></Link>
+                                                    <span className='post-caption-feed'>{this.props.post.caption}</span>
+                                                </li>
+                                            </ul>
                                         </div>
+
                                         <div className='post-comments-container2'>
                                             <div className='post-comments-list2'>{this.postComments(this.props.post)}</div>
                                             <CommentContainer postId={this.props.post.id} />
