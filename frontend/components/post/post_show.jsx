@@ -38,8 +38,8 @@ class PostShow extends React.Component {
                                         <div>
                                             <img className='post-show-prof' src={this.props.post.user_photo} />
                                         </div>
-                                        <div>
-                                            {this.props.post.username}
+                                        <div className='post-username-show'>
+                                            <div>{this.props.post.username}</div>
                                         </div>
                                     </div>
                                     <div className='post-show-comments'>Whats up</div>

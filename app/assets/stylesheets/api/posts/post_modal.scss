@@ -60,10 +60,18 @@
 .post-show-header{
     padding: 20px 0px 20px 0px;
     border-bottom: 1px solid #efefef;
+    display: flex;
+}
+
+.post-username-show{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
 }
 
 .post-show-prof{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    padding: 10px;
 }
