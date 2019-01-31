@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CommentContainer from '../comment/comment_container';
 
 
 class PostShow extends React.Component {
@@ -11,6 +12,32 @@ class PostShow extends React.Component {
     componentDidMount() {
         // this.props.fetchPosts();
         this.props.fetchPost(this.props.postId);
+    }
+
+    postComments(post) {
+        // debugger
+        if (post.comments) {
+            return (
+                post.comments.map(comment => {
+                    // debugger
+                    return (
+                        <div className='feed-comment-list'>
+                            <ul key={comment.id}>
+                                <li key={comment.id}>
+                                    <Link to={`/users/${comment.user_id}`}><span className='post-username2'>{comment.username} </span></Link>
+                                    <span className='post-caption-feed'>{comment.body}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    )
+
+                })
+            )
+        } else {
+            return (
+                <div></div>
+            )
+        }
     }
 
 
@@ -46,6 +73,10 @@ class PostShow extends React.Component {
                                         <div className='post-caption-container2'>
                                             <div className='post-username-show2'>{this.props.post.username}</div>
                                             <div className='post-show-caption'>{this.props.post.caption}</div>
+                                        </div>
+                                        <div className='post-comments-container2'>
+                                            <div className='post-comments-list2'>{this.postComments(this.props.post)}</div>
+                                            <CommentContainer postId={this.props.post.id} />
                                         </div>
                                     </div>
 
