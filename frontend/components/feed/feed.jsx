@@ -19,7 +19,6 @@ class Feed extends React.Component {
             return (
                 post.comments.map(comment => {
                     // debugger
-
                     return (
                         <div className='feed-comment-list'>
                             <ul key={comment.id}>
@@ -71,7 +70,7 @@ class Feed extends React.Component {
                                 </div>
 
                                 <div className='post-comments-container'>
-                                    {this.postComments(post)}
+                                    <div className='post-comments-list'>{this.postComments(post)}</div>
                                     <CommentContainer postId={post.id}/>
                                 </div>
                                 <div></div>

@@ -39,10 +39,17 @@
 
 .post-show-image-container{
     display: table;
+    margin-bottom: 35px;
     // max-height: 580px;
     // align-items: center;
     // justify-content: center;
     // display: table-row;
+}
+
+.close-button a{
+    text-decoration: none;
+    color: #fff;
+
 }
 
 
