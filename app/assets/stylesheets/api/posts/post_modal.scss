@@ -20,6 +20,7 @@
     max-height: 580px;
     height: 100%;
     width: auto;
+    background: black;
 
 }
 
@@ -54,6 +55,7 @@
 
 .post-show-comments{
     padding: 12px 0px 12px 0px;
+    height: 100%;
 }
 
 .post-show-image-wrap{
@@ -116,4 +118,14 @@
 
 .post-show-comments a{
     text-decoration: none;
+}
+
+
+
+
+
+.feed-comment-list ul{
+    list-style-type: none;
+    padding: 5px 0px 0px 0px;
+    margin: 0;
 }
