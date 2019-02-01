@@ -13,6 +13,7 @@
             json.user_id comment.user_id
       end
     end
+    json.liker_ids post.likers.pluck(:id)
   end 
 end 
 
