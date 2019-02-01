@@ -5,13 +5,15 @@ import { fetchPost, fetchPosts } from '../../actions/post_actions';
 import { fetchUsers } from '../../actions/user_actions';
 
 const mstp = (state, ownProps) => {
-    // debugger
+    debugger
     let postId = ownProps.match.params.post_id;
-    let userId = ownProps.match.params.id
+    let userId = ownProps.match.params.id;
+    let likes = state.entities.posts[postId].liker_ids.length;
     return ({
         postId: postId,
         post: state.entities.posts[postId],
-        userId: userId
+        userId: userId,
+        likes
     });
 };
 
