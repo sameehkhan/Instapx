@@ -23,6 +23,7 @@
     display: block;
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
+    background: black;
 }
 
 .feed-post {
@@ -119,6 +120,7 @@
 
 .post-caption-feed{
     font-size: 14px;
+    
 }
 .post-caption-container{
     padding-bottom: 6px;
@@ -126,7 +128,7 @@
 
 .post-comments-list{
     // display: inline-block;
-    max-height: 90px;
+    max-height: 92px;
     overflow: scroll;
 }
 
