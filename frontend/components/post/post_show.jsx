@@ -12,6 +12,7 @@ class PostShow extends React.Component {
     componentDidMount() {
         // this.props.fetchPosts();
         this.props.fetchPost(this.props.postId);
+        // this.props.fetchUsers();
     }
 
     postComments(post) {
