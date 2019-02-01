@@ -4,7 +4,10 @@ import { RECEIVE_USER } from '../actions/user_actions';
 
 import { RECEIVE_COMMENT, REMOVE_COMMENT, RECEIVE_COMMENTS } from '../actions/comment_actions';
 
-
+import {
+    RECEIVE_LIKE,
+    REMOVE_LIKE
+} from '../actions/like_actions';
 
 import merge from 'lodash/merge';
 
@@ -12,6 +15,12 @@ const postsReducer = (state = {}, action) => {
     Object.freeze(state);
     let newState = merge({}, state);
     switch (action.type) {
+        case RECEIVE_LIKE:
+            newState[action.like.postId].likerIds.push(action.like.userId);
+            return newState;
+        case REMOVE_LIKE:
+            newState[action.like.postId].likerIds = newState[action.like.postId].likerIds.filter(id => id !== action.like.userId);
+            return newState;
         case RECEIVE_POSTS:
             return merge({}, action.posts);
         case RECEIVE_POST:
