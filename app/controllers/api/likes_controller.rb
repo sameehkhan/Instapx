@@ -7,13 +7,13 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-    @like = Like.where(user_id: current_user.id).where(image_id: params[:id])[0]
-    @like.destroy
-    render :show
+    @like = Like.find(params[:id])
+    @like.delete! if @like
+    render :show  
   end
 
   private
   def like_params
-    params.require(:like).permit(:image_id, :user_id)
+    params.require(:like).permit(:post_id, :user_id)
   end
 end
