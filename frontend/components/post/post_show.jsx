@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CommentContainer from '../comment/comment_container';
+import LikeContainer from '../like/like_container';
 
 
 class PostShow extends React.Component {
@@ -86,9 +87,10 @@ class PostShow extends React.Component {
                                             {/* <div className='post-show-likes-comments'> */}
                                                 {/* <div className='post-show-likes'>likes</div> */}
                                                 <div>
-                                                <div> HEART </div>
-                                                <div className='post-show-likes'>{this.props.likes} likes</div>
-                                                <CommentContainer postId={this.props.post.id} />
+                                                {/* <div> HEART </div> */}
+                                                    <LikeContainer likes={this.props.likes} />
+                                                    <div className='post-show-likes'>{this.props.likes} likes</div>
+                                                    <CommentContainer postId={this.props.post.id} />
                                                 </div>
                                             {/* </div> */}
                                         </div>
