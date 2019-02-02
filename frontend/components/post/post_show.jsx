@@ -86,6 +86,7 @@ class PostShow extends React.Component {
                                             {/* <div className='post-show-likes-comments'> */}
                                                 {/* <div className='post-show-likes'>likes</div> */}
                                                 <div>
+                                                <div> HEART </div>
                                                 <div className='post-show-likes'>{this.props.likes} likes</div>
                                                 <CommentContainer postId={this.props.post.id} />
                                                 </div>
