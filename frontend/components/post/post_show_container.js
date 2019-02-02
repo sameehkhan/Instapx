@@ -9,11 +9,13 @@ const mstp = (state, ownProps) => {
     let postId = ownProps.match.params.post_id;
     let userId = ownProps.match.params.id;
     let likes = state.entities.posts[postId].liker_ids.length;
+    let allLikes = state.entities.posts[postId].liker_ids;
     return ({
         postId: postId,
         post: state.entities.posts[postId],
         userId: userId,
-        likes
+        likes,
+        allLikes
     });
 };
 
