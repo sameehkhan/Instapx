@@ -25,7 +25,7 @@ class Like extends React.Component {
         // debugger
         return (
             <div>
-                
+                HEART
             </div>
         );
     }
