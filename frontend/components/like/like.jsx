@@ -23,12 +23,19 @@ class Like extends React.Component {
 
     render() {
         // debugger
-        if(this.props.hasLiked)
+        if(this.props.hasLiked){
         return (
             <div>
-                HEART/NO HEART
+                HEART
             </div>
         );
+        }else{
+            return (
+                <div>
+                    NO HEART
+                </div>
+            )
+        }
     }
 };
 
