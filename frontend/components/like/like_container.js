@@ -9,10 +9,15 @@ const mstp = (state, ownProps) => {
     let postId = ownProps.postId;
     let hasLiked = ownProps.likes.includes(id);
     // debugger
+    let like = {
+        user_id: userId,
+        post_id: postId
+    }
     return ({
         userId,
         postId,
-        hasLiked
+        hasLiked,
+        like
     });
 };
 

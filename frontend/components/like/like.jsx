@@ -13,11 +13,11 @@ class Like extends React.Component {
 
 
     handleSubmit(e) {
-        // // debugger
-
-        // e.preventDefault();
-        // console.log(this.state)
-        // this.props.action(this.state).then(() => this.setState({ body: '' }));
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("post[caption]", this.state.caption);
+        formData.append("post[photo]", this.state.photoFile);
+        this.props.createLike(formData);
     }
 
 
@@ -27,12 +27,21 @@ class Like extends React.Component {
         return (
             <div>
                 HEART
+                
             </div>
         );
         }else{
             return (
                 <div>
                     NO HEART
+                    <form onSubmit={this.handleSubmit}>
+                        <div><textarea className="post-caption" placeholder="Add a caption..." onChange={this.update("caption")} /></div>
+                        <div className='upload-btn-wrapper'>
+                            <button className="file-upload-button">Upload a file</button>
+                            <input type="file" onChange={this.handleFile.bind(this)} />
+                        </div>
+                        <div><input className="post-submit-button" type="submit" value="Submit" /></div>
+                    </form>
                 </div>
             )
         }
