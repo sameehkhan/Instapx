@@ -7,7 +7,7 @@ import { createLike, deleteLike } from '../../actions/like_actions';
 const mstp = (state, ownProps) => {
     let id = parseInt(state.session.id);
     let hasLiked = ownProps.likes.includes(id);
-    debugger
+    // debugger
     return ({
         id,
         hasLiked
