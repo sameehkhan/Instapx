@@ -5,11 +5,13 @@ import { createLike, deleteLike } from '../../actions/like_actions';
 // import { fetchUsers } from '../../actions/user_actions';
 
 const mstp = (state, ownProps) => {
-    let user_id = parseInt(state.session.id);
+    let userId = parseInt(state.session.id);
+    let postId = ownProps.postId;
     let hasLiked = ownProps.likes.includes(id);
     // debugger
     return ({
-        user_id,
+        userId,
+        postId,
         hasLiked
     });
 };
