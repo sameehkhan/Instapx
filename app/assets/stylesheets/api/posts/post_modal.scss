@@ -174,9 +174,11 @@
 // }
 
 .heart-full{
-    height: 24px;
-    width: auto;
-    fill: red;
+    height: 36px;
+    width: 33px;
+    fill: #ed0036;
+    stroke-width: 0;
+    cursor: pointer;
 }
 
 .heart-empty{
