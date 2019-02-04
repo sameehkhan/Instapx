@@ -173,12 +173,14 @@
 //     flex-direction: column;
 // }
 
-.heart-full1{
+.heart-full{
     height: 24px;
     width: auto;
+    fill: red;
 }
 
-.heart-full2{
+.heart-empty{
     height: 24px;
     width: auto;
+    border: 1px solid #000000;
 }
