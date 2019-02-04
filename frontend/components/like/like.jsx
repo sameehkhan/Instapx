@@ -18,8 +18,8 @@ class Like extends React.Component {
             <div>
                 HEART
                 <img
-                    className="heart"
-                    src={window.instapxlogo}
+                    className="heart-full"
+                    src={window.heart}
                     onClick={() => this.props.deleteLike(this.props.postId)}
                 />
                 
@@ -30,8 +30,8 @@ class Like extends React.Component {
                 <div>
                     NO HEART
                     <img
-                        className="heart"
-                        src={window.icon}
+                        className="heart-empty"
+                        src={window.heart}
                         onClick={() => this.props.createLike({ post_id: this.props.postId })}
                     />
 
