@@ -8,18 +8,20 @@ const mstp = (state, ownProps) => {
     let userId = parseInt(state.session.id);
     let hasLiked = ownProps.likes.includes(userId);
     let postId = ownProps.postId;
+    let likerIds = ownProps.likes;
     // debugger
     return ({
         userId,
         hasLiked,
-        postId
+        postId,
+        likerIds
     });
 };
 
 const mdtp = (dispatch) => {
     return ({
        createLike: (like) => dispatch(createLike(like)),
-       deleteLike: (id) => dispatch(deleteLike(id))
+       deleteLike: (post_id, user_id) => dispatch(deleteLike(post_id, user_id))
 
     });
 };

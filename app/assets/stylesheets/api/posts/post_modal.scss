@@ -182,7 +182,13 @@
 }
 
 .heart-empty{
-    height: 24px;
-    width: auto;
-    border: 1px solid #000000;
+    height: 35px;
+    width: 32px;
+    stroke-width: 1;
+    stroke: #262626;
+    cursor: pointer;
+}
+
+.post-show-like{
+    height: 30px;
 }

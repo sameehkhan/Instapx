@@ -6,10 +6,10 @@ class Api::LikesController < ApplicationController
     render :show
   end
 
-  def destroy
-    @like = Like.find(params[:id])
-    @like.delete! if @like
-    render :show  
+   def destroy
+    @like = Like.where(user_id: current_user.id).where(post_id: params[:id])[0]
+    @like.destroy
+    render :show
   end
 
   private

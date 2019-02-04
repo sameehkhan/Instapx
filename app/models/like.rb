@@ -22,6 +22,6 @@ class Like < ApplicationRecord
     class_name: 'User'
 
   has_one :receiver,
-    through: :image,
+    through: :post,
     source: :user
 end
