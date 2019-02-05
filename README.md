@@ -1,4 +1,4 @@
-![](s3://instapx-dev/instapx.png)
+<!-- ![](s3://instapx-dev/instapx.png)
 
 # Table of Contents
 - [Background and Overview](#background-and-overview)
@@ -41,21 +41,21 @@ The Instapx splash page/user authentication is an exact clone of Instagram, with
 ![](./images/screenshot1.png)
 <!-- ![](./screenshots/auth.gif) -->
 
-### Videos
+<!-- ### Videos
 
-Chillflix videos are featured on scroll wheels according to their categories. Scroll wheels feature infinite scroll. Upon hovering over a single video, controls for that video appear. The controls include a play button, an add to my list button, and an expand button which displays more info on the video.
+Chillflix videos are featured on scroll wheels according to their categories. Scroll wheels feature infinite scroll. Upon hovering over a single video, controls for that video appear. The controls include a play button, an add to my list button, and an expand button which displays more info on the video. -->
 
 ![](./screenshots/hover.png)
 
-### Info
+<!-- ### Info
 
 When the expand button is clicked, the videos title and description is shown. Below the description, there is a play button and my list button. There is also a button to close the info. When a video's info is expanded, the video is highlighted with a white border and down-caret
 
 ![](./screenshots/info.png)
 
-## Feature Highlights
+## Feature Highlights -->
 
-### Video Search
+<!-- ### Video Search
 
 Implementing the search functionality was quite a challenge. At first, I was trying to combine all the logic into the Navbar since the search bar was there. But it proved to be very difficult to render the results and also track the query string. So I came to this solution:
 * Search functionality was spread over two components
@@ -64,9 +64,9 @@ Implementing the search functionality was quite a challenge. At first, I was try
 * Once the route changed to a search, the search results container would monitor the query string, passing it as a prop to the search results
 * Search results component would filter out the movies in state, non case-sensitive and display them
   * An empty query string would return all videos
-* If the 'X' was clicked, the search bar would contract and the user would be rerouted back to browse
+* If the 'X' was clicked, the search bar would contract and the user would be rerouted back to browse -->
 
-![](./screenshots/search.png)
+<!-- ![](./screenshots/search.png) -->
 
 ```
 // search_results_container.js
@@ -101,14 +101,14 @@ componentDidUpdate(prevProps){
 }
 ```
 
-### Video Info Dropdown and Effects
+<!-- ### Video Info Dropdown and Effects
 
 When a movie's dropdown is expanded, it's info is supposed to show the video's title, description, control buttons, and a close button. Also, the current video with expanded info should be highlighted white a white border and a downwards caret pointing to the info. The challenging part with this feature was what to do if one dropdown is already open and the user attempts to expand another one. At first both dropdowns would show and both would have the highlight effects. The solution I came to was the following:
 * When a dropdown is expanded, update the route to have wildcards for the id of the scroll wheel and the id of the movie
 * Upon reaching the proper route, remove all effects from each video and allow each video to be enlarged upon hover to show controls
 * Find the matching id's
   * If non-existent, reroute to `/browse`
-  * If it does exist, remove enlarge capability and add effects
+  * If it does exist, remove enlarge capability and add effects -->
 
 ![](./screenshots/info.png)
 

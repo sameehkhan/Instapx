@@ -165,7 +165,8 @@
 .post-show-likes{
     font-weight: 600;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 // .post-show-likes-comments{
@@ -193,4 +194,12 @@
     border-top: 1px solid #efefef;
     padding-top: 6px;
     height: 30px;
+}
+
+.post-show-time{
+    color: #999;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2px;
 }

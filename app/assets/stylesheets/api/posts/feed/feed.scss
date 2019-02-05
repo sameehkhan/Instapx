@@ -109,7 +109,6 @@
 
 .post-like-container{
     width: 100%;
-    height: 40px;
 }
 
 .post-caption-feed{
@@ -130,4 +129,10 @@
     list-style-type: none;
     padding: 5px 0px 0px 0px;
     margin: 0;
+}
+
+
+.post-feed-like{
+    padding-top: 6px;
+    height: 30px;
 }

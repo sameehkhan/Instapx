@@ -1,5 +1,6 @@
 import React from 'react';
 import CommentContainer from '../comment/comment_container';
+import LikeContainer from '../like/like_container';
 import { Link } from 'react-router-dom';
 
 class Feed extends React.Component {
@@ -68,7 +69,10 @@ class Feed extends React.Component {
 
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
-                                <div className='post-like-container'></div>
+                                <div className='post-like-container'>
+                                    <LikeContainer likes={post.liker_ids} postId={post.id} />
+                                    <div className='post-show-likes'>{post.liker_ids.length} likes</div>
+                                </div>
 
                                 <div className='post-caption-container'>
                                     <Link to={`/users/${post.user_id}`}><h2 className='post-username2'>{post.username} </h2></Link>
@@ -77,6 +81,7 @@ class Feed extends React.Component {
 
                                 <div className='post-comments-container'>
                                     <div className='post-comments-list'>{this.postComments(post)}</div>
+                                    <div className='post-feed-time'>{post.created_at}</div>
                                     <CommentContainer postId={post.id}/>
                                 </div>
                                 <div></div>
