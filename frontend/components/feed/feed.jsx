@@ -26,7 +26,7 @@ class Feed extends React.Component {
                 post.comments.map(comment => {
                     // debugger
                     return (
-                        <div className='feed-comment-list'>
+                        <div key={comment.id}className='feed-comment-list'>
                             <ul key={comment.id}>
                                 <li key={comment.id}>
                                     <Link to={`/users/${comment.user_id}`}><span className='post-username2'>{comment.username} </span></Link>
