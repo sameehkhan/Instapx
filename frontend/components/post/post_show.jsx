@@ -87,7 +87,7 @@ class PostShow extends React.Component {
                                                 <div>
                                                     <LikeContainer likes={this.props.allLikes} postId={this.props.post.id} />
                                                     <div className='post-show-likes'>{this.props.likes} likes</div>
-                                                    <div>{this.props.post.created_at}</div>
+                                                    <div className='post-show-time'>{this.props.post.created_at}</div>
                                                     <CommentContainer postId={this.props.post.id} />
                                                 </div>
                                         </div>
