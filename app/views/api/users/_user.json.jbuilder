@@ -12,3 +12,6 @@ json.set! :posts do
       end 
    end 
 end
+
+json.follower_ids @user.followers.pluck(:id)
+json.following_ids @user.followings.pluck(:id)

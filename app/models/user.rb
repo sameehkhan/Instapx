@@ -23,6 +23,10 @@ class User < ApplicationRecord
 
   has_many :likes
 
+  has_many :followings
+
+  has_many :followers
+
   attr_reader :password
 
 

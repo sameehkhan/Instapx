@@ -12,13 +12,15 @@ class Feed extends React.Component {
 
     componentDidMount(){
         this.props.fetchPosts();
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
 
     }
 
-    componentDidUpdate() {
-
-    }
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.props !== prevProps.posts) {
+    //         this.props.fetchPosts();
+    //     }
+    // }
 
     postComments(post){
         // debugger
