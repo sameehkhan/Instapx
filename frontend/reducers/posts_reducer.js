@@ -31,7 +31,7 @@ const postsReducer = (state = {}, action) => {
             delete newState[action.postId];
             return newState;
         case RECEIVE_COMMENT:
-            const newPost = merge({}, state[action.comment.post_id])
+            const newPost = merge({}, state[action.comment.post_id]);
             newPost.comments.unshift(action.comment);
             return merge({}, state, { [action.comment.post_id]: newPost });
         case RECEIVE_CURRENT_USER:
