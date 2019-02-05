@@ -9,6 +9,11 @@ import {
   REMOVE_COMMENT
 } from '../actions/comment_actions';
 
+import {
+  RECEIVE_FOLLOW,
+  REMOVE_FOLLOW
+} from '../actions/follow_actions';
+
 import merge from 'lodash/merge';
 
 const usersReducer = (state = {}, action) => {
