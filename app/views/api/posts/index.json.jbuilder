@@ -14,6 +14,7 @@
       end
     end
     json.liker_ids post.likers.pluck(:id)
+    json.created_at post.created_at.strftime("%B%d,%Y")
   end 
 end 
 
