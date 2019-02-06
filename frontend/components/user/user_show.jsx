@@ -142,9 +142,9 @@ class UserShow extends React.Component {
                     <div className='info-section'>
                         <div className='div-1'>
                             <h1>{this.props.user.username}</h1>
-                            <div><button className='user-button'>Edit Profile</button></div>
-                            <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
-                            <div><button className='user-button' onClick={this.upload}>Upload</button></div>
+                            <div><button className='user-button'>Follow/Unfollow</button></div>
+                            {/* <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
+                            <div><button className='user-button' onClick={this.upload}>Upload</button></div> */}
                         </div>
 
                         <ul className='stats-list'>
