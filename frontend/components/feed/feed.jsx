@@ -7,21 +7,36 @@ class Feed extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.fetchPosts = this.fetchPosts.bind(this);
+        // this.state = {
+        //     loading: false,
+        //     offset: 0,
+        //     postId: 0
+        // }
+
+        // window.addEventListener('scroll', () => {
+        //     const { innerHeight } = window;
+        //     const { scrollTop, offsetHeight } = document.documentElement;
+
+        //     if (innerHeight + scrollTop > offsetHeight - 1) {
+        //         this.setState(state => ({
+        //             offset: state.offset + 5
+        //         }));
+        //         this.props.fetchPosts(this.state.offset);
+        //     }
+        // });
+
+
     }
 
     componentDidMount(){
         this.props.fetchPosts();
         this.props.fetchUser(this.props.userId);
         window.scrollTo(0, 0);
-
+        // this.setState({ loading: true });
+        // this.props.fetchPosts(this.state.offset)
+        //     .then(() => this.setState({ loading: false }))
     }
 
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.props !== prevProps.posts) {
-    //         this.props.fetchPosts();
-    //     }
-    // }
 
     postComments(post){
         // debugger
@@ -60,7 +75,7 @@ class Feed extends React.Component {
             <div>
                 <div className='feed-container'>
                 <div className='feed-index'>
-                {this.props.posts.reverse().map(post => {
+                {this.props.posts.map(post => {
                     const likers = post.liker_ids ? post.liker_ids : '';
                     return (
                         <div key={post.id} className='feed-post' tabIndex="0">

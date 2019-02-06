@@ -1,13 +1,5 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
 import { RECEIVE_USER, RECEIVE_USERS } from '../actions/user_actions';
-import {
-  RECEIVE_LIKE,
-  REMOVE_LIKE
-} from '../actions/like_actions';
-import {
-  RECEIVE_COMMENT,
-  REMOVE_COMMENT
-} from '../actions/comment_actions';
 
 import {
   RECEIVE_FOLLOW,

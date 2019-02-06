@@ -9,7 +9,7 @@ const mstp = (state, ownProps) => {
     const userId = parseInt(state.session.id);
     // debugger
     const currentUser = state.entities.users[userId];
-    const posts = Object.values(state.entities.posts).filter( post => currentUser.following_ids.includes(post.user_id));
+    const posts = Object.values(state.entities.posts).filter( post => currentUser.following_ids.includes(post.user_id)).reverse();
     return ({
         currentUser,
         posts,
