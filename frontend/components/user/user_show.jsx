@@ -91,8 +91,8 @@ class UserShow extends React.Component {
 
                                 <ul className='stats-list'> 
                                     <li className='stat-li'><span className='number'>{this.props.posts.length}</span> posts</li>
-                                    <li className='stat-li'>followers</li>
-                                    <li className='stat-li'>following</li>
+                                    <li className='stat-li'><span className='number'>{this.props.user.follower_ids.length}</span>followers</li>
+                                    <li className='stat-li'><span className='number'>{this.props.user.following_ids.length}</span>following</li>
                                 </ul>
                             <div className='div-3'> 
                                 <div><h1 className='full-name'>{this.props.user.full_name}</h1></div>
