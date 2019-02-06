@@ -2,22 +2,25 @@ import { connect } from 'react-redux';
 import Feed from './feed';
 import { withRouter } from 'react-router-dom';
 import { fetchPosts } from '../../actions/post_actions';
-import { fetchUsers } from '../../actions/user_actions';
+import { fetchUser } from '../../actions/user_actions';
 
 
 const mstp = (state, ownProps) => {
-    const posts = Object.values(state.entities.posts);
-    // const users = state.entities.users;
+    const userId = parseInt(state.session.id);
+    // debugger
+    const currentUser = state.entities.users[userId];
+    const posts = Object.values(state.entities.posts).filter( post => currentUser.following_ids.includes(post.user_id));
     return ({
-        posts, 
-        // users,
-        // comments
+        currentUser,
+        posts,
+        userId
     }); 
 };
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        fetchPosts: () => dispatch(fetchPosts())
+        fetchPosts: () => dispatch(fetchPosts()),
+        fetchUser: (id) => dispatch(fetchUser(id))
     });
 };
 

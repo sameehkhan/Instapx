@@ -12,6 +12,7 @@ class Feed extends React.Component {
 
     componentDidMount(){
         this.props.fetchPosts();
+        this.props.fetchUser(this.props.userId);
         window.scrollTo(0, 0);
 
     }
@@ -50,7 +51,7 @@ class Feed extends React.Component {
 
     
     render() {
-        if (this.props.posts == undefined){
+        if (this.props.posts == undefined || this.props.currentUser.following_ids == undefined){
             return(
                 <div></div>
             )
@@ -60,8 +61,6 @@ class Feed extends React.Component {
                 <div className='feed-container'>
                 <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
-                    // debugger
-                    // console.log(post);
                     const likers = post.liker_ids ? post.liker_ids : '';
                     return (
                         <div key={post.id} className='feed-post' tabIndex="0">
