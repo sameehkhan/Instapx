@@ -8,13 +8,13 @@ class Like extends React.Component {
     }
 
     render() {
-        if (this.props.currentUser == undefined) {
+        if (this.props.currentUser == undefined || this.props.currentUser.following_ids == undefined) {
             return (
                 <div>
                 </div>
             )
         }
-        if (this.props.currentUser.following_ids.includes(parseInt(ownProps.match.params.id))){
+        if (this.props.following){
             return (
                 <div>
                     <button className='user-button'>Unfollow</button>
@@ -24,7 +24,7 @@ class Like extends React.Component {
             return (
             
             <div>
-                <button className='user-button'>Unfollow</button>
+                <button className='user-button'>Follow</button>
             </div>
             )
         }

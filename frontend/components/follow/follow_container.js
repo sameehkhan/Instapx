@@ -6,10 +6,11 @@ import { fetchUsers } from '../../actions/user_actions';
 
 const mstp = (state, ownProps) => {
     // debugger
-    let currentUser = state.entities.users[state.session.id];=
+    let currentUser = state.entities.users[state.session.id];
+    let following;
     return ({
-        currentUser
-
+        currentUser,
+        following: currentUser.following_ids.includes(parseInt(ownProps.match.params.id))
     });
 };
 
