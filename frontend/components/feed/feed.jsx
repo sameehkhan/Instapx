@@ -61,7 +61,7 @@ class Feed extends React.Component {
                 <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
                     // debugger
-                    console.log(post);
+                    // console.log(post);
                     const likers = post.liker_ids ? post.liker_ids : '';
                     return (
                         <div key={post.id} className='feed-post' tabIndex="0">
