@@ -50,7 +50,7 @@ class Feed extends React.Component {
 
     
     render() {
-        if (this.props.posts === undefined){
+        if (this.props.posts == undefined){
             return(
                 <div></div>
             )
@@ -61,6 +61,8 @@ class Feed extends React.Component {
                 <div className='feed-index'>
                 {this.props.posts.reverse().map(post => {
                     // debugger
+                    console.log(post);
+                    const likers = post.liker_ids ? post.liker_ids : '';
                     return (
                         <div key={post.id} className='feed-post' tabIndex="0">
                             <div className='post-bar'>
@@ -72,8 +74,8 @@ class Feed extends React.Component {
                             <img className='post-index-img' src={post.photo_url} />
                             <div className='comment-bar'>
                                 <div className='post-like-container'>
-                                    <LikeContainer likes={post.liker_ids} postId={post.id} />
-                                    <div className='post-show-likes'>{post.liker_ids.length} likes</div>
+                                    <LikeContainer likes={likers} postId={post.id} />
+                                    <div className='post-show-likes'>{likers.length} likes</div>
                                 </div>
 
                                 <div className='post-caption-container'>

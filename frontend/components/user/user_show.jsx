@@ -24,32 +24,6 @@ class UserShow extends React.Component {
         
     }
 
-// componentDidUpdate(prevProps) {
-//     debugger
-//     if (prevProps.location.pathname === '/feed') {
-//         window.scrollTo(0, 0);
-//     }
-// }
-
-    // componentWillReceiveProps(nextProps) {
-        // debugger
-
-        // if (nextProps.location !== this.props.location) {
-        //     this.setState({ prevPath: this.props.location })
-        // }
-    // }
-
-    // logger({ lastLocation }) {
-    //     return (
-    //     <div>
-    //         <h2>Logger!</h2>
-    //         <pre>
-    //             {JSON.stringify(lastLocation)}
-    //         </pre>
-    //     </div>
-    //     )
-    // };
-
     handleLogout(e) {
         e.preventDefault();
         this.props.action().then(() => this.props.history.push('/login'));
@@ -91,8 +65,8 @@ class UserShow extends React.Component {
 
                                 <ul className='stats-list'> 
                                     <li className='stat-li'><span className='number'>{this.props.posts.length}</span> posts</li>
-                                    <li className='stat-li'><span className='number'>{this.props.user.follower_ids.length}</span>followers</li>
-                                    <li className='stat-li'><span className='number'>{this.props.user.following_ids.length}</span>following</li>
+                                    {/* <li className='stat-li'><span className='number'>{this.props.user.follower_ids.length}</span>followers</li>
+                                    <li className='stat-li'><span className='number'>{this.props.user.following_ids.length}</span>following</li> */}
                                 </ul>
                             <div className='div-3'> 
                                 <div><h1 className='full-name'>{this.props.user.full_name}</h1></div>

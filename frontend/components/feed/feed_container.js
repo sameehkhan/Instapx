@@ -7,10 +7,10 @@ import { fetchUsers } from '../../actions/user_actions';
 
 const mstp = (state, ownProps) => {
     const posts = Object.values(state.entities.posts);
-    const users = state.entities.users;
+    // const users = state.entities.users;
     return ({
         posts, 
-        users,
+        // users,
         // comments
     }); 
 };
