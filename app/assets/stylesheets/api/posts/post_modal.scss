@@ -152,6 +152,7 @@
     // max-height: 92px;
     margin-top: 10px;
     overflow: scroll;
+    max-height: 100px;
 }
 
 .post-comments-container2{
@@ -202,4 +203,8 @@
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: .2px;
+}
+
+.likes-comments-time{
+    box-sizing: border-box;
 }

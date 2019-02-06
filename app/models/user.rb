@@ -23,9 +23,26 @@ class User < ApplicationRecord
 
   has_many :likes
 
-  has_many :followings
+   has_many :followeeships,
+    primary_key: :id,
+    foreign_key: :follower_id,
+    class_name: 'Follow',
+    dependent: :destroy
 
-  has_many :followers
+  has_many :followerships,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: 'Follow',
+    dependent: :destroy
+
+  has_many :followings,
+    through: :followeeships,
+    source: :following
+
+  has_many :followers,
+    through: :followerships,
+    source: :follower
+
 
   attr_reader :password
 

@@ -17,7 +17,7 @@ const mstp = (state, ownProps) => {
         likes,
         allLikes
     });
-};
+}
 
 const mdtp = (dispatch) => {
     return ({

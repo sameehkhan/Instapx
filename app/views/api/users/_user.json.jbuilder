@@ -1,6 +1,8 @@
 json.set! :user do 
    json.extract! user, :id, :username, :full_name, :bio
    json.photo url_for(user.photo)
+   json.follower_ids user.followers.pluck(:id)
+   json.following_ids user.followings.pluck(:id)
 end 
 
 
@@ -13,5 +15,3 @@ json.set! :posts do
    end 
 end
 
-json.follower_ids @user.followers.pluck(:id)
-json.following_ids @user.followings.pluck(:id)
