@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { matchPath } from 'react-router';
 import PostFormContainer from './post_form_container';
-// import PostShowContainer from '../post/post_show_container';
+import FollowContainer from '../follow/follow_container';
 import { LastLocationProvider } from 'react-router-last-location';
 
 
@@ -20,6 +20,7 @@ class UserShow extends React.Component {
     // }
 
     componentDidMount() {
+
         this.props.fetchUser(this.props.match.params.id);
     }
 
@@ -115,7 +116,7 @@ class UserShow extends React.Component {
                 </div>
             );
         } else if (this.props.user.id != this.props.curr) {
-            debugger
+            // debugger
             return (
             <div className='profile-div'>
 
@@ -124,7 +125,7 @@ class UserShow extends React.Component {
                     <div className='info-section'>
                         <div className='div-1'>
                             <h1>{this.props.user.username}</h1>
-                            {/* <FollowContainer/> */}
+                            <FollowContainer/>
                             {/* <div><button className='user-button'>Follow/Unfollow</button></div> */}
                             {/* <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
                             <div><button className='user-button' onClick={this.upload}>Upload</button></div> */}

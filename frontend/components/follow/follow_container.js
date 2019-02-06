@@ -5,9 +5,10 @@ import { fetchUsers } from '../../actions/user_actions';
 
 
 const mstp = (state, ownProps) => {
-    let current_user = state.entities.users[state.session.id]
+    // debugger
+    let currentUser = state.entities.users[state.session.id];=
     return ({
-        current_user
+        currentUser
 
     });
 };
