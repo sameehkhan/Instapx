@@ -21,7 +21,14 @@ class UserShow extends React.Component {
 
     componentDidMount() {
         this.props.fetchUser(this.props.match.params.id);
+    }
+
+    componentDidUpdate(prevProps){
         
+        if (prevProps.match.params.id != this.props.match.params.id){
+            this.props.fetchUser(this.props.match.params.id)
+        }
+        // this.props.fetchUser(this.props.match.params.id);
     }
 
     handleLogout(e) {
