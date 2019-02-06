@@ -8,6 +8,7 @@ import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
     let curr = state.session.id;
+    let current_user = state.entities.users
     const posts = Object.values(state.entities.posts).filter(post => post.user_id === parseInt(ownProps.match.params.id));
     return ({
         user: state.entities.users[ownProps.match.params.id],
