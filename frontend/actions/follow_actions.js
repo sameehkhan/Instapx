@@ -8,7 +8,7 @@ const receiveFollow = follow => ({
     follow: follow
 });
 
-const removeLike = follow => ({
+const removeFollow = follow => ({
     type: REMOVE_FOLLOW,
     follow: follow
 });
@@ -20,5 +20,5 @@ export const createFollow = follow => dispatch => (
 
 export const deleteFollow = id => dispatch => (
     LikeAPIUtil.deleteFollow(id)
-        .then(follow => dispatch(removeLike(follow)))
+        .then(follow => dispatch(removeFollow(follow)))
 );

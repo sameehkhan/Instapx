@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Follow from './follow';
 import { fetchUsers } from '../../actions/user_actions';
+import { createLike, deleteLike } from '../../actions/like_actions';
 
 
 const mstp = (state, ownProps) => {
@@ -16,7 +17,8 @@ const mstp = (state, ownProps) => {
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        fetchUsers: () => dispatch(fetchUsers())
+        fetchUsers: () => dispatch(fetchUsers()),
+
     });
 };
 

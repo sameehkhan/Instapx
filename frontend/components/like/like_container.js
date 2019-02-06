@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Like from './like';
 import { createLike, deleteLike } from '../../actions/like_actions';
-// import { fetchUsers } from '../../actions/user_actions';
 
 const mstp = (state, ownProps) => {
     let userId = parseInt(state.session.id);
