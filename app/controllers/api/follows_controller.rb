@@ -14,7 +14,7 @@ class Api::FollowsController < ApplicationController
     end
 
     def follow_params
-        params.requre(:follow).permit(:user_id)
+        params.require(:follow).permit(:user_id)
     end 
 
 end
