@@ -1,23 +1,26 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Follow from './follow';
-import { fetchUsers } from '../../actions/user_actions';
+import { fetchUser } from '../../actions/user_actions';
 import { createLike, deleteLike } from '../../actions/like_actions';
 
 
 const mstp = (state, ownProps) => {
     // debugger
     let currentUser = state.entities.users[state.session.id];
-    let following;
+    let currId = state.session.id;
+    let followingId = parseInt(ownProps.match.params.id);
+    // debugger
     return ({
         currentUser,
-        following: currentUser.following_ids.includes(parseInt(ownProps.match.params.id))
+        followingId,
+        currId
     });
 };
 
 const mdtp = (dispatch, ownProps) => {
     return ({
-        fetchUsers: () => dispatch(fetchUsers()),
+        fetchUser: (id) => dispatch(fetchUser(id)),
 
     });
 };

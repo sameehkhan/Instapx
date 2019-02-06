@@ -7,6 +7,10 @@ class Like extends React.Component {
 
     }
 
+    componentDidMount() {
+        this.props.fetchUser(this.props.currId);
+    }
+
     render() {
         if (this.props.currentUser == undefined || this.props.currentUser.following_ids == undefined) {
             return (
@@ -14,13 +18,14 @@ class Like extends React.Component {
                 </div>
             )
         }
-        if (this.props.following){
+        if (this.props.currentUser.following_ids.includes(this.props.followingId)){
             return (
                 <div>
                     <button className='user-button'>Unfollow</button>
                 </div>
             )
         }else{
+            debugger
             return (
             
             <div>
