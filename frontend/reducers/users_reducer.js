@@ -16,7 +16,7 @@ const usersReducer = (state = {}, action) => {
     case RECEIVE_USER:
       return merge({}, state, { [action.user.id]: action.user });
     case RECEIVE_USERS: 
-      return merge({},action.users);
+      return merge({}, state, action.users);
     case RECEIVE_FOLLOW:
       // debugger
       newState[action.follow.follower_id].following_ids.push(action.follow.user_id);

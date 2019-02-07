@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchContainer from './search_container';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class NavBar extends React.Component {
                         <img className="nav-bar-word" src={window.instapx}/>
                     </Link>
                     </div>
-                    <div className='search-bar'><input className='search-input'type="text" placeholder="Search"/></div>
+                    <SearchContainer />
                     <div className='user-icon'><Link to={`/users/${this.props.currentUserId}`}><img className="prof-icon" src={window.icon} /></Link></div>
             </div>
         </div>
