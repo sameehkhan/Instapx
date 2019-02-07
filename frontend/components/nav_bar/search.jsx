@@ -47,6 +47,7 @@ class Search extends React.Component {
                     {this.state.users.map( user => {
                         // debugger
                         return(
+                            <Link key={user.id}to={`/users/${user.id}`}>
                             <li key={user.id}>
                                 <div className='search-item'>
                                     <div className='search-photo'>
@@ -58,6 +59,7 @@ class Search extends React.Component {
                                     </div>
                                 </div>
                             </li>
+                            </Link>
                         )
                     })}
                 </ul>

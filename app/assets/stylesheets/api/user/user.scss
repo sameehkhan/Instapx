@@ -233,6 +233,11 @@
     box-shadow: 0px 0px 10px rgba(0,0,0,.0975);
 }
 
+.search-bar a:link{
+    text-decoration: none;
+    color: none;
+}
+
 .search-bar li:hover{
     background: #fafafa;
     cursor: pointer;
@@ -272,9 +277,10 @@
     line-height: 22px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #999;
+    color: #999 !important;
 }
 
 .search-username{
     font-weight: 600;
+    color: #262626;
 }
