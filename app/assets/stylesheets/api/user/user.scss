@@ -224,20 +224,13 @@
 .search-bar ul{
     margin: 0;
     background: #fff;
-    border: solid 1px 0px 0px 0px #e6e6e6;
+    // border: solid 1px 0px 0px 0px #e6e6e6;
     border-radius: 3px;
     max-height: 362px;
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 0;
-    // -webkit-box-shadow: 0 0 5px rgba(0,0,0,.0975);
-    // box-shadow: 0px 0px 0px 0px rgba(0,0,0,.0975);
-}
-
-.search-bar ul:focus{
-    border: solid 1px #e6e6e6;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.0975);
-
+    box-shadow: 0px 0px 10px rgba(0,0,0,.0975);
 }
 
 .search-bar li:hover{
@@ -251,7 +244,6 @@
     border-style: solid;
     border-width: 0px 1px 1px 1px;
     overflow-x: hidden;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.0975);
 
 }
 
