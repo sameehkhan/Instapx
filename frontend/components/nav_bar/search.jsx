@@ -45,9 +45,18 @@ class Search extends React.Component {
 
                 <ul>
                     {this.state.users.map( user => {
+                        // debugger
                         return(
                             <li key={user.id}>
-                                {user.username}
+                                <div className='search-item'>
+                                    <div className='search-photo'>
+                                        <img src={user.photo}/>
+                                    </div>
+                                    <div className='search-info'>
+                                        <div className='search-username'>{user.username}</div>
+                                        <div className='search-fullname'>{user.full_name}</div>
+                                    </div>
+                                </div>
                             </li>
                         )
                     })}
