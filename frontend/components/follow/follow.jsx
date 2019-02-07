@@ -21,14 +21,14 @@ class Like extends React.Component {
         if (this.props.currentUser.following_ids.includes(this.props.followingId)){
             return (
                 <div>
-                    <button onClick={() => this.props.deleteFollow(this.props.followingId)} className='user-button'>Unfollow</button>
+                    <button onClick={() => this.props.deleteFollow(this.props.followingId)} className='user-button'>Following</button>
                 </div>
             )
         }else{
             return (
             
                 <div>
-                    <button onClick={() => this.props.createFollow({ user_id: this.props.followingId })} className='user-button'>Follow</button>
+                    <button onClick={() => this.props.createFollow({ user_id: this.props.followingId })} className='user-button-follow'>Follow</button>
                 </div>
             )
         }
