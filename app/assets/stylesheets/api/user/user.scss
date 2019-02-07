@@ -218,3 +218,35 @@
     margin-left: 15px;
 }
 
+
+// .search-bar ul{
+//     background: #fafafa;
+//     list-style-type: none;
+//     max-height: 362px;
+//     overflow-x: hidden;
+//     overflow-y: scroll;
+//     padding: 0;
+// }
+.search-bar ul{
+    background: #fff;
+    border: solid 1px #e6e6e6;
+    border-radius: 3px;
+    max-height: 362px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.0975);
+    box-shadow: 0 0 5px rgba(0,0,0,.0975);
+    // display: block;
+    // left: 50%;
+    // margin-left: -121px;
+    // position: absolute;
+    // right: -12px;
+    // top: 18px;
+    // width: 243px;
+    // z-index: 9;
+}
+
+.search-bar li:hover{
+    background: #fafafa;
+}
