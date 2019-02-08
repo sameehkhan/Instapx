@@ -14,15 +14,18 @@
 
 ## Background and Overview
 
-Chillflix is a clone of the video-streaming site, Netflix. On this site, users are able to create new accounts and login and watch short clips of popular movies and shows.
+Instagram is a clone of the video-streaming site, Instagram. On this site, users are able to create new accounts and login and watch short clips of popular movies and shows.
 
 Features cloned from Instagram include:
 * User authentication
-* User feed
+* Feed
 * Profile
 * Post Modals
 * Liking posts
 * Commenting on posts
+* Search bar
+* User follows and followings
+
 
 
 ### Demo
@@ -41,7 +44,7 @@ The Instapx splash page/user authentication is an exact clone of Instagram, with
 ![](./images/screenshot1.png)
 <!-- ![](./screenshots/auth.gif) -->
 
-<!-- ### Videos
+<!-- ### Posts
 
 Chillflix videos are featured on scroll wheels according to their categories. Scroll wheels feature infinite scroll. Upon hovering over a single video, controls for that video appear. The controls include a play button, an add to my list button, and an expand button which displays more info on the video. -->
 

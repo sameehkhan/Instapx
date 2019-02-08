@@ -10,7 +10,7 @@ Like.destroy_all
 Follow.destroy_all
 Comment.destroy_all
 
-demo = User.new({ username: 'demo', full_name: 'Demo', password: 'password'})
+demo = User.new({ username: 'demo', full_name: 'Demo', password: 'password', bio: 'The first official Instapx user'})
 demo.photo.attach(io: File.open("#{Rails.root}/app/assets/images/default_user.png"), filename: 'default_user.png')
 demo.save
 
