@@ -1,0 +1,144 @@
+.upload-modal{
+    position: fixed;
+    width: 100vw;
+    top:0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+    z-index: 1000;
+    display: none;
+}
+
+body.upload-modal{
+    overflow: hidden;
+}
+
+.upload-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.upload-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+}
+
+.upload-form form input{
+    margin-bottom: 5px;
+
+}
+
+
+
+.post-form-container{
+    margin-top: 340px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    background: #fafafa;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.post-form-container h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.post-form-container textarea{
+    font-size: 14px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button{
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    content: '\00D7';
+    display: block;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    border: none;
+}
+
+.close-button-wrp{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 13px 2px 7px;
+
+}
+
+.post-submit-button, .file-upload-button{
+    font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    outline: 0 !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    // cursor: pointer;
+    // margin-left: 15px;
+}
+
+.post-submit-button:hover{
+    background: rgb(28, 137, 238);
+    color: #fafafa
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+.post-caption{
+    background-color: rgb(230, 227, 220);
+    border-top-color: rgb(213, 209, 201);
+    border-right-color: rgb(213, 209, 201);
+    border-bottom-color: rgb(213, 209, 201);
+    border-left-color: rgb(213, 209, 201);
+    height: 42px;
+    width: 320px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding-left: 9px;
+    box-sizing: border-box;
+    font-size: 13px;
+    resize: none;
+}

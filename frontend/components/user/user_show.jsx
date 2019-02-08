@@ -114,6 +114,15 @@ class UserShow extends React.Component {
                             <PostFormContainer/>
                         </div>
                     </div>
+                    
+                    <div id='user-modal'className="upload-modal">
+                        <div className='close-button-wrp'>
+                            <button className='close-button' onClick={this.closeModal}>×</button>
+                        </div>
+                        <div className='form-container'>
+                            <PostFormContainer/>
+                        </div>
+                    </div>
                 
                 </div>
             );
