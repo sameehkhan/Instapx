@@ -29,7 +29,9 @@ class UserShow extends React.Component {
         if (prevProps.match.params.id != this.props.match.params.id){
             this.props.fetchUser(this.props.match.params.id)
         }
-        // this.props.fetchUser(this.props.match.params.id);
+        if (prevProps.location.pathname != this.props.location.pathname) {
+            window.scrollTo(0,0);
+        }
     }
 
     handleLogout(e) {
