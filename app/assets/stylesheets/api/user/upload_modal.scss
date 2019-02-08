@@ -41,7 +41,7 @@ body.upload-modal{
     margin-top: 340px;
     display: flex;
     flex-direction: column;
-    height: 222px;
+    height: 200px;
     width: 400px;
     background: #fafafa;
     position: absolute;
@@ -50,9 +50,10 @@ body.upload-modal{
 }
 
 .post-form-container h2{
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 600;
 }
+
 
 .post-form-container textarea{
     font-size: 14px;
@@ -128,6 +129,8 @@ body.upload-modal{
   opacity: 0;
   cursor: pointer;
 }
+
+
 
 .post-caption{
     background-color: rgb(230, 227, 220);

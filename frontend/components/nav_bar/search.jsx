@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { browserHistory } from 'react-router';
+
+
 
 class Search extends React.Component {
     constructor(props) {
@@ -16,6 +19,16 @@ class Search extends React.Component {
     componentDidMount() {
         this.props.fetchUsers();
     }
+
+    componentDidUpdate(prevProps){
+        if(prevProps.location.pathname != this.props.location.pathname){
+            this.setState({
+                search: '',
+                users: []
+            });
+        }
+    }
+
 
     update(field) {
         console.log(this.state);
