@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { matchPath } from 'react-router';
 import PostFormContainer from './post_form_container';
+import EditContainer from './edit_container';
 import FollowContainer from '../follow/follow_container';
 import { LastLocationProvider } from 'react-router-last-location';
 
@@ -133,7 +134,7 @@ class UserShow extends React.Component {
                             <button className='close-button' onClick={this.closeEditModal}>×</button>
                         </div>
                         <div className='form-container'>
-                            <PostFormContainer/>
+                            <EditContainer/>
                         </div>
                     </div>
                 
@@ -150,9 +151,6 @@ class UserShow extends React.Component {
                         <div className='div-1'>
                             <h1>{this.props.user.username}</h1>
                             <FollowContainer/>
-                            {/* <div><button className='user-button'>Follow/Unfollow</button></div> */}
-                            {/* <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
-                            <div><button className='user-button' onClick={this.upload}>Upload</button></div> */}
                         </div>
 
                         <ul className='stats-list'>
@@ -178,24 +176,13 @@ class UserShow extends React.Component {
                                     <div key={post.id} className='post' tabIndex="0">
                                         <img className='post-image' src={post.photo} />
                                         <div className='post-info'></div>
-
                                     </div>
                                 </Link>
-
-
                             )
                         })}
                     </div>
                 </div>
 
-                <div id='user-modal' className="upload-modal">
-                    <div className='close-button-wrp'>
-                        <button className='close-button' onClick={this.closeModal}>×</button>
-                    </div>
-                    <div className='form-container'>
-                        <PostFormContainer />
-                    </div>
-                </div>
 
             </div>
             )

@@ -6,6 +6,9 @@ require 'open-uri'
 #
 User.destroy_all
 Post.destroy_all
+Like.destroy_all
+Follow.destroy_all
+Comment.destroy_all
 
 demo = User.new({ username: 'demo', full_name: 'Demo', password: 'password'})
 demo.photo.attach(io: File.open("#{Rails.root}/app/assets/images/default_user.png"), filename: 'default_user.png')
