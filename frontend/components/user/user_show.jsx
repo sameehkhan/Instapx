@@ -52,6 +52,19 @@ class UserShow extends React.Component {
 
     }
 
+    edit(e) {
+        e.preventDefault();
+
+        document.getElementById('edit-modal').style.display = 'block';
+    }
+
+    closeEditModal(e) {
+        e.preventDefault();
+
+        document.getElementById('edit-modal').style.display = 'none';
+
+    }
+
     render() {
         if(this.props.user == undefined || Object.values(this.props.user).length < 5){
             return (
@@ -68,7 +81,7 @@ class UserShow extends React.Component {
                         <div className='info-section'>
                                 <div className='div-1'> 
                                     <h1>{this.props.user.username}</h1>
-                                    <div><button className='user-button'>Edit Profile</button></div>
+                                    <div><button className='user-button' onClick={this.edit}>Edit Profile</button></div>
                                     <div><button className='user-button' onClick={this.handleLogout}>Log Out</button></div>
                                     <div><button className='user-button' onClick={this.upload}>Upload</button></div>
                                 </div>
@@ -114,10 +127,10 @@ class UserShow extends React.Component {
                             <PostFormContainer/>
                         </div>
                     </div>
-                    
-                    <div id='user-modal'className="upload-modal">
+
+                    <div id='edit-modal'className="upload-modal">
                         <div className='close-button-wrp'>
-                            <button className='close-button' onClick={this.closeModal}>×</button>
+                            <button className='close-button' onClick={this.closeEditModal}>×</button>
                         </div>
                         <div className='form-container'>
                             <PostFormContainer/>
