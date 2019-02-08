@@ -6,7 +6,7 @@
 - [Technologies](#technologies)
 - [Site](#site)
   - [Splash Page](#splash-page)
-  - [Videos](#videos)
+  - [Posts](#posts)
   - [Info](#info)
 - [Feature Highlights](#feature-highlights)
   - [Video Search](#video-search)
@@ -29,7 +29,7 @@ Features cloned from Instagram include:
 
 
 ### Demo
-[Live Link](https://flix-n-chill.herokuapp.com/#/)
+[Live Link](https://instapx.herokuapp.com/#/)
 
 ## Technologies
 
@@ -39,35 +39,36 @@ Instapx was built on a `Ruby on Rails` backend with a `React/Redux` front end. U
 
 ### Splash Page
 
-The Instapx splash page/user authentication is an exact clone of Instagram, without facebook links. It features the same background, fonts, and iphone template.
+The Instapx splash page/user authentication is an exact clone of Instagram, without facebook links. It features the same background, fonts, and iPhone template as of January 2019.
 
 ![](./images/screenshot1.png)
 <!-- ![](./screenshots/auth.gif) -->
 
 <!-- ### Posts
 
-Chillflix videos are featured on scroll wheels according to their categories. Scroll wheels feature infinite scroll. Upon hovering over a single video, controls for that video appear. The controls include a play button, an add to my list button, and an expand button which displays more info on the video. -->
+Instapx posts can be accessed through three means. Posts from users you follow are available upon login, on the feed page. A user's own posts can be viewed on their own profile, and on their feed. Any user's profile features all of their posts as well as a pop up modal on click for any post.
+
+
 
 ![](./screenshots/hover.png)
 
 <!-- ### Info
 
-When the expand button is clicked, the videos title and description is shown. Below the description, there is a play button and my list button. There is also a button to close the info. When a video's info is expanded, the video is highlighted with a white border and down-caret
+
 
 ![](./screenshots/info.png)
 
 ## Feature Highlights -->
 
-<!-- ### Video Search
+<!-- ### Search
 
-Implementing the search functionality was quite a challenge. At first, I was trying to combine all the logic into the Navbar since the search bar was there. But it proved to be very difficult to render the results and also track the query string. So I came to this solution:
+Incorporating the search functionality was at first at first challenging. My approach from a high-level perspective was to fetch all the users within the search container so that I have access to them while searching, and against refreshes, however it proved difficult to include it all within the nav bar, so it was split into its own component. 
+
 * Search functionality was spread over two components
-* The search bar on the Navbar component would expand when clicked on
-  * Once the user starts typing, the route would be updated with the query string
-* Once the route changed to a search, the search results container would monitor the query string, passing it as a prop to the search results
-* Search results component would filter out the movies in state, non case-sensitive and display them
-  * An empty query string would return all videos
-* If the 'X' was clicked, the search bar would contract and the user would be rerouted back to browse -->
+* Once the user begins typing, the search bar has a drop down showing all results that match the query string
+* As with Instagram, the results are capped at a certain amount, and overflow is then scrollable. 
+* An issue I ran into originally, was that the query string as well as the results would be present even after clicking a link to a user's page, to rectify this I utilized the ComponentWillUpdate() React lifecycle method. 
+
 
 <!-- ![](./screenshots/search.png) -->
 
