@@ -1,0 +1,1369 @@
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+html, body {
+  height: 100%;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 15, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 20, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+body, button, input, textarea {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+/* line 28, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.main-nav {
+  background-color: white;
+  width: 970px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+/* line 40, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.big-nav {
+  background-color: white;
+  height: 25px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+}
+
+/* line 55, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.main-nav input {
+  overflow: hidden;
+}
+
+/* line 60, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.search-bar {
+  width: 215px;
+  height: 28px;
+}
+
+/* line 66, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.ig-logo {
+  height: 24px;
+  width: 24px;
+  background-position: -163px -84px;
+}
+
+/* line 72, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.nav-logo {
+  font-family: 'Grand Hotel', cursive;
+  height: 29px;
+  width: 103px;
+}
+
+/* line 78, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+#logo-words {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 83, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.search-input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 3px 10px 3px 26px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  color: #262626;
+  outline: 0;
+  z-index: 2;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+/* line 100, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.search-input:placeholder-shown {
+  font-size: 16px;
+}
+
+/* line 104, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.nav-bar-word {
+  width: 86px;
+  height: 33px;
+  position: relative;
+  top: -2px;
+}
+
+/* line 111, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.nav-bar-logo {
+  width: 27px;
+  height: 27px;
+  position: relative;
+}
+
+/* line 117, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.nav-bar-line {
+  width: 5px;
+  height: 33px;
+  position: relative;
+  top: -4px;
+}
+
+/* line 124, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.visible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 133, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.prof-icon {
+  width: 24px;
+  height: 26px;
+  position: relative;
+  top: -1px;
+}
+
+/* line 140, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/00_reset.scss */
+.all-nav-logos {
+  width: 145px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.comment-creator-container {
+  border-top: 1px solid #efefef;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  min-height: 55px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 14, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.create-comment-wrapper {
+  width: 100%;
+}
+
+/* line 18, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.create-post-comment {
+  background: 0 0;
+  display: flex;
+  flex-grow: 1;
+  border: 0;
+  color: #262626;
+  font-size: inherit;
+  height: 18px;
+  font-size: 14px;
+  width: 100%;
+  max-height: 120px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+}
+
+/* line 35, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.create-post-comment:hover, .create-post-comment:focus {
+  outline: 0;
+}
+
+/* line 39, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.create-post-comment:active {
+  outline: none;
+  border: none;
+}
+
+/* line 44, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/comments.scss */
+.hidden-submit {
+  display: none;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-index {
+  display: flex;
+  flex-direction: column;
+  width: 614px !important;
+  margin-top: 136px;
+  padding-left: 0px;
+  justify-content: center;
+}
+
+/* line 13, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-container {
+  display: flex;
+  justify-content: center;
+  color: #262626;
+}
+
+/* line 19, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-index-img {
+  width: 614px;
+  min-height: 614px;
+  object-fit: cover;
+  display: block;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background: black;
+}
+
+/* line 29, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-post {
+  position: relative;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+/* line 37, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-post:hover, .feed-post:focus {
+  outline: 0;
+}
+
+/* line 41, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-post:active {
+  outline: none;
+  border: none;
+}
+
+/* line 46, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-post a {
+  text-decoration: none;
+  color: #262626;
+}
+
+/* line 54, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-bar {
+  background: white;
+  height: 27px;
+  width: 582px;
+  padding-left: 0px;
+  border: 1px solid #e6e6e6;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 16px 21px 16px 11px;
+}
+
+/* line 69, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.comment-bar {
+  background: white;
+  color: black;
+  display: inline-block;
+  width: 582px;
+  padding: 0px 16px 0px 16px;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 85, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-username {
+  color: #262626;
+  font-weight: 600;
+  padding-left: 5px;
+  display: inline;
+  font-size: 14px;
+}
+
+/* line 95, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.canvas {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 103, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-prof-pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* line 110, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-like-container {
+  width: 100%;
+}
+
+/* line 114, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-caption-feed {
+  font-size: 14px;
+}
+
+/* line 118, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-caption-container {
+  padding-bottom: 6px;
+}
+
+/* line 122, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-comments-list {
+  max-height: 92px;
+  overflow: scroll;
+}
+
+/* line 128, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.feed-comment-list ul {
+  list-style-type: none;
+  padding: 5px 0px 0px 0px;
+  margin: 0;
+}
+
+/* line 135, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-feed-like {
+  padding-top: 6px;
+  height: 30px;
+}
+
+/* line 140, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/feed/feed.scss */
+.post-feed-time {
+  color: #999;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .2px;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.big-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+/* line 9, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-modal-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/* line 19, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-image {
+  max-height: 580px;
+  height: 100%;
+  width: auto;
+  background: black;
+}
+
+/* line 27, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-image-container {
+  display: flex;
+}
+
+/* line 32, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.close-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 40, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-comments-container {
+  width: 335px;
+  max-height: 580px;
+  background: #fafafa;
+  padding: 0px 24px 0px 24px;
+  box-sizing: border-box;
+}
+
+/* line 48, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-comments-wrp {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+/* line 59, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-comments {
+  padding: 12px 0px 12px 0px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 68, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 73, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-header {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+}
+
+/* line 79, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-username-show {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* line 89, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-username-show2 {
+  color: #262626;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* line 97, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-caption {
+  font-size: 14px;
+}
+
+/* line 101, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-caption-container2 {
+  display: flex;
+  padding: 5px 2px 6px 0px;
+}
+
+/* line 106, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-prof {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* line 114, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-caption-feed2 {
+  font-size: 14px;
+  padding-right: 2px;
+}
+
+/* line 120, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.feed-comment-list ul {
+  list-style-type: none;
+  padding: 5px 0px 0px 0px;
+  margin: 0;
+}
+
+/* line 126, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-comments a {
+  text-decoration: none;
+}
+
+/* line 134, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.feed-comment-list2 ul {
+  list-style-type: none;
+  padding: 5px 0px 0px 0px;
+  margin: 0;
+}
+
+/* line 141, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-username2 {
+  color: #262626;
+  font-weight: 600;
+  display: inline;
+  font-size: 14px;
+}
+
+/* line 150, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-comments-list2 {
+  margin-top: 10px;
+  overflow: scroll;
+  max-height: 100px;
+}
+
+/* line 158, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-comments-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* line 166, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-likes {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 178, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.heart-full {
+  height: 36px;
+  width: 33px;
+  fill: #ed0036;
+  stroke-width: 0;
+  cursor: pointer;
+}
+
+/* line 186, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.heart-empty {
+  height: 35px;
+  width: 32px;
+  stroke-width: 1;
+  stroke: #262626;
+  cursor: pointer;
+}
+
+/* line 194, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-like {
+  border-top: 1px solid #efefef;
+  padding-top: 6px;
+  height: 30px;
+}
+
+/* line 200, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.post-show-time {
+  color: #999;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .2px;
+}
+
+/* line 208, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/posts/post_modal.scss */
+.likes-comments-time {
+  box-sizing: border-box;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.edit-modal {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+}
+
+/* line 11, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+body.upload-modal {
+  overflow: hidden;
+}
+
+/* line 15, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.upload-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 22, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.upload-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+}
+
+/* line 30, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.upload-form form input {
+  margin-bottom: 5px;
+}
+
+/* line 37, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-form-container {
+  margin-top: 340px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  background: #fafafa;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 49, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-form-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* line 55, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-form-container textarea {
+  font-size: 14px;
+}
+
+/* line 59, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 66, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.close-button {
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+  content: '\00D7';
+  display: block;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  border: none;
+}
+
+/* line 78, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.close-button-wrp {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 13px 2px 7px;
+}
+
+/* line 85, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-submit-button, .file-upload-button {
+  font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  outline: 0 !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+}
+
+/* line 105, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-submit-button:hover {
+  background: #1c89ee;
+  color: #fafafa;
+}
+
+/* line 110, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 117, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 128, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/edit_modal.scss */
+.post-caption {
+  background-color: #e6e3dc;
+  border-top-color: #d5d1c9;
+  border-right-color: #d5d1c9;
+  border-bottom-color: #d5d1c9;
+  border-left-color: #d5d1c9;
+  height: 42px;
+  width: 320px;
+  margin-bottom: 8px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding-left: 9px;
+  box-sizing: border-box;
+  font-size: 13px;
+  resize: none;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/post_form.scss */
+.post-form {
+  padding-top: 200px;
+}
+/* line 11, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.outer-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+/* line 29, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.form-header {
+  margin-bottom: 18px;
+  margin-top: 0px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #999;
+}
+
+/* line 40, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* line 45, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.instapx-logo {
+  width: 125px;
+  height: 56px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  margin-left: 2px;
+}
+
+/* line 53, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form, .parent-image {
+  margin-top: 70px;
+}
+
+/* line 57, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  border-radius: 1px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  text-align: center;
+}
+
+/* line 72, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.errors {
+  margin-top: 10px;
+  list-style: none;
+  color: red;
+  font-size: 14px;
+}
+
+/* line 78, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form form {
+  border: 1px solid #e6e6e6;
+  background-color: white;
+  display: inline-block;
+  padding-bottom: 20px;
+  width: 348px;
+}
+
+/* line 87, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form a {
+  color: #1c89ee;
+  text-decoration: none;
+}
+
+/* line 92, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.sep-form-box {
+  font-size: 12px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-top: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  background-color: white;
+  width: 348px;
+}
+
+/* line 108, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.form-box {
+  font-size: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+/* line 116, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.greeting {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* line 124, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form button {
+  font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #1c89ee;
+  border-radius: 4px;
+  color: #eae7e1;
+  border: none;
+  padding: 3px;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 9px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+  width: 250px;
+  cursor: pointer;
+}
+
+/* line 142, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.session-form input {
+  background-color: #e6e3dc;
+  border-top-color: #d5d1c9;
+  border-right-color: #d5d1c9;
+  border-bottom-color: #d5d1c9;
+  border-left-color: #d5d1c9;
+  height: 37px;
+  width: 250px;
+  margin-bottom: 8px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  padding-left: 9px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+/* line 159, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+#iphone {
+  width: 430px;
+  height: 618px;
+  position: relative;
+  z-index: 3;
+}
+
+/* line 168, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+.parent-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 175, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+#paris {
+  width: 251px;
+  height: 518px;
+  border-radius: 6px;
+  position: absolute;
+  top: 30px;
+  left: 213px;
+  z-index: 1;
+  margin-left: -70px;
+}
+
+/* line 186, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+#temp {
+  width: 241px;
+  height: 515px;
+  position: absolute;
+  top: 37px;
+  left: 221px;
+  z-index: 2;
+  margin-left: -75px;
+}
+
+/* line 197, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/session.scss */
+#logo {
+  font-family: 'Grand Hotel', cursive;
+  font-weight: 200;
+  font-size: 55px;
+  margin: 20px;
+  margin-bottom: 14px;
+}
+/* line 1, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-modal {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none;
+}
+
+/* line 14, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+body.upload-modal {
+  overflow: hidden;
+}
+
+/* line 18, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 25, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+}
+
+/* line 33, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-form form input {
+  margin-bottom: 5px;
+}
+
+/* line 40, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-form-container {
+  margin-top: 340px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  background: #fafafa;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 52, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-form-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* line 58, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-form-container textarea {
+  font-size: 14px;
+}
+
+/* line 62, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 69, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.close-button {
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+  content: '\00D7';
+  display: block;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  border: none;
+}
+
+/* line 85, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.close-button-wrp {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 13px 2px 7px;
+}
+
+/* line 92, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-submit-button, .file-upload-button {
+  font-family: -apple-system,system-ui,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  outline: 0 !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+}
+
+/* line 112, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-submit-button:hover {
+  background: #1c89ee;
+  color: #fafafa;
+}
+
+/* line 117, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 124, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 135, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/upload_modal.scss */
+.post-caption {
+  background-color: #e6e3dc;
+  border-top-color: #d5d1c9;
+  border-right-color: #d5d1c9;
+  border-bottom-color: #d5d1c9;
+  border-left-color: #d5d1c9;
+  height: 42px;
+  width: 320px;
+  margin-bottom: 8px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding-left: 9px;
+  box-sizing: border-box;
+  font-size: 13px;
+  resize: none;
+}
+/* line 2, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.posts-container {
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+/* line 12, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.all-posts {
+  width: 935px !important;
+  display: grid;
+  grid-template-columns: repeat(3, 31.33%);
+  grid-gap: 28px;
+}
+
+/* line 20, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post {
+  position: relative;
+  flex: 10 0 22px;
+  margin: 10px;
+  color: #fff;
+  cursor: pointer;
+  height: 293px;
+}
+
+/* line 31, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post:hover .post-info,
+.post:focus .post-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: 0;
+  border: none;
+}
+
+/* line 45, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post:hover, .post:focus {
+  outline: 0;
+  border: none;
+}
+
+/* line 49, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post:active {
+  outline: none;
+  border: none;
+}
+
+/* line 54, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post-image:hover, .post-image:focus {
+  outline: 0;
+}
+
+/* line 58, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: black;
+}
+
+/* line 66, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post-image {
+  outline: none;
+  border: none;
+}
+
+/* line 71, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post,
+.all-posts {
+  width: auto;
+  margin: 0;
+}
+
+/* line 77, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.post-info {
+  display: none;
+}
+
+/* line 81, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.profile-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color: #262626;
+  padding-top: 134px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 130px;
+  margin-right: 130px;
+  position: relative;
+}
+
+/* line 95, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.info-container {
+  margin-bottom: 44px;
+  display: flex;
+  align-items: flex-start;
+  width: 935px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* line 104, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 613.328px;
+}
+
+/* line 113, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.div-1 {
+  display: flex;
+}
+/* line 117, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.div-1 h1 {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 0px;
+  margin-right: 7px;
+}
+
+/* line 126, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.div-3 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 134, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.stats-list {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* line 141, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.stat-li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+/* line 146, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.posts-block {
+  width: 935px;
+  height: 52px;
+  border-top: 1px solid #efefef;
+}
+
+/* line 152, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.number {
+  color: #262626;
+  font-weight: 600;
+}
+
+/* line 157, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.full-name {
+  font-weight: 600;
+  display: inline;
+  font-size: 16px;
+}
+
+/* line 164, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.image-section {
+  height: 170px;
+  width: 291.672px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 172, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.prof-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+/* line 182, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.user-button {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  outline: 0 !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+/* line 202, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.user-button-follow {
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  outline: 0 !important;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+/* line 221, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-bar input:focus {
+  background: #fff;
+}
+
+/* line 224, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-bar ul {
+  margin: 0;
+  background: #fff;
+  border-radius: 3px;
+  max-height: 362px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0975);
+}
+
+/* line 236, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-bar a:link {
+  text-decoration: none;
+  color: none;
+}
+
+/* line 241, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-bar li:hover {
+  background: #fafafa;
+  cursor: pointer;
+}
+
+/* line 246, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-bar li {
+  padding: 8px 14px 8px 14px;
+  border-color: #efefef;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  overflow-x: hidden;
+}
+
+/* line 255, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-item {
+  display: flex;
+}
+
+/* line 259, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 264, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-photo {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 270, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-photo img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+/* line 275, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-fullname {
+  font-weight: 300;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999 !important;
+}
+
+/* line 283, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.search-username {
+  font-weight: 600;
+  color: #262626;
+}
+
+/* line 288, /Users/sameehkhan/Desktop/Instapx/app/assets/stylesheets/api/user/user.scss */
+.error-list {
+  list-style: none;
+  padding-left: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
