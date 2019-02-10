@@ -269,7 +269,7 @@
 
 .search-photo img{
     height: 32px;
-    width: auto;
+    width: 32px;
     border-radius: 50%;
 }
 .search-fullname{
@@ -283,4 +283,9 @@
 .search-username{
     font-weight: 600;
     color: #262626;
+}
+
+.error-list{
+    list-style: none;
+    padding-left: 0;
 }
