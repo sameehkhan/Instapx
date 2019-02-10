@@ -74,7 +74,7 @@ class UserShow extends React.Component {
         }
             // debugger
         if(this.props.user.id == this.props.curr){
-            return (
+            return (  
                 <div className='profile-div'>
                     
                     <div className='info-container'>
