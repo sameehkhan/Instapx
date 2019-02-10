@@ -10,8 +10,7 @@ class Edit extends React.Component {
             bio: this.props.user.bio,
             photoFile: null,
             photoUrl: this.props.user.photo
-          
-        }
+        };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
@@ -23,17 +22,17 @@ class Edit extends React.Component {
     update(field) {
         return e => this.setState({
             [field]: e.target.value
-        })
+        });
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const formData = new FormData();
-        formData.append("post[caption]", this.state.caption);
-        formData.append("post[photo]", this.state.photoFile);
+        formData.append("user[bio]", this.state.bio);
+        formData.append("user[photo]", this.state.photoFile);
         this.props.action(formData)
             .then(() => {
-                this.props.history.push("/feed")
+                this.props.history.push(`/users/${this.props.user.id}`);
             });
     }
 
@@ -42,15 +41,22 @@ class Edit extends React.Component {
     }
 
     render() {
+        if(this.props.user == undefined){
+            return( <div>
 
+            </div>
+            )
+        }
+        if(this.state.bio == null){
+            this.state.bio = '';
+        }
         return (
             <div className='post-form-container'>
-                {/* <div className='close-button'onClick={this.closeModal}>X</div> */}
                 <h2 className="post-index-upload-title">Edit Profile</h2>
 
                 <div className='upload-form'>
                     <form onSubmit={this.handleSubmit}>
-                        <div><textarea className="post-caption" placeholder="Bio..." onChange={this.update("caption")} /></div>
+                        <div><textarea className="post-caption" value={this.state.bio} onChange={this.update("bio")} /></div>
                         <div className='upload-btn-wrapper'>
                             <button className="file-upload-button">Change Profile Picture</button>
                             <input type="file" onChange={this.handleFile.bind(this)} />
