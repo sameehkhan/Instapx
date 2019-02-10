@@ -4,19 +4,15 @@ import { updateUser } from '../../actions/user_actions';
 import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
-    let currentUserId = state.session.id;
-    let post = {
-        caption: "",
-        user_id: currentUserId
-    };
+    let user = state.entities.users[ownProps.match.params.id];
     return ({
-        post
+        user
     });
 };
 
 const mdtp = (dispatch) => {
     return ({
-        action: (id) => dispatch(updateUser(id))
+        action: (user) => dispatch(updateUser(user))
     });
 };
 

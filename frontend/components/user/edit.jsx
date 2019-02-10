@@ -3,7 +3,15 @@ import React from 'react';
 class Edit extends React.Component {
     constructor(props) {
         super(props);
-        this.state = Object.assign({}, this.props.post, { photoFile: null })
+
+        this.state = {
+            id: this.props.user.id,
+            username: this.props.user.username,
+            bio: this.props.user.bio,
+            photoFile: null,
+            photoUrl: this.props.user.photo
+          
+        }
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleFile = this.handleFile.bind(this);
