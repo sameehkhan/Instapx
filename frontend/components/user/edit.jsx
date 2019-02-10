@@ -59,7 +59,7 @@ class Edit extends React.Component {
 
                 <div className='upload-form'>
                     <form onSubmit={this.handleSubmit}>
-                        <div><textarea className="post-caption" value={this.state.bio} onChange={this.update("bio")} /></div>
+                        <div><textarea className="post-caption" placeholder="Edit bio..." onChange={this.update("bio")} /></div>
                         <div className='upload-btn-wrapper'>
                             <button className="file-upload-button">Change Profile Picture</button>
                             <input type="file" onChange={this.handleFile.bind(this)} />
