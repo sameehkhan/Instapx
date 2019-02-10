@@ -30,10 +30,16 @@ class SignupForm extends React.Component {
         this.props.action(this.state).then(() => this.props.history.push('/feed'));
     }
 
-    renderErrors(errors){
-        return this.props.errors.map( e=>{
-            return <li>{e}</li>;
-        })
+    renderErrors(){
+        return (
+            <ul className="error-list">
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`} className="submit-errors">
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
     }
 
 
