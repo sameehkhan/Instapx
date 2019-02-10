@@ -19,6 +19,6 @@ export const updateUser = (user) => {
         url: `api/users/${user.id}`,
         processData: false,
         contentType: false,
-        data: { user }
+        data: user 
     });
 };
