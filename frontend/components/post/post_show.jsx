@@ -11,9 +11,7 @@ class PostShow extends React.Component {
     }
 
     componentDidMount() {
-        // this.props.fetchPosts();
         this.props.fetchPost(this.props.postId);
-        // this.props.fetchUsers();
     }
 
     postComments(post) {
@@ -45,7 +43,7 @@ class PostShow extends React.Component {
 
 
     render() {
-        if (this.props.post === undefined) {
+        if (this.props.post == undefined || Object.values(this.props.post).length < 8) {
             return (
                 <div></div>
             )

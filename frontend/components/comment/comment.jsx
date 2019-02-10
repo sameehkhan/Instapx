@@ -21,7 +21,7 @@ class Comment extends React.Component {
         // debugger
 
         e.preventDefault();
-        console.log(this.state)
+        // console.log(this.state)
         this.props.action(this.state).then( ()=> this.setState({body: ''}));
     }
 
