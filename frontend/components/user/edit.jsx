@@ -9,7 +9,7 @@ class Edit extends React.Component {
             username: this.props.user.username,
             bio: this.props.user.bio,
             photoFile: null,
-            photoUrl: this.props.user.photo
+            photo: this.props.user.photo
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,10 +26,13 @@ class Edit extends React.Component {
     }
 
     handleSubmit(e) {
+        // debugger
         e.preventDefault();
         const formData = new FormData();
         formData.append("user[bio]", this.state.bio);
-        formData.append("user[photo]", this.state.photoFile);
+        if (this.state.photoFile) {
+            formData.append('user[photo]', this.state.photoFile);
+        }
         this.props.action(formData)
             .then(() => {
                 this.props.history.push(`/users/${this.props.user.id}`);
@@ -42,8 +45,8 @@ class Edit extends React.Component {
 
     render() {
         if(this.props.user == undefined){
-            return( <div>
-
+            return( 
+            <div>
             </div>
             )
         }
