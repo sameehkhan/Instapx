@@ -31,7 +31,6 @@ class Search extends React.Component {
 
 
     update(field) {
-        console.log(this.state);
         return e => { 
             let filtered = this.props.users.filter(user => user.username.includes(e.target.value));
             if(e.target.value === ''){
