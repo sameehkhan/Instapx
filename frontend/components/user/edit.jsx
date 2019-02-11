@@ -55,7 +55,7 @@ class Edit extends React.Component {
         }
         return (
             <div className='post-form-container'>
-                <h2 className="post-index-upload-title">Edit Profile TEST</h2>
+                <h2 className="post-index-upload-title">Edit Profile</h2>
 
                 <div className='upload-form'>
                     <form onSubmit={this.handleSubmit}>
