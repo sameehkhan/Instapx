@@ -49,7 +49,7 @@ class Edit extends React.Component {
             <div>
             </div>
             )
-        }
+        }  
         if(this.state.bio == null){
             this.state.bio = '';
         }
