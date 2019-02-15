@@ -73,75 +73,35 @@ Incorporating the search functionality was at first at first challenging. My app
 ![](./screenshots/r-search-bar.png)
 
 ```
-// search_results_container.js
+// search.jsx
 
-
-const mstp = (state, ownProps) => {
-
-  let pathname = ownProps.location.pathname;
-  let search = ownProps.location.search;
-  let query = "";
-  if (pathname === '/search' && search.length > 2) {
-    query = search.split('=')[1];
-  }
-
-  return ({
-    movies: Object.values(state.entities.movies),
-    query: query.toLowerCase()
-  });
-};
-```
-```
-// search_results.jsx
-
-
-componentDidUpdate(prevProps){
-  if(this.props.query !== prevProps.query){
-    const filteredMovies = this.props.movies.filter(movie => movie.title.toLowerCase().includes(this.props.query));
-    this.setState({
-      filtered: filteredMovies
-    });
-  }
-}
-```
-
-### Video Info Dropdown and Effects
-
-When a movie's dropdown is expanded, it's info is supposed to show the video's title, description, control buttons, and a close button. Also, the current video with expanded info should be highlighted white a white border and a downwards caret pointing to the info. The challenging part with this feature was what to do if one dropdown is already open and the user attempts to expand another one. At first both dropdowns would show and both would have the highlight effects. The solution I came to was the following:
-* When a dropdown is expanded, update the route to have wildcards for the id of the scroll wheel and the id of the movie
-* Upon reaching the proper route, remove all effects from each video and allow each video to be enlarged upon hover to show controls
-* Find the matching id's
-  * If non-existent, reroute to `/browse`
-  * If it does exist, remove enlarge capability and add effects
-
-![](./screenshots/info.png)
-
-```
-addEffects() {
-    let spinnerId = this.props.match.params.spinnerId;
-    let movieId = this.props.match.params.movieId;
-    
-    const current = document.getElementById(`spinner-${spinnerId}-${movieId}`);
-    if(current !== null) {
-      current.style.border = "4px solid white";
-      current.classList.remove('enlarge');
-      document.getElementById(`spinner-${spinnerId}`).classList.add('buffed');
+componentDidMount() {
+        this.props.fetchUsers();
     }
-    const caret = document.getElementById(`expand-${spinnerId}-${movieId}`);
-    if(caret !== null){
-      caret.style.display = "block";
-    }
-  }
 
-  removeEffects() {
-    const allSpinners = document.getElementsByClassName("spinner-item");
-    const allCarets = document.getElementsByClassName("expand-down");
-    for (let i = 0; i < allSpinners.length; i++) {
-      allSpinners[i].style.border = "0";
-      allSpinners[i].classList.add('enlarge');
-      allCarets[i].style.display = "none";
+    componentDidUpdate(prevProps){
+        if(prevProps.location.pathname != this.props.location.pathname){
+            this.setState({
+                search: '',
+                users: []
+            });
+        }
     }
-  }
+
+
+    update(field) {
+        return e => { 
+            let filtered = this.props.users.filter(user => user.username.includes(e.target.value));
+            if(e.target.value === ''){
+                filtered = [];
+            }
+            this.setState({
+
+            [field]: e.target.value,
+            users: filtered
+        });
+        };
+    }
 ```
 
 
