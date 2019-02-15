@@ -42,9 +42,9 @@ Instapx was built on a `Ruby on Rails` backend with a `React/Redux` front end. U
 The Instapx splash page/user authentication is an exact clone of Instagram, without facebook links. It features the same background, fonts, and iPhone template as of January 2019.
 
 ![](./images/screenshot1.png)
-<!-- ![](./screenshots/auth.gif) -->
 
-<!-- ### Posts
+
+### Posts
 
 Instapx posts can be accessed through three means. Posts from users you follow are available upon login, on the feed page. A user's own posts can be viewed on their own profile, and on their feed. Any user's profile features all of their posts as well as a pop up modal on click for any post.
 
