@@ -1,4 +1,4 @@
-[](s3://instapx-dev/instapx.png)
+![](https://s3-us-west-1.amazonaws.com/instapx-dev/instapx.png)
 
 # Table of Contents
 - [Background and Overview](#background-and-overview)
@@ -44,6 +44,7 @@ The Instapx splash page/user authentication is an exact clone of Instagram, with
 ![](./app/assets/images/r-splash.png)
 
 
+
 ### Posts
 
 Instapx posts can be accessed through three means. Posts from users you follow are available upon login, on the feed page. A user's own posts can be viewed on their own profile, and on their feed. Any user's profile features all of their posts as well as a pop up modal on click for any post.
@@ -70,7 +71,7 @@ Incorporating the search functionality was at first at first challenging. My app
 * An issue I ran into originally, was that the query string as well as the results would be present even after clicking a link to a user's page, to rectify this I utilized the ComponentWillUpdate() React lifecycle method. 
 
 
-![](./app/assets/r-search-bar.png)
+![](./app/assets/images/r-search-bar.png)
 
 ```
 // search.jsx
