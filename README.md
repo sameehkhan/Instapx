@@ -1,4 +1,4 @@
-![](https://s3-us-west-1.amazonaws.com/instapx-dev/instapx.png)
+<img src='https://s3-us-west-1.amazonaws.com/instapx-dev/instapx.png' width='270'>
 
 # Table of Contents
 - [Background and Overview](#background-and-overview)
