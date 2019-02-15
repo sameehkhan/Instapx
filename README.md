@@ -1,4 +1,4 @@
-<!-- ![](s3://instapx-dev/instapx.png)
+[](s3://instapx-dev/instapx.png)
 
 # Table of Contents
 - [Background and Overview](#background-and-overview)
@@ -14,17 +14,17 @@
 
 ## Background and Overview
 
-Instagram is a clone of the video-streaming site, Instagram. On this site, users are able to create new accounts and login and watch short clips of popular movies and shows.
+Instagram is a clone of the social media site, Instagram. On this site, users are able to create new accounts and login and view and post pictures.
 
 Features cloned from Instagram include:
 * User authentication
 * Feed
 * Profile
 * Post Modals
-* Liking posts
-* Commenting on posts
-* Search bar
-* User follows and followings
+* Likes
+* Comments
+* User Search
+* Follows
 
 
 
