@@ -7,10 +7,8 @@
 - [Site](#site)
   - [Splash Page](#splash-page)
   - [Posts](#posts)
-  - [Info](#info)
 - [Feature Highlights](#feature-highlights)
-  - [Video Search](#video-search)
-  - [Info and Dropdown Effects](#video-info-dropdown-and-effects)
+  - [Search](#search)
 
 ## Background and Overview
 
