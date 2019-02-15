@@ -41,26 +41,26 @@ Instapx was built on a `Ruby on Rails` backend with a `React/Redux` front end. U
 
 The Instapx splash page/user authentication is an exact clone of Instagram, without facebook links. It features the same background, fonts, and iPhone template as of January 2019.
 
-![](./images/screenshot1.png)
+![](./images/r-splash.png)
 
 
 ### Posts
 
 Instapx posts can be accessed through three means. Posts from users you follow are available upon login, on the feed page. A user's own posts can be viewed on their own profile, and on their feed. Any user's profile features all of their posts as well as a pop up modal on click for any post.
 
+![](./images/r-feed.png)
+
+![](./images/r-user-profile.png)
+
+![](./images/r-post-modal.png)
 
 
-![](./screenshots/hover.png)
-
-<!-- ### Info
+### Info
 
 
+## Feature Highlights
 
-![](./screenshots/info.png)
-
-## Feature Highlights -->
-
-<!-- ### Search
+### Search
 
 Incorporating the search functionality was at first at first challenging. My approach from a high-level perspective was to fetch all the users within the search container so that I have access to them while searching, and against refreshes, however it proved difficult to include it all within the nav bar, so it was split into its own component. 
 
@@ -70,7 +70,7 @@ Incorporating the search functionality was at first at first challenging. My app
 * An issue I ran into originally, was that the query string as well as the results would be present even after clicking a link to a user's page, to rectify this I utilized the ComponentWillUpdate() React lifecycle method. 
 
 
-<!-- ![](./screenshots/search.png) -->
+![](./screenshots/r-search-bar.png)
 
 ```
 // search_results_container.js
@@ -105,14 +105,14 @@ componentDidUpdate(prevProps){
 }
 ```
 
-<!-- ### Video Info Dropdown and Effects
+### Video Info Dropdown and Effects
 
 When a movie's dropdown is expanded, it's info is supposed to show the video's title, description, control buttons, and a close button. Also, the current video with expanded info should be highlighted white a white border and a downwards caret pointing to the info. The challenging part with this feature was what to do if one dropdown is already open and the user attempts to expand another one. At first both dropdowns would show and both would have the highlight effects. The solution I came to was the following:
 * When a dropdown is expanded, update the route to have wildcards for the id of the scroll wheel and the id of the movie
 * Upon reaching the proper route, remove all effects from each video and allow each video to be enlarged upon hover to show controls
 * Find the matching id's
   * If non-existent, reroute to `/browse`
-  * If it does exist, remove enlarge capability and add effects -->
+  * If it does exist, remove enlarge capability and add effects
 
 ![](./screenshots/info.png)
 
