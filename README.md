@@ -41,18 +41,18 @@ Instapx was built on a `Ruby on Rails` backend with a `React/Redux` front end. U
 
 The Instapx splash page/user authentication is an exact clone of Instagram, without facebook links. It features the same background, fonts, and iPhone template as of January 2019.
 
-![](./images/r-splash.png)
+![](./app/assets/images/r-splash.png)
 
 
 ### Posts
 
 Instapx posts can be accessed through three means. Posts from users you follow are available upon login, on the feed page. A user's own posts can be viewed on their own profile, and on their feed. Any user's profile features all of their posts as well as a pop up modal on click for any post.
 
-![](./images/r-feed.png)
+![](./app/assets/images/r-feed.png)
 
-![](./images/r-user-profile.png)
+![](./app/assets/images/r-user-profile.png)
 
-![](./images/r-post-modal.png)
+![](./app/assets/images/r-post-modal.png)
 
 
 ### Info
@@ -70,7 +70,7 @@ Incorporating the search functionality was at first at first challenging. My app
 * An issue I ran into originally, was that the query string as well as the results would be present even after clicking a link to a user's page, to rectify this I utilized the ComponentWillUpdate() React lifecycle method. 
 
 
-![](./screenshots/r-search-bar.png)
+![](./app/assets/r-search-bar.png)
 
 ```
 // search.jsx
